@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.csu.slicing.coachbuswithedatatype/src" modelPluginID="org.csu.slicing.coachbuswithedatatype"
+    modelName="CoachBusWithEDataType" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false">
+  <foreignModel>CoachBusWithEDataType.ecore</foreignModel>
+  <genPackages prefix="CoachBusWithEDataType" basePackage="org.csu.slicing" disposableProviderFactory="true"
+      ecorePackage="CoachBusWithEDataType.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CoachBusWithEDataType.ecore#//Sex">
+      <genEnumLiterals ecoreEnumLiteral="CoachBusWithEDataType.ecore#//Sex/male"/>
+      <genEnumLiterals ecoreEnumLiteral="CoachBusWithEDataType.ecore#//Sex/female"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="CoachBusWithEDataType.ecore#//TType"/>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//Trip">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Trip/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Trip/origin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Trip/destination"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Trip/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Trip/number"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Trip/coaches"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Trip/passengers"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//RegularTrip"/>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//PrivateTrip">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//PrivateTrip/extras"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//Coach">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Coach/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Coach/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Coach/model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Coach/noOfSeats"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Coach/trips"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Coach/guards"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Coach/offices"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//Passenger">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Passenger/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Passenger/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Passenger/idCard"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Passenger/trips"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Passenger/tickets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Passenger/sex"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//Employee">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Employee/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Employee/baseSalary"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//SecurityGuard">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//SecurityGuard/shift"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//SecurityGuard/coach"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//Manager">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Manager/hasMBA"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Manager/office"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//BookingOffice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//BookingOffice/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//BookingOffice/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//BookingOffice/officeID"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//BookingOffice/coaches"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//BookingOffice/manager"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//BookingOffice/vms"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//Ticket">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Ticket/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Ticket/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//Ticket/isRoundTrip"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Ticket/psg"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//Ticket/vm"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//VendingMachine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//VendingMachine/number"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//VendingMachine/tickets"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CoachBusWithEDataType.ecore#//VendingMachine/office"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//AdultTicket">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//AdultTicket/isElderlyDiscount"/>
+    </genClasses>
+    <genClasses ecoreClass="CoachBusWithEDataType.ecore#//ChildTicket">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoachBusWithEDataType.ecore#//ChildTicket/isSchoolTrip"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
