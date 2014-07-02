@@ -1,0 +1,109 @@
+http://www.emn.fr/z-info/atlanmod/index.php/Ecore#MATLAB_1.2
+MATLAB ecore
+
+Parsing OCL file estimated time is 2
+onlyBinaryAssociationCanBeAggregations Slicing estimated time is 29
+Evaluation estimated time is 80
+Evaluation estimated time including file loading is 2394
+Evaluation estimated time is 42
+Evaluation estimated time including file loading is 70
+
+Parsing OCL file estimated time is 2
+specializedAssociationsHasSameNumberOfEnds Slicing estimated time is 15
+Evaluation estimated time is 60
+Evaluation estimated time including file loading is 2338
+Evaluation estimated time is 13
+Evaluation estimated time including file loading is 52
+
+Parsing OCL file estimated time is 2
+operationHasOnlyOneReturnParameter Slicing estimated time is 3
+Evaluation estimated time is 15
+Evaluation estimated time including file loading is 2257
+Evaluation estimated time is 0
+Evaluation estimated time including file loading is 14
+no objects
+
+Parsing OCL file estimated time is 2
+class1 Slicing estimated time is 5
+Evaluation estimated time is 69
+Evaluation estimated time including file loading is 2396
+Evaluation estimated time including file loading is 38
+
+Parsing OCL file estimated time is 1
+bc1 Slicing estimated time is 4
+Evaluation estimated time is 62
+Evaluation estimated time including file loading is 2339
+Evaluation estimated time is 14
+Evaluation estimated time including file loading is 82
+
+
+Parsing OCL file estimated time is 1
+ownedElementHasVisibility Slicing estimated time is 22
+Evaluation estimated time is 47
+Evaluation estimated time including file loading is 2321
+Evaluation estimated time is 4
+Evaluation estimated time including file loading is 148
+
+
+Parsing OCL file estimated time is 1
+mustBeOwnedHasOwner Slicing estimated time is 22
+Evaluation estimated time is 107
+Evaluation estimated time including file loading is 2326
+Evaluation estimated time is 45
+Evaluation estimated time including file loading is 133
+
+Parsing OCL file estimated time is 1
+nAryAssociationsOwnTheirEnds Slicing estimated time is 3
+Evaluation estimated time is 72
+Evaluation estimated time including file loading is 2276
+Evaluation estimated time is 14
+Evaluation estimated time including file loading is 42
+
+Parsing OCL file estimated time is 1
+inheritedMemberIsValid Slicing estimated time is 24
+Evaluation estimated time is 86
+Evaluation estimated time including file loading is 2443
+Evaluation estimated time is 39
+Evaluation estimated time including file loading is 182
+
+Parsing OCL file estimated time is 1
+isAbstractDefined Slicing estimated time is 6
+Evaluation estimated time is 71
+Evaluation estimated time including file loading is 2370
+Evaluation estimated time is 18
+Evaluation estimated time including file loading is 106
+
+Parsing OCL file estimated time is 1
+derivedUnionIsDerived Slicing estimated time is 3
+Evaluation estimated time is 97
+Evaluation estimated time including file loading is 2425
+Evaluation estimated time is 29
+Evaluation estimated time including file loading is 108
+
+Parsing OCL file estimated time is 1
+subsetRequiresDifferentName Slicing estimated time is 25
+Evaluation estimated time is 105
+Evaluation estimated time including file loading is 2340
+Evaluation estimated time is 45
+Evaluation estimated time including file loading is 169
+
+Parsing OCL file estimated time is 2
+derivedUnionIsReadOnly Slicing estimated time is 3
+Evaluation estimated time is 98
+Evaluation estimated time including file loading is 2336
+Evaluation estimated time is 45
+Evaluation estimated time including file loading is 95
+
+Parsing OCL file estimated time is 1
+isCompositeIsValid Slicing estimated time is 4
+Evaluation estimated time is 109
+Evaluation estimated time including file loading is 2395
+Evaluation estimated time is 37
+Evaluation estimated time including file loading is 89
+
+Parsing OCL file estimated time is 2
+Slicing estimated time is 128
+Evaluation estimated time is 762
+Evaluation estimated time including file loading is 2465
+Evaluation estimated time is 405
+Evaluation estimated time including file loading is 1206

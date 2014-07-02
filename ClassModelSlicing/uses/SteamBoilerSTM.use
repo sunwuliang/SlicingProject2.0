@@ -1,0 +1,290 @@
+model SteamBoilerSTM
+
+enum valveState {open, closed}
+enum State {on, off}
+enum Mode {Normal, Initialization, Degraded, Rescue, EmergencyStop}
+
+
+
+
+
+class SteamBoiler
+attributes
+  ready: Boolean
+  capacity: Real
+  minimalNormal: Real
+  maximalNormal: Real
+  maximumIncrease: Real
+  maximumDecrease: Real
+  minimalLimit: Real
+  maximalLimit: Real
+  valveOpen: valveState
+  operations
+  getCurrentSnapshot(): Snapshot = self.snp
+end
+
+
+class SteamMeasurmentDevice
+attributes
+  ready : Boolean
+  evaporationRate: Real
+  operations
+  getCurrentSnapshot(): Snapshot = self.snp
+end
+
+class WaterLevelMeasurmentDevice
+attributes
+  ready : Boolean
+  waterLevel: Real
+  operations
+  getCurrentSnapshot(): Snapshot = self.snp
+end
+
+class Pump
+attributes
+  ready : Boolean
+  capacity: Real
+  mode: valveState
+  operations
+  getCurrentSnapshot(): Snapshot = self.snp
+end
+
+class PumpControler
+attributes
+  ready : Boolean
+  circulating : Boolean
+  operations
+  getCurrentSnapshot(): Snapshot = self.snp
+end
+
+class ControlProgram
+attributes
+    mode: Mode
+    ready: Boolean
+    failureDetected:Boolean
+    wlmdFailure: Boolean
+    smdFailure: Boolean
+    pumpFailure: Boolean
+    pumpControlerFailure: Boolean
+ operations
+  getCurrentSnapshot(): Snapshot = self.snp
+end
+
+
+class Snapshot
+    operations
+    getNext(): Snapshot = self.nextTrans.nextSnapshot
+    futureClosure(s : Set(Snapshot)) : Set(Snapshot)= if s->includesAll(s.getNext()->asSet()) then s else futureClosure(s->union(s.getNext()->asSet()))endif
+    getPost(): Set(Snapshot) = futureClosure(Set{self.getNext()})
+    getPrevious(): Snapshot = self.previousTrans.previousSnapshot
+    previousClosure(s : Set(Snapshot)) : Set(Snapshot)= if s->includesAll(s.getPrevious()->asSet()) then s else previousClosure(s->union(s.getPrevious()->asSet()))endif
+    getPre(): Set(Snapshot) = previousClosure(Set{self.getPrevious()})
+end
+
+abstract class Transition
+--operations
+  --  nextTransition(): Transition = self.nextSnapshot.nextTrans
+   -- closureTrasitions(s : Set(Transition)) : Set(Transition)= if s->includesAll(s.nextTransition()->asSet()) then s else closureTrasitions(s->union(s.nextTransition()->asSet()))endif
+    --futureTransitions(): Set(Transition) = closureTrasitions(Set{self.nextTransition()})
+end
+
+class WaterLevelMeasurmentDevice_getLevel < Transition
+  attributes
+    wlmdPre:WaterLevelMeasurmentDevice
+    wlmdPost:WaterLevelMeasurmentDevice
+    ret: Real
+end
+
+class SteamMeasurmentDevice_getSteam < Transition
+  attributes
+    smdPre:SteamMeasurmentDevice
+    wmdPost:SteamMeasurmentDevice
+    ret: Real
+end
+
+class SteamBoiler_OpenValve < Transition
+  attributes
+    sbPre:SteamBoiler
+    sbPost:SteamBoiler
+end
+
+class PumpControler_OpenPump < Transition
+  attributes
+    PCPre:PumpControler
+    PCPost:PumpControler
+end
+
+class PumpControler_ClosePump < Transition
+  attributes
+    PCPre:PumpControler
+    PCPost:PumpControler
+end
+
+class ControlProgram_StartOperation < Transition
+  attributes
+    CPPre: ControlProgram
+    CPPost: ControlProgram
+end
+
+--------------------associations--------------
+
+association SteamBoilerControlProgram between
+  SteamBoiler [1] role sb
+  ControlProgram [1] role program
+end
+
+association SteamBoilerWLMD between
+  SteamBoiler [1] role sb
+  WaterLevelMeasurmentDevice [1] role wlmd
+end
+
+association SteamBoilerSMD between
+  SteamBoiler [1] role sb
+  SteamMeasurmentDevice [1] role smd
+end
+
+association SteamBoilerPump between
+  SteamBoiler [1] role sb
+  Pump [1] role pump
+end
+
+association ControlProgramPump between
+  ControlProgram [1] role program
+  Pump [1] role pump
+end
+
+association PumpControlerPump between
+  PumpControler [1] role controler
+  Pump [1] role pump
+end
+
+
+association ControlProgramPumpControler between
+  ControlProgram [1] role program
+  PumpControler [1] role PC
+end
+
+association ControlProgramWLMD between
+  ControlProgram [1] role program
+  WaterLevelMeasurmentDevice [1] role wlmd
+end
+
+association ControlProgramSMD between
+  ControlProgram [1] role program
+  SteamMeasurmentDevice [1] role smd
+end
+
+association BeforeTrans between
+  Snapshot [0..1] role previousSnapshot
+  Transition [0..1] role nextTrans
+end
+
+association AfterTrans between
+  Snapshot [0..1] role nextSnapshot
+  Transition [0..1] role previousTrans
+end
+
+composition SnapshotSteamBoilers between
+ Snapshot [1] role snp
+ --Snapshot [*] role snapshots
+ SteamBoiler [1] role boiler
+end
+
+
+
+composition SnapshotWMD between
+ Snapshot [1] role snp
+ WaterLevelMeasurmentDevice [1] role WLMD
+end
+
+composition SnapshotPump between
+ Snapshot [1] role snp
+ Pump[1] role pump
+end
+
+composition SnapshotPumpControler between
+ Snapshot [1] role snp
+ PumpControler[1] role PC
+end
+
+composition SnapshotSMD between
+ Snapshot [1] role snp
+ SteamMeasurmentDevice [1] role SMD
+end
+
+composition SnapshotControlProgram between
+ Snapshot [1] role snp
+ ControlProgram [1] role program
+end
+
+
+--------------constraints------
+constraints
+
+--TP1
+context ControlProgram
+inv: let CS:Snapshot = self.snp in let NS: Snapshot= CS.getNext()
+in self.wlmdFailure implies NS.program.mode= # Rescue
+
+--TP1 ReWitten in plain OCL without nesting
+
+context ControlProgram
+inv TP1: self.wlmdFailure implies (self.snp.nextTrans.nextSnapshot.program.mode = Mode::Rescue)
+
+--TP2
+context ControlProgram
+inv: let CS:Snapshot = self.snp in let NS: Snapshot= CS.getNext()
+in (self.smdFailure or self.pumpFailure or self.pumpControlerFailure) implies NS.program.mode= # Degraded
+
+--TP2 rewitten 
+
+context ControlProgram 
+inv TP2: (self.smdFailure or self.pumpFailure or self.pumpControlerFailure) implies (self.snp.nextTrans.nextSnapshot.program.mode = Mode::Degraded)
+
+--TP3
+context SteamBoiler
+inv: let CS:Snapshot = self.snp in let NS: Snapshot= CS.getNext()
+in (self.wlmd.waterLevel > self.maximalNormal or self.wlmd.waterLevel < self.minimalNormal) implies NS.program.mode= # EmergencyStop
+
+--TP3 rewittten 
+
+context SteamBoiler
+inv TP3: (self.wlmd.waterLevel > self.maximalNormal or self.wlmd.waterLevel < self.minimalNormal) implies (self.snp.nextTrans.nextSnapshot.program.mode= # EmergencyStop)
+
+--TP4
+context SteamBoiler
+inv: let CS:Snapshot = self.snp in let FS: Set(Snapshot)= CS.getPost()
+in self.valveOpen = # open implies FS->exists(s:Snapshot | s.WLMD.waterLevel <= maximalNormal)
+
+--TP4 rewitten 
+
+--context SteamBoiler
+--inv TP4: self.valveOpen = # open implies self.snp
+
+--TP5
+context ControlProgram
+inv: let CS:Snapshot = self.snp in let NS: Snapshot= CS.getNext()
+in (self.mode=# Initialization and self.wlmdFailure) implies NS.program.mode= # EmergencyStop
+
+--TP5 rewitten
+
+context ControlProgram
+inv TP5 :(self.mode=# Initialization and self.wlmdFailure) implies (self.snp.nextTrans.nextSnapshot.program.mode= # EmergencyStop)
+
+
+--TP6
+--context ControlProgram
+--inv: let CS:Snapshot = self.snp in let FS: Set(Snapshot)= CS.getPost()->select(s:Snapshot | s.boiler.ready and s.SMD.ready and s.pump.ready and s.PC.ready and s.WLMD.ready) in let FS1:Snapshot=FS->first() in let PreFS1:Set(Snapshot)=FS1.getPre() in let BTS:Set(Snapshot)=PreFS1->excluding(CS.getPre())
+--in self.mode= # Initialization implies BTS->forAll(s1:Snapshot | s1.program.mode= #Initialization)
+
+-- initial class diagram invariants
+
+context WaterLevelMeasurmentDevice
+inv: self.waterLevel < self.sb.capacity
+
+context SteamBoiler
+inv: self.valveOpen=#open implies self.program.mode=#Initialization
+
+context PumpControler_OpenPump
+inv: PCPre.pump.mode = #off
+inv: PCPost.pump.mode = #on
