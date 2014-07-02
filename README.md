@@ -1,8 +1,8 @@
 SlicingProject2.0
 =================
 The slicing project (ClassModelSlicing) is used to slice a .ecore class model and a .xmi object configuration based on one or many OCL invariants.
-It has dependency with a list of other projects: org.csu.slicing.uml2, org.csu.slicing.coachbuswithedatatype, org.csu.slicing.coachbus. 
-org.csu.slicing.uml2 is used to create instances of UML2 metamodel, while the other two projects, creating instances of CoachBus class model, are used for testing and example demonstration. 
+It has dependency with three other projects: org.csu.slicing.uml2, org.csu.slicing.coachbuswithedatatype, and org.csu.slicing.coachbus. These three projects are automatically generated from the corresponding *.genmodels.
+The org.csu.slicing.uml2 project is used to create instances of UML2 metamodel, while the other two projects, creating instances of CoachBus class model, are used for testing and example demonstration. 
 
 Below is a descrition of a list of folders/files in the ClassModelSlicing project:
 1. ecores folder includes a list of .ecore class models; 
