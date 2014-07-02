@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CoachBus="http:///CoachBus.ecore">
+  <CoachBus:Passenger name="Bill" age="12" idCard="AB1212" trips="#/9" tickets="#/2"/>
+  <CoachBus:Coach id="1" name="coach1" model="Benz" noOfSeats="20" trips="#/9" offices="#/3"/>
+  <CoachBus:ChildTicket number="3" price="12.0" psg="#/0" vm="#/4"/>
+  <CoachBus:BookingOffice name="DenverOffice" location="Denver" officeID="1" coaches="#/1"
+      vms="#/4"/>
+  <CoachBus:VendingMachine number="1" tickets="#/7 #/6 #/2" office="#/3"/>
+  <CoachBus:Passenger name="Tom" age="65" idCard="AB2342" trips="#/9" tickets="#/6"/>
+  <CoachBus:AdultTicket number="2" price="16.0" psg="#/5" vm="#/4" isElderlyDiscount="true"/>
+  <CoachBus:AdultTicket number="1" price="24.0" psg="#/8" vm="#/4"/>
+  <CoachBus:Passenger name="Peter" age="24" idCard="AB67823" trips="#/9" tickets="#/7"/>
+  <CoachBus:RegularTrip name="LasVegasTrip" origin="Denver" destination="LasVegas"
+      type="Regular" number="1" coaches="#/1" passengers="#/8 #/5 #/0"/>
+</xmi:XMI>

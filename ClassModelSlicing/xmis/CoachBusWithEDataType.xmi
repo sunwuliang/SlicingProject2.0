@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CoachBusWithEDataType="http:///CoachBusWithEDataType.ecore">
+  <CoachBusWithEDataType:Passenger name="Emily" age="12" idCard="AB1212" trips="#/2"
+      tickets="#/8" sex="female"/>
+  <CoachBusWithEDataType:Passenger name="Tom" age="65" idCard="AB2342" trips="#/2"
+      tickets="#/5"/>
+  <CoachBusWithEDataType:RegularTrip name="LasVegasTrip" origin="Denver" destination="LasVegas"
+      number="1" coaches="#/7" passengers="#/9 #/1 #/0"/>
+  <CoachBusWithEDataType:VendingMachine number="1" tickets="#/6 #/5 #/8" office="#/4"/>
+  <CoachBusWithEDataType:BookingOffice name="DenverOffice" location="Denver" officeID="1"
+      coaches="#/7" vms="#/3"/>
+  <CoachBusWithEDataType:AdultTicket number="2" price="16.0" psg="#/1" vm="#/3" isElderlyDiscount="true"/>
+  <CoachBusWithEDataType:AdultTicket number="1" price="24.0" psg="#/9" vm="#/3"/>
+  <CoachBusWithEDataType:Coach id="1" name="coach1" model="Benz" noOfSeats="20" trips="#/2"
+      offices="#/4"/>
+  <CoachBusWithEDataType:ChildTicket number="3" price="12.0" psg="#/0" vm="#/3"/>
+  <CoachBusWithEDataType:Passenger name="Peter" age="24" idCard="AB67823" trips="#/2"
+      tickets="#/6"/>
+</xmi:XMI>
