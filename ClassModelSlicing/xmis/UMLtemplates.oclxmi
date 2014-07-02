@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <ocl.ecore:Constraint xmi:id="_GFuT8Mw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFuT8cw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFuT8sw2EeCTAbeb_8PhAQ" name="forAll">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuT9Mw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(TemplateParameterSubstitution).2"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFuT9sw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFuUBsw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateBinding/parameterSubstitution"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFuT-Mw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuT-sw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(TemplateParameter).2"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuT_Mw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFuT_sw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFuUBsw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateBinding/signature"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateSignature/parameter"/>
+          </source>
+          <argument xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuUAMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFuUAsw2EeCTAbeb_8PhAQ" name="b" referredVariable="_GFuUBMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameterSubstitution/formal"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/includes"/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFuUBMw2EeCTAbeb_8PhAQ" name="b">
+          <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+        </iterator>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFuUBsw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFuUCMw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFuUCcw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFuUCsw2EeCTAbeb_8PhAQ" name="forAll">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuUDMw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(TemplateParameter).2"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuUDsw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFuUEMw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7D8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateBinding/signature"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateSignature/parameter"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFuUEsw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFuUFMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFuUFsw2EeCTAbeb_8PhAQ" name="select">
+              <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(TemplateParameterSubstitution).2"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFuUGMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(TemplateParameterSubstitution).2"/>
+                <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFuUGsw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7D8w2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateBinding/parameterSubstitution"/>
+              </source>
+              <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7Acw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7A8w2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+                  <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Bcw2EeCTAbeb_8PhAQ" name="b" referredVariable="_GFu7Ccw2EeCTAbeb_8PhAQ">
+                    <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameterSubstitution/formal"/>
+                </source>
+                <argument xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7B8w2EeCTAbeb_8PhAQ" name="p" referredVariable="_GFu7Dcw2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+              </body>
+              <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7Ccw2EeCTAbeb_8PhAQ" name="b">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+              </iterator>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_GFu7C8w2EeCTAbeb_8PhAQ" integerSymbol="1">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/%3C="/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7Dcw2EeCTAbeb_8PhAQ" name="p">
+          <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+        </iterator>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7D8w2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateBinding"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFu7Ecw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFu7Esw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7E8w2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7Fcw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(Element).11"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7F8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateableElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Gcw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7O8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateSignature/template"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//Element/ownedElement"/>
+        </source>
+        <argument xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFu7G8w2EeCTAbeb_8PhAQ" name="reject">
+          <eType xsi:type="ocl.ecore:SequenceType" href="ocl:///oclenv.ecore#/1/Sequence(ParameterableElement).2"/>
+          <source xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFu7Hcw2EeCTAbeb_8PhAQ" name="collect">
+            <eType xsi:type="ocl.ecore:SequenceType" href="ocl:///oclenv.ecore#/1/Sequence(ParameterableElement).2"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7H8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(TemplateParameter).2"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Icw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7O8w2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateSignature/parameter"/>
+            </source>
+            <body xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7I8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Jcw2EeCTAbeb_8PhAQ" name="temp1" referredVariable="_GFu7J8w2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameter/parameteredElement"/>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7J8w2EeCTAbeb_8PhAQ" name="temp1">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+            </iterator>
+          </source>
+          <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7Kcw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFu7K8w2EeCTAbeb_8PhAQ" name="collect">
+              <eType xsi:type="ocl.ecore:SequenceType" href="ocl:///oclenv.ecore#/1/Sequence(ParameterableElement).2"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7Lcw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(TemplateParameter).2"/>
+                <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7L8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7O8w2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateSignature/parameter"/>
+              </source>
+              <body xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7Mcw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+                <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7M8w2EeCTAbeb_8PhAQ" name="temp2" referredVariable="_GFu7Ncw2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameter/ownedParameteredElement"/>
+              </body>
+              <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7Ncw2EeCTAbeb_8PhAQ" name="temp2">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+              </iterator>
+            </source>
+            <argument xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7N8w2EeCTAbeb_8PhAQ" name="e" referredVariable="_GFu7Ocw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/includes"/>
+          </body>
+          <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7Ocw2EeCTAbeb_8PhAQ" name="e">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+          </iterator>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/includesAll"/>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7O8w2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateSignature"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFu7Pcw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFu7Psw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7P8w2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7Qcw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:CollectionLiteralExp" xmi:id="_GFu7Q8w2EeCTAbeb_8PhAQ">
+            <eAnnotations xmi:id="_GFu7RMw2EeCTAbeb_8PhAQ" source="http://www.eclipse.org/ocl/1.1.0/OCL/Annotations">
+              <details xmi:id="_GFu7Rcw2EeCTAbeb_8PhAQ" key="IMPLICIT_SET_CONVERSION" value="true"/>
+            </eAnnotations>
+            <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(ParameterableElement).2"/>
+            <part xsi:type="ocl.ecore:CollectionItem" xmi:id="_GFu7R8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+              <item xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7Scw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+                <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7S8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7V8w2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameter/default"/>
+              </item>
+            </part>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/notEmpty"/>
+        </source>
+        <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7Tcw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7T8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Ucw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7V8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameter/default"/>
+          </source>
+          <argument xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7U8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Vcw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7V8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameter/parameteredElement"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="UMLtemplates.ecore#//ParameterableElement/isCompatibleWith"/>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/implies"/>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7V8w2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFu7Wcw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFu7Wsw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFu7W8w2EeCTAbeb_8PhAQ" name="forAll">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:CollectionLiteralExp" xmi:id="_GFu7Xcw2EeCTAbeb_8PhAQ">
+          <eAnnotations xmi:id="_GFu7Xsw2EeCTAbeb_8PhAQ" source="http://www.eclipse.org/ocl/1.1.0/OCL/Annotations">
+            <details xmi:id="_GFu7X8w2EeCTAbeb_8PhAQ" key="IMPLICIT_SET_CONVERSION" value="true"/>
+          </eAnnotations>
+          <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(ParameterableElement).2"/>
+          <part xsi:type="ocl.ecore:CollectionItem" xmi:id="_GFu7Ycw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+            <item xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7Y8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7Zcw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7c8w2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameterSubstitution/actual"/>
+            </item>
+          </part>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7Z8w2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7acw2EeCTAbeb_8PhAQ" name="a" referredVariable="_GFu7ccw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+          </source>
+          <argument xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7a8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7bcw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameter"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7b8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7c8w2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameterSubstitution/formal"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//TemplateParameter/parameteredElement"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="UMLtemplates.ecore#//ParameterableElement/isCompatibleWith"/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7ccw2EeCTAbeb_8PhAQ" name="a">
+          <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ParameterableElement"/>
+        </iterator>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7c8w2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//TemplateParameterSubstitution"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFu7dcw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFu7dsw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7d8w2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7ecw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7e8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7g8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ClassifierTemplateParameter"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="UMLtemplates.ecore#//ClassifierTemplateParameter/allowSubstitutable"/>
+        </source>
+        <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7fcw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7f8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(Classifier).18"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7gcw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7g8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ClassifierTemplateParameter"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//ClassifierTemplateParameter/constrainingClassifier"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/notEmpty"/>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/implies"/>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7g8w2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ClassifierTemplateParameter"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ClassifierTemplateParameter"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFu7hcw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFu7hsw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IteratorExp" xmi:id="_GFu7h8w2EeCTAbeb_8PhAQ" name="forAll">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7icw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(ValueSpecification).2"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7i8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7lcw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//Expression/operand"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7jcw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7j8w2EeCTAbeb_8PhAQ" name="op" referredVariable="_GFu7k8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ValueSpecification"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" xmi:id="_GFu7kcw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/3/LiteralString.2"/>
+            <referredType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//LiteralString"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" xmi:id="_GFu7k8w2EeCTAbeb_8PhAQ" name="op">
+          <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//ValueSpecification"/>
+        </iterator>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7lcw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_GFu7l8w2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_GFu7mMw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IfExp" xmi:id="_GFu7mcw2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <condition xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7m8w2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7ncw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(StringExpression).2"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7n8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7rcw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//StringExpression/subExpression"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/notEmpty"/>
+        </condition>
+        <thenExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7ocw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7o8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(ValueSpecification).2"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7pcw2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7rcw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//Expression/operand"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/isEmpty"/>
+        </thenExpression>
+        <elseExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_GFu7p8w2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_GFu7qcw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(ValueSpecification).2"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_GFu7q8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_GFu7rcw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="UMLtemplates.ecore#//Expression/operand"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/notEmpty"/>
+        </elseExpression>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_GFu7rcw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLtemplates.ecore#//StringExpression"/>
+  </ocl.ecore:Constraint>
+</xmi:XMI>

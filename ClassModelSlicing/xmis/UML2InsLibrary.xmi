@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UML2="http:///UML2.ecore">
+  <UML2:Class ownedElement="#/48 #/30 #/49 #/6 #/39 #/16 #/52 #/20 #/42" name="Library"
+      superClass="#/9"/>
+  <UML2:Property owner="#/45" name="borrowed" type="#/27" association="#/23"/>
+  <UML2:Enumeration name="BookCategory">
+    <ownedLiteral name="Mystery"/>
+    <ownedLiteral name="ScienceFiction"/>
+    <ownedLiteral name="Biography"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/40" name="author" type="#/31" association="#/11"/>
+  <UML2:Property owner="#/31" name="books" type="#/40" association="#/11"/>
+  <UML2:Class ownedElement="#/24" name="Item" isAbstract="true"/>
+  <UML2:Property owner="#/0" name="employees" type="#/19"/>
+  <UML2:Property owner="#/9" name="address" type="#/44"/>
+  <UML2:Class ownedElement="#/15 #/34" name="Person" superClass="#/9"/>
+  <UML2:Class ownedElement="#/7" name="Addressable" isAbstract="true"/>
+  <UML2:Association owner="#/51" name="parentBranchbranches" memberEnd="#/42 #/20"/>
+  <UML2:Association owner="#/51" name="booksauthor" memberEnd="#/4 #/3"/>
+  <UML2:PrimitiveType name="EDouble" package="#/51"/>
+  <UML2:PrimitiveType name="EBoolean" package="#/51"/>
+  <UML2:Property owner="#/38" name="minutesLength" type="#/25"/>
+  <UML2:Property owner="#/8" name="firstName" type="#/44"/>
+  <UML2:Property owner="#/0" name="stock" type="#/5"/>
+  <UML2:Property owner="#/22" name="cast" type="#/8"/>
+  <UML2:Property owner="#/21" name="author" type="#/31"/>
+  <UML2:Class ownedElement="#/46" name="Employee" superClass="#/8"/>
+  <UML2:Property owner="#/0" name="branches" type="#/0" association="#/10"/>
+  <UML2:Class ownedElement="#/28 #/18" name="BookOnTape" superClass="#/38"/>
+  <UML2:Class ownedElement="#/17" name="VideoCassette" superClass="#/38"/>
+  <UML2:Association owner="#/51" name="borrowedborrowers" memberEnd="#/1 #/35"/>
+  <UML2:Property owner="#/5" name="publicationDate"/>
+  <UML2:PrimitiveType name="EInt" package="#/51"/>
+  <UML2:Class ownedElement="#/33 #/37" name="Periodical" isAbstract="true" superClass="#/5"/>
+  <UML2:Class ownedElement="#/50 #/35" name="Lendable" isAbstract="true"/>
+  <UML2:Property owner="#/21" name="reader" type="#/8"/>
+  <UML2:Property owner="#/40" name="category" type="#/2"/>
+  <UML2:Property owner="#/0" name="people"/>
+  <UML2:Class ownedElement="#/36 #/4" name="Writer" superClass="#/8"/>
+  <UML2:Property owner="#/40" name="title" type="#/44"/>
+  <UML2:Property owner="#/26" name="title" type="#/44"/>
+  <UML2:Property owner="#/8" name="lastName" type="#/44"/>
+  <UML2:Property owner="#/27" name="borrowers" type="#/45" association="#/23"/>
+  <UML2:Property owner="#/31" name="name" type="#/44"/>
+  <UML2:Property owner="#/26" name="issuesPerYear" type="#/25"/>
+  <UML2:Class ownedElement="#/43 #/14 #/53" name="AudioVisualItem" isAbstract="true"
+      superClass="#/41"/>
+  <UML2:Property owner="#/0" name="borrowers" type="#/45"/>
+  <UML2:Class ownedElement="#/32 #/47 #/29 #/3" name="Book" superClass="#/41"/>
+  <UML2:Class name="CirculatingItem" isAbstract="true" superClass="#/5 #/27"/>
+  <UML2:Property owner="#/0" name="parentBranch" type="#/0" association="#/10"/>
+  <UML2:Property owner="#/38" name="title" type="#/44"/>
+  <UML2:PrimitiveType name="EString" package="#/51"/>
+  <UML2:Class ownedElement="#/1" name="Borrower" superClass="#/8"/>
+  <UML2:Property owner="#/19" name="manager" type="#/19"/>
+  <UML2:Property owner="#/40" name="pages" type="#/25"/>
+  <UML2:Property owner="#/0" name="name" type="#/44"/>
+  <UML2:Property owner="#/0" name="writers" type="#/31"/>
+  <UML2:Property owner="#/27" name="copies" type="#/25"/>
+  <UML2:Package ownedElement="#/10 #/23 #/11" name="Library" member="#/2 #/40 #/0 #/31 #/5 #/27 #/41 #/26 #/38 #/21 #/22 #/45 #/8 #/19 #/9"
+      ownedType="#/44 #/25 #/13 #/12"/>
+  <UML2:Property owner="#/0" name="books" type="#/40"/>
+  <UML2:Property owner="#/38" name="damaged" type="#/13"/>
+</xmi:XMI>

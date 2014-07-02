@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UML2="http:///UML2.ecore">
+  <UML2:Property owner="#/189" name="handler" type="#/386" association="#/12"/>
+  <UML2:Class ownedElement="#/773 #/142" name="ClearAssociationAction" superClass="#/100"/>
+  <UML2:Property owner="#/278" name="required" type="#/18"/>
+  <UML2:Class ownedElement="#/23 #/690" name="GeneralOrdering" superClass="#/40"/>
+  <UML2:Property owner="#/673" name="isDimension" type="#/657"/>
+  <UML2:Class ownedElement="#/215" name="StartOwnedBehaviorAction" superClass="#/100"/>
+  <UML2:Property owner="#/338" name="isSubmachineState" type="#/657"/>
+  <UML2:Property owner="#/817" name="ownedElement" type="#/817" association="#/429"/>
+  <UML2:Class name="CreateLinkAction" superClass="#/316"/>
+  <UML2:Association owner="#/737" name="ownedBehaviorcontext" memberEnd="#/803 #/505"/>
+  <UML2:Property owner="#/372" name="invariant" type="#/706"/>
+  <UML2:Property owner="#/514" name="ownedTemplateSignature" type="#/360" association="#/375"/>
+  <UML2:Association owner="#/737" name="protectedNodehandler" memberEnd="#/445 #/0"/>
+  <UML2:Class ownedElement="#/454 #/576" name="CallAction" isAbstract="true" superClass="#/25"/>
+  <UML2:Property owner="#/39" name="role" type="#/791"/>
+  <UML2:Property owner="#/422" name="message" type="#/671" association="#/530"/>
+  <UML2:Class ownedElement="#/548 #/552" name="ParameterSet" superClass="#/40"/>
+  <UML2:Property owner="#/268" name="slot" type="#/257" association="#/727"/>
+  <UML2:Class ownedElement="#/317 #/232 #/42 #/638 #/751 #/717" name="Interface" superClass="#/837"/>
+  <UML2:Association owner="#/737" name="stateregion" memberEnd="#/701 #/768"/>
+  <UML2:Property owner="#/345" name="second" type="#/439"/>
+  <UML2:Property owner="#/736" name="extendedStateMachine" type="#/736"/>
+  <UML2:Property owner="#/178" name="end" type="#/107"/>
+  <UML2:Property owner="#/3" name="before" type="#/238" association="#/766"/>
+  <UML2:Property owner="#/457" name="isException" type="#/657"/>
+  <UML2:Class ownedElement="#/90 #/444" name="InvocationAction" isAbstract="true"
+      superClass="#/100"/>
+  <UML2:Property owner="#/338" name="deferrableTrigger" type="#/499"/>
+  <UML2:Class name="Pin" isAbstract="true" superClass="#/246 #/679"/>
+  <UML2:Property owner="#/320" name="insertAt" type="#/439"/>
+  <UML2:Association owner="#/737" name="regionAsOutputoutputElement" memberEnd="#/651 #/417"/>
+  <UML2:Property owner="#/184" name="includingCase" type="#/742" association="#/553"/>
+  <UML2:Property owner="#/238" name="startExec" type="#/525" association="#/579"/>
+  <UML2:Property owner="#/185" name="ownedRule" type="#/706" association="#/843"/>
+  <UML2:Class ownedElement="#/174 #/307 #/546 #/743" name="Extend" superClass="#/40 #/578"/>
+  <UML2:Property owner="#/671" name="messageSort" type="#/785"/>
+  <UML2:Property owner="#/103" name="parameterSubstitution" type="#/76" association="#/270"/>
+  <UML2:Class ownedElement="#/175 #/50" name="Implementation" superClass="#/574"/>
+  <UML2:Association owner="#/737" name="sourceoutgoing" memberEnd="#/394 #/559"/>
+  <UML2:Property owner="#/297" name="generalMachine" type="#/282"/>
+  <UML2:Class ownedElement="#/610 #/715 #/14 #/264" name="StructuredClassifier" isAbstract="true"
+      superClass="#/837"/>
+  <UML2:Class ownedElement="#/526 #/557 #/568 #/236 #/136" name="NamedElement" isAbstract="true"
+      superClass="#/514"/>
+  <UML2:Class ownedElement="#/410" name="WriteStructuralFeatureAction" isAbstract="true"
+      superClass="#/770"/>
+  <UML2:Property owner="#/18" name="redefinedInterface" type="#/18"/>
+  <UML2:Class ownedElement="#/687" name="CreateLinkObjectAction" superClass="#/8"/>
+  <UML2:Property owner="#/682" name="isMulticast" type="#/657"/>
+  <UML2:Property owner="#/438" name="value" type="#/439"/>
+  <UML2:Association owner="#/737" name="conformancespecificMachine" memberEnd="#/730 #/208"/>
+  <UML2:Enumeration name="ParameterEffectKind">
+    <ownedLiteral name="update"/>
+    <ownedLiteral name="read"/>
+    <ownedLiteral name="delete"/>
+    <ownedLiteral name="create"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/673" name="subgroup" type="#/673" association="#/826"/>
+  <UML2:Property owner="#/671" name="interaction" type="#/422" association="#/530"/>
+  <UML2:Property owner="#/36" name="implementingClassifier" type="#/402" association="#/832"/>
+  <UML2:Class ownedElement="#/300" name="Signal" superClass="#/837"/>
+  <UML2:Property owner="#/87" name="generalization" type="#/661" association="#/173"/>
+  <UML2:Property owner="#/537" name="bodyExpression" type="#/699"/>
+  <UML2:Association owner="#/737" name="subjectuseCase" memberEnd="#/336 #/218"/>
+  <UML2:Property owner="#/487" name="ownedDefault" type="#/262"/>
+  <UML2:Class ownedElement="#/830" name="SignalTrigger" superClass="#/378"/>
+  <UML2:Property owner="#/278" name="redefinedPort" type="#/278"/>
+  <UML2:Property owner="#/718" name="inStructuredNode" type="#/712" association="#/286"/>
+  <UML2:Property owner="#/837" name="isAbstract" type="#/657"/>
+  <UML2:Class ownedElement="#/123 #/733" name="SendObjectAction" superClass="#/25"/>
+  <UML2:Property owner="#/670" name="nestedNode" type="#/670"/>
+  <UML2:Property owner="#/388" name="setupPart" type="#/718"/>
+  <UML2:Class ownedElement="#/321 #/250 #/228 #/222" name="ReclassifyObjectAction"
+      superClass="#/100"/>
+  <UML2:Property owner="#/748" name="function" type="#/685"/>
+  <UML2:Association owner="#/737" name="deploymentlocation" memberEnd="#/71 #/382"/>
+  <UML2:Class ownedElement="#/86 #/636" name="DeploymentSpecification" superClass="#/771"/>
+  <UML2:Property owner="#/827" name="signal" type="#/51"/>
+  <UML2:Property owner="#/308" name="body" type="#/248"/>
+  <UML2:Association owner="#/737" name="predecessorClausesuccessorClause" memberEnd="#/182 #/572"/>
+  <UML2:Class ownedElement="#/846" name="Continuation" superClass="#/146"/>
+  <UML2:Property owner="#/183" name="deployment" type="#/407" association="#/65"/>
+  <UML2:Class ownedElement="#/700 #/836 #/331 #/709" name="ConditionalNode" superClass="#/712"/>
+  <UML2:Property owner="#/411" name="raisedException" type="#/290"/>
+  <UML2:Property owner="#/736" name="stateMachine_redefinitionContext" type="#/402"
+      association="#/406"/>
+  <UML2:Property owner="#/460" name="aggregation" type="#/468"/>
+  <UML2:Class ownedElement="#/509 #/170 #/405 #/782" name="TemplateParameterSubstitution"
+      superClass="#/817"/>
+  <UML2:Association owner="#/737" name="inPartitioncontainedNode" memberEnd="#/359 #/324"/>
+  <UML2:Class name="ClearStructuralFeatureAction" superClass="#/770"/>
+  <UML2:Property owner="#/103" name="boundElement" type="#/514" association="#/220"/>
+  <UML2:Class ownedElement="#/812 #/645 #/513 #/496" name="Association" superClass="#/837 #/520"/>
+  <UML2:Class ownedElement="#/558 #/760 #/394 #/711 #/440 #/341 #/642 #/214" name="Transition"
+      superClass="#/116"/>
+  <UML2:Property owner="#/186" name="fragment" type="#/146" association="#/471"/>
+  <UML2:Property owner="#/212" name="realization" type="#/520"/>
+  <UML2:Enumeration name="ObjectNodeOrderingKind">
+    <ownedLiteral name="FIFO"/>
+    <ownedLiteral name="unordered"/>
+    <ownedLiteral name="ordered"/>
+    <ownedLiteral name="LIFO"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/185" name="importedMember" type="#/342"/>
+  <UML2:Property owner="#/66" name="deploymentLocation" type="#/248"/>
+  <UML2:Class ownedElement="#/118 #/442 #/356 #/52" name="GeneralizationSet" superClass="#/342"/>
+  <UML2:Property owner="#/290" name="package" type="#/732" association="#/481"/>
+  <UML2:Class ownedElement="#/738" name="LiteralString" superClass="#/637"/>
+  <UML2:Property owner="#/25" name="argument" type="#/439"/>
+  <UML2:Enumeration name="ParameterDirectionKind">
+    <ownedLiteral name="in"/>
+    <ownedLiteral name="inout"/>
+    <ownedLiteral name="out"/>
+    <ownedLiteral name="return"/>
+  </UML2:Enumeration>
+  <UML2:Class name="InitialNode" superClass="#/544"/>
+  <UML2:Class ownedElement="#/663" name="AcceptCallAction" superClass="#/602"/>
+  <UML2:Property owner="#/210" name="min" type="#/538"/>
+  <UML2:Property owner="#/402" name="classifierBehavior" type="#/668"/>
+  <UML2:Property owner="#/350" name="ownedMember" type="#/342"/>
+  <UML2:Property owner="#/682" name="selection" type="#/668"/>
+  <UML2:Property owner="#/346" name="result" type="#/364"/>
+  <UML2:Class name="Permission" superClass="#/152"/>
+  <UML2:Class ownedElement="#/181 #/419 #/335 #/652 #/466 #/332" name="Action" superClass="#/189"/>
+  <UML2:Property owner="#/712" name="variable" type="#/106" association="#/441"/>
+  <UML2:Property owner="#/602" name="result" type="#/364"/>
+  <UML2:Class ownedElement="#/79 #/643 #/35" name="TemplateBinding" superClass="#/578"/>
+  <UML2:Property owner="#/185" name="elementImport" type="#/354" association="#/611"/>
+  <UML2:Class ownedElement="#/580" name="InformationItem" superClass="#/837"/>
+  <UML2:Class ownedElement="#/594" name="Variable" superClass="#/791 #/283 #/679"/>
+  <UML2:Class ownedElement="#/587 #/200 #/808" name="ConnectorEnd" superClass="#/679"/>
+  <UML2:Property owner="#/740" name="value" type="#/439"/>
+  <UML2:Class name="Usage" superClass="#/152"/>
+  <UML2:Property owner="#/774" name="importingNamespace" type="#/185" association="#/256"/>
+  <UML2:Class name="DurationInterval" superClass="#/210"/>
+  <UML2:Class ownedElement="#/403 #/491" name="AddVariableValueAction" superClass="#/438"/>
+  <UML2:Property owner="#/515" name="bodyOutput" type="#/364"/>
+  <UML2:Property owner="#/178" name="kind" type="#/516"/>
+  <UML2:Enumeration name="CallConcurrencyKind">
+    <ownedLiteral name="guarded"/>
+    <ownedLiteral name="concurrent"/>
+    <ownedLiteral name="sequential"/>
+  </UML2:Enumeration>
+  <UML2:Class ownedElement="#/465 #/539" name="RedefinableElement" isAbstract="true"
+      superClass="#/40"/>
+  <UML2:Property owner="#/668" name="parameter" type="#/457"/>
+  <UML2:Property owner="#/87" name="isCovering" type="#/657"/>
+  <UML2:Property owner="#/790" name="result" type="#/457"/>
+  <UML2:Property owner="#/308" name="action" type="#/100"/>
+  <UML2:Association owner="#/737" name="datatypeownedAttribute" memberEnd="#/589 #/659"/>
+  <UML2:Property owner="#/561" name="refersTo" type="#/422"/>
+  <UML2:Property owner="#/60" name="target" type="#/439"/>
+  <UML2:Class ownedElement="#/528 #/586" name="Extension" superClass="#/80"/>
+  <UML2:Property owner="#/685" name="language" type="#/248"/>
+  <UML2:Class ownedElement="#/432 #/804" name="InteractionConstraint" superClass="#/706"/>
+  <UML2:Class name="Actor" superClass="#/837"/>
+  <UML2:Property owner="#/308" name="node" type="#/718" association="#/524"/>
+  <UML2:Association owner="#/737" name="templateParameterparameteredElement" memberEnd="#/227 #/667"/>
+  <UML2:Property owner="#/790" name="bodies" type="#/248"/>
+  <UML2:Property owner="#/689" name="useCase" type="#/742" association="#/772"/>
+  <UML2:Association owner="#/737" name="memberEndassociation" memberEnd="#/496 #/421"/>
+  <UML2:Property owner="#/238" name="finishExec" type="#/525" association="#/473"/>
+  <UML2:Property owner="#/460" name="associationEnd" type="#/460" association="#/263"/>
+  <UML2:Property owner="#/662" name="weight" type="#/538"/>
+  <UML2:Property owner="#/40" name="nameExpression" type="#/699"/>
+  <UML2:Property owner="#/350" name="realization" type="#/574" association="#/564"/>
+  <UML2:Property owner="#/537" name="body" type="#/248"/>
+  <UML2:Property owner="#/710" name="decomposedAs" type="#/647"/>
+  <UML2:Property owner="#/196" name="operation" type="#/497"/>
+  <UML2:Association owner="#/737" name="powertypeExtentpowertype" memberEnd="#/380 #/356"/>
+  <UML2:Property owner="#/1" name="association" type="#/80"/>
+  <UML2:Property owner="#/426" name="enumeration" type="#/169" association="#/480"/>
+  <UML2:Class ownedElement="#/786" name="InstanceValue" superClass="#/538"/>
+  <UML2:Property owner="#/525" name="behavior" type="#/668"/>
+  <UML2:Class ownedElement="#/504 #/573 #/829 #/363" name="InteractionFragment" isAbstract="true"
+      superClass="#/40"/>
+  <UML2:Property owner="#/340" name="mapping" type="#/790"/>
+  <UML2:Property owner="#/671" name="receiveEvent" type="#/508" association="#/779"/>
+  <UML2:Property owner="#/338" name="isComposite" type="#/657"/>
+  <UML2:Class ownedElement="#/366" name="BroadcastSignalAction" superClass="#/25"/>
+  <UML2:Class ownedElement="#/795" name="Manifestation" superClass="#/340"/>
+  <UML2:Class ownedElement="#/266 #/519" name="Dependency" superClass="#/342 #/578"/>
+  <UML2:Property owner="#/574" name="realizingClassifier" type="#/837"/>
+  <UML2:Property owner="#/679" name="lower" type="#/434"/>
+  <UML2:Association owner="#/737" name="incomingtarget" memberEnd="#/390 #/747"/>
+  <UML2:Class name="CentralBufferNode" superClass="#/246"/>
+  <UML2:Class name="AssociationClass" superClass="#/554 #/80"/>
+  <UML2:Property owner="#/710" name="interaction" type="#/422" association="#/452"/>
+  <UML2:Property owner="#/585" name="variable" type="#/106"/>
+  <UML2:Property owner="#/318" name="mergingPackage" type="#/732" association="#/255"/>
+  <UML2:Property owner="#/345" name="result" type="#/364"/>
+  <UML2:Property owner="#/198" name="value" type="#/538"/>
+  <UML2:Property owner="#/360" name="ownedParameter" type="#/487" association="#/698"/>
+  <UML2:Property owner="#/196" name="target" type="#/439"/>
+  <UML2:Property owner="#/718" name="activity" type="#/308" association="#/524"/>
+  <UML2:Property owner="#/574" name="abstraction" type="#/350" association="#/564"/>
+  <UML2:Property owner="#/764" name="value" type="#/439"/>
+  <UML2:Class ownedElement="#/437 #/234" name="LinkEndCreationData" superClass="#/764"/>
+  <UML2:Class ownedElement="#/279" name="Enumeration" superClass="#/592"/>
+  <UML2:Property owner="#/76" name="templateBinding" type="#/103" association="#/270"/>
+  <UML2:Property owner="#/320" name="isReplaceAll" type="#/657"/>
+  <UML2:Property owner="#/848" name="regionAsInput" type="#/458" association="#/450"/>
+  <UML2:Association owner="#/737" name="generalizationgeneralizationSet" memberEnd="#/52 #/847"/>
+  <UML2:Property owner="#/33" name="extendedCase" type="#/742"/>
+  <UML2:Property owner="#/36" name="contract" type="#/18"/>
+  <UML2:Property owner="#/178" name="redefinedConnector" type="#/178"/>
+  <UML2:Association owner="#/737" name="sendEventsendMessage" memberEnd="#/484 #/656"/>
+  <UML2:Class ownedElement="#/114 #/298 #/176 #/22 #/179" name="Connector" superClass="#/806"/>
+  <UML2:Property owner="#/178" name="contract" type="#/668"/>
+  <UML2:Class name="DestroyLinkAction" superClass="#/316"/>
+  <UML2:Property owner="#/100" name="effect" type="#/248"/>
+  <UML2:Property owner="#/515" name="predecessorClause" type="#/515" association="#/69"/>
+  <UML2:Class ownedElement="#/71 #/641" name="DeploymentTarget" isAbstract="true"
+      superClass="#/40"/>
+  <UML2:Class ownedElement="#/30 #/408" name="Include" superClass="#/40 #/578"/>
+  <UML2:Class ownedElement="#/271 #/32 #/85 #/104 #/431" name="Namespace" isAbstract="true"
+      superClass="#/40"/>
+  <UML2:Class ownedElement="#/675 #/82" name="InteractionOperand" superClass="#/185 #/146"/>
+  <UML2:Class ownedElement="#/634" name="ReadSelfAction" superClass="#/100"/>
+  <UML2:Property owner="#/774" name="visibility" type="#/327"/>
+  <UML2:Class ownedElement="#/0" name="ExecutableNode" isAbstract="true" superClass="#/718"/>
+  <UML2:Class name="FinalNode" isAbstract="true" superClass="#/544"/>
+  <UML2:Property owner="#/338" name="isSimple" type="#/657"/>
+  <UML2:Property owner="#/771" name="fileName" type="#/248"/>
+  <UML2:Property owner="#/757" name="isCombineDuplicate" type="#/657"/>
+  <UML2:Property owner="#/457" name="isStream" type="#/657"/>
+  <UML2:Property owner="#/239" name="operand" type="#/186"/>
+  <UML2:Class ownedElement="#/140 #/164" name="CallOperationAction" superClass="#/13"/>
+  <UML2:Property owner="#/338" name="stateInvariant" type="#/706"/>
+  <UML2:Class ownedElement="#/162" name="ValuePin" superClass="#/439"/>
+  <UML2:Class name="TimeConstraint" superClass="#/669"/>
+  <UML2:Property owner="#/107" name="role" type="#/791" association="#/775"/>
+  <UML2:Property owner="#/811" name="interruptingEdge" type="#/662" association="#/291"/>
+  <UML2:Property owner="#/467" name="target" type="#/439"/>
+  <UML2:Property owner="#/460" name="subsettedProperty" type="#/460"/>
+  <UML2:Property owner="#/399" name="object" type="#/439"/>
+  <UML2:Property owner="#/578" name="source" type="#/817"/>
+  <UML2:Property owner="#/458" name="inputElement" type="#/848" association="#/450"/>
+  <UML2:Association owner="#/737" name="owningAssociationownedEnd" memberEnd="#/835 #/645"/>
+  <UML2:Property owner="#/297" name="specificMachine" type="#/282" association="#/46"/>
+  <UML2:Property owner="#/360" name="parameter" type="#/487"/>
+  <UML2:Class ownedElement="#/94 #/400" name="Interval" superClass="#/538"/>
+  <UML2:Property owner="#/268" name="classifier" type="#/837"/>
+  <UML2:Class ownedElement="#/83 #/541" name="InformationFlow" superClass="#/342 #/578"/>
+  <UML2:Property owner="#/257" name="definingFeature" type="#/261"/>
+  <UML2:Property owner="#/81" name="effect" type="#/308"/>
+  <UML2:Property owner="#/5" name="object" type="#/439"/>
+  <UML2:Property owner="#/497" name="redefinedOperation" type="#/497"/>
+  <UML2:Class name="AnyTrigger" superClass="#/378"/>
+  <UML2:Property owner="#/837" name="useCase" type="#/742" association="#/54"/>
+  <UML2:Property owner="#/308" name="edge" type="#/662" association="#/800"/>
+  <UML2:Association owner="#/737" name="templateBindingboundElement" memberEnd="#/753 #/79"/>
+  <UML2:Property owner="#/732" name="packageMerge" type="#/318" association="#/255"/>
+  <UML2:Property owner="#/63" name="object" type="#/439"/>
+  <UML2:Property owner="#/790" name="language" type="#/248"/>
+  <UML2:Property owner="#/515" name="body" type="#/718"/>
+  <UML2:Property owner="#/460" name="isDerivedUnion" type="#/657"/>
+  <UML2:Property owner="#/771" name="ownedOperation" type="#/497"/>
+  <UML2:Property owner="#/262" name="templateParameter" type="#/487" association="#/129"/>
+  <UML2:Property owner="#/63" name="newClassifier" type="#/837"/>
+  <UML2:Property owner="#/238" name="toAfter" type="#/3" association="#/766"/>
+  <UML2:Property owner="#/457" name="defaultValue" type="#/538"/>
+  <UML2:Property owner="#/682" name="isMultireceive" type="#/657"/>
+  <UML2:Property owner="#/18" name="ownedOperation" type="#/497"/>
+  <UML2:Property owner="#/515" name="test" type="#/718"/>
+  <UML2:Property owner="#/168" name="insertAt" type="#/439"/>
+  <UML2:Property owner="#/618" name="event" type="#/40"/>
+  <UML2:Property owner="#/40" name="clientDependency" type="#/152" association="#/824"/>
+  <UML2:Property owner="#/736" name="connectionPoint" type="#/550"/>
+  <UML2:Class ownedElement="#/31 #/133 #/229 #/672" name="EventOccurrence" superClass="#/146 #/508"/>
+  <UML2:Class ownedElement="#/449 #/195 #/633" name="CombinedFragment" superClass="#/146"/>
+  <UML2:Property owner="#/806" name="featuringClassifier" type="#/837" association="#/588"/>
+  <UML2:Property owner="#/418" name="ownedPort" type="#/278"/>
+  <UML2:Property owner="#/662" name="inStructuredNode" type="#/712" association="#/395"/>
+  <UML2:Class name="RemoveVariableValueAction" superClass="#/438"/>
+  <UML2:Property owner="#/407" name="configuration" type="#/66"/>
+  <UML2:Property owner="#/354" name="visibility" type="#/327"/>
+  <UML2:Class ownedElement="#/326 #/745 #/303 #/518" name="ObjectNode" isAbstract="true"
+      superClass="#/718 #/283"/>
+  <UML2:Property owner="#/668" name="redefinedBehavior" type="#/668"/>
+  <UML2:PrimitiveType name="EString" package="#/737"/>
+  <UML2:Property owner="#/837" name="substitution" type="#/549" association="#/581"/>
+  <UML2:Property owner="#/63" name="oldClassifier" type="#/837"/>
+  <UML2:Class name="ActivityFinalNode" superClass="#/190"/>
+  <UML2:Property owner="#/411" name="method" type="#/668" association="#/328"/>
+  <UML2:Property owner="#/515" name="decider" type="#/364"/>
+  <UML2:Class ownedElement="#/474" name="LiteralBoolean" superClass="#/637"/>
+  <UML2:Association owner="#/737" name="packageMergemergingPackage" memberEnd="#/221 #/160"/>
+  <UML2:Association owner="#/737" name="importingNamespacepackageImport" memberEnd="#/110 #/431"/>
+  <UML2:Class ownedElement="#/556 #/315 #/213" name="Slot" superClass="#/817"/>
+  <UML2:Property owner="#/354" name="importingNamespace" type="#/185" association="#/611"/>
+  <UML2:Association owner="#/737" name="inInterruptibleRegioncontainedNode" memberEnd="#/750 #/697"/>
+  <UML2:Property owner="#/554" name="extension" type="#/124" association="#/560"/>
+  <UML2:Class ownedElement="#/623" name="StructuralFeature" isAbstract="true" superClass="#/806 #/283 #/679"/>
+  <UML2:Class ownedElement="#/227 #/428" name="ParameterableElement" isAbstract="true"
+      superClass="#/817"/>
+  <UML2:Association owner="#/737" name="associationEndqualifier" memberEnd="#/134 #/840"/>
+  <UML2:Property owner="#/39" name="ownedConnector" type="#/178"/>
+  <UML2:Property owner="#/710" name="selector" type="#/790"/>
+  <UML2:Property owner="#/152" name="client" type="#/40" association="#/824"/>
+  <UML2:Property owner="#/710" name="coveredBy" type="#/146" association="#/796"/>
+  <UML2:Class ownedElement="#/17 #/211 #/329" name="InstanceSpecification" superClass="#/342 #/183 #/285"/>
+  <UML2:Property owner="#/415" name="referred" type="#/497"/>
+  <UML2:Association owner="#/737" name="templateBindingparameterSubstitution" memberEnd="#/170 #/35"/>
+  <UML2:Property owner="#/185" name="member" type="#/40"/>
+  <UML2:Property owner="#/457" name="direction" type="#/91"/>
+  <UML2:Enumeration name="TransitionKind">
+    <ownedLiteral name="internal"/>
+    <ownedLiteral name="local"/>
+    <ownedLiteral name="external"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/668" name="returnResult" type="#/457"/>
+  <UML2:Class ownedElement="#/501 #/424 #/728" name="Profile" superClass="#/732"/>
+  <UML2:Property owner="#/662" name="interrupts" type="#/811" association="#/291"/>
+  <UML2:Property owner="#/625" name="exit" type="#/550"/>
+  <UML2:Class ownedElement="#/601 #/583 #/2 #/57 #/749 #/754" name="Port" superClass="#/460"/>
+  <UML2:Property owner="#/169" name="ownedLiteral" type="#/426" association="#/480"/>
+  <UML2:Association owner="#/737" name="containertransition" memberEnd="#/760 #/349"/>
+  <UML2:Property owner="#/554" name="superClass" type="#/554"/>
+  <UML2:Class ownedElement="#/730" name="ProtocolStateMachine" superClass="#/736"/>
+  <UML2:Class ownedElement="#/305" name="TypedElement" isAbstract="true" superClass="#/40"/>
+  <UML2:Property owner="#/554" name="nestedClassifier" type="#/837"/>
+  <UML2:Class name="DeployedArtifact" isAbstract="true" superClass="#/40"/>
+  <UML2:Association owner="#/737" name="inStructuredNodecontainedNode" memberEnd="#/58 #/461"/>
+  <UML2:Association owner="#/737" name="stateMachineregion" memberEnd="#/767 #/703"/>
+  <UML2:Class ownedElement="#/555 #/479" name="TimeTrigger" superClass="#/499"/>
+  <UML2:Property owner="#/790" name="behavior" type="#/668"/>
+  <UML2:Class ownedElement="#/88" name="Type" isAbstract="true" superClass="#/342"/>
+  <UML2:Association owner="#/737" name="interruptingEdgeinterrupts" memberEnd="#/201 #/276"/>
+  <UML2:Property owner="#/770" name="structuralFeature" type="#/261"/>
+  <UML2:Association owner="#/737" name="nestingPackagenestedPackage" memberEnd="#/347 #/653"/>
+  <UML2:Property owner="#/668" name="isReentrant" type="#/657"/>
+  <UML2:Property owner="#/789" name="replyValue" type="#/439"/>
+  <UML2:Property owner="#/837" name="ownedUseCase" type="#/742"/>
+  <UML2:Class ownedElement="#/208 #/38" name="ProtocolConformance" superClass="#/578"/>
+  <UML2:Property owner="#/178" name="type" type="#/80"/>
+  <UML2:Class ownedElement="#/423" name="ReadLinkAction" superClass="#/805"/>
+  <UML2:Property owner="#/51" name="ownedAttribute" type="#/460"/>
+  <UML2:Property owner="#/338" name="submachine" type="#/736"/>
+  <UML2:Property owner="#/791" name="end" type="#/107" association="#/775"/>
+  <UML2:Property owner="#/246" name="inState" type="#/338"/>
+  <UML2:Class name="Stereotype" superClass="#/554"/>
+  <UML2:Property owner="#/283" name="type" type="#/290"/>
+  <UML2:Property owner="#/497" name="precondition" type="#/706"/>
+  <UML2:Property owner="#/33" name="extension" type="#/742" association="#/723"/>
+  <UML2:Class ownedElement="#/68 #/377 #/619 #/334 #/219 #/542 #/128 #/120 #/655"
+      name="Activity" superClass="#/668"/>
+  <UML2:Property owner="#/361" name="classifier" type="#/837"/>
+  <UML2:Property owner="#/615" name="symbol" type="#/248"/>
+  <UML2:Property owner="#/353" name="isDestroyOwnedObjects" type="#/657"/>
+  <UML2:Property owner="#/318" name="mergedPackage" type="#/732"/>
+  <UML2:Property owner="#/338" name="exit" type="#/308"/>
+  <UML2:Property owner="#/402" name="ownedTrigger" type="#/499"/>
+  <UML2:Property owner="#/257" name="value" type="#/538"/>
+  <UML2:Class name="WriteLinkAction" isAbstract="true" superClass="#/805"/>
+  <UML2:Property owner="#/18" name="ownedAttribute" type="#/460"/>
+  <UML2:Class ownedElement="#/160 #/312" name="PackageMerge" superClass="#/578"/>
+  <UML2:Property owner="#/388" name="test" type="#/718"/>
+  <UML2:Class ownedElement="#/171 #/28" name="AddStructuralFeatureValueAction" superClass="#/41"/>
+  <UML2:Property owner="#/63" name="isReplaceAll" type="#/657"/>
+  <UML2:Enumeration name="InteractionOperator">
+    <ownedLiteral name="consider"/>
+    <ownedLiteral name="par"/>
+    <ownedLiteral name="opt"/>
+    <ownedLiteral name="loop"/>
+    <ownedLiteral name="alt"/>
+    <ownedLiteral name="break"/>
+    <ownedLiteral name="assert"/>
+    <ownedLiteral name="strict"/>
+    <ownedLiteral name="seq"/>
+    <ownedLiteral name="ignore"/>
+    <ownedLiteral name="neg"/>
+    <ownedLiteral name="critical"/>
+  </UML2:Enumeration>
+  <UML2:Class ownedElement="#/598" name="LiteralUnlimitedNatural" superClass="#/637"/>
+  <UML2:Property owner="#/673" name="containedNode" type="#/718" association="#/77"/>
+  <UML2:Property owner="#/523" name="result" type="#/364"/>
+  <UML2:Property owner="#/246" name="ordering" type="#/84"/>
+  <UML2:Enumeration name="VisibilityKind">
+    <ownedLiteral name="package"/>
+    <ownedLiteral name="private"/>
+    <ownedLiteral name="protected"/>
+    <ownedLiteral name="public"/>
+  </UML2:Enumeration>
+  <UML2:Association owner="#/737" name="methodspecification" memberEnd="#/252 #/536"/>
+  <UML2:Property owner="#/268" name="specification" type="#/538"/>
+  <UML2:Property owner="#/532" name="extendedRegion" type="#/532"/>
+  <UML2:Property owner="#/72" name="clause" type="#/515"/>
+  <UML2:Property owner="#/100" name="localPostcondition" type="#/706"/>
+  <UML2:Property owner="#/388" name="bodyOutput" type="#/364"/>
+  <UML2:Property owner="#/308" name="isReadOnly" type="#/657"/>
+  <UML2:Property owner="#/100" name="input" type="#/439"/>
+  <UML2:Property owner="#/742" name="subject" type="#/837" association="#/54"/>
+  <UML2:Property owner="#/661" name="general" type="#/837"/>
+  <UML2:Class ownedElement="#/149 #/720 #/191 #/6 #/301 #/511 #/517 #/26 #/768 #/816 #/313 #/374 #/197"
+      name="State" superClass="#/185 #/116 #/493"/>
+  <UML2:Property owner="#/525" name="start" type="#/238" association="#/579"/>
+  <UML2:Class ownedElement="#/147" name="Abstraction" superClass="#/152"/>
+  <UML2:Property owner="#/81" name="trigger" type="#/499"/>
+  <UML2:Class ownedElement="#/533" name="PackageableElement" isAbstract="true" superClass="#/40 #/262"/>
+  <UML2:Property owner="#/819" name="event" type="#/40"/>
+  <UML2:Class ownedElement="#/577" name="ActivityParameterNode" superClass="#/246"/>
+  <UML2:Class ownedElement="#/793 #/20 #/161" name="TestIdentityAction" superClass="#/100"/>
+  <UML2:Class ownedElement="#/593 #/621 #/98" name="ReadLinkObjectEndAction" superClass="#/100"/>
+  <UML2:Property owner="#/732" name="nestingPackage" type="#/732" association="#/293"/>
+  <UML2:Property owner="#/386" name="exceptionInput" type="#/246"/>
+  <UML2:Property owner="#/532" name="transition" type="#/81" association="#/280"/>
+  <UML2:Class ownedElement="#/815 #/622 #/787 #/137 #/96" name="Component" superClass="#/554"/>
+  <UML2:Property owner="#/353" name="isDestroyLinks" type="#/657"/>
+  <UML2:Property owner="#/411" name="formalParameter" type="#/457"/>
+  <UML2:Class ownedElement="#/351 #/311 #/761" name="DestroyObjectAction" superClass="#/100"/>
+  <UML2:Class ownedElement="#/245 #/383 #/500 #/258" name="ElementImport" superClass="#/578"/>
+  <UML2:Property owner="#/411" name="returnResult" type="#/457"/>
+  <UML2:Property owner="#/87" name="powertype" type="#/837" association="#/141"/>
+  <UML2:Property owner="#/822" name="roleBinding" type="#/152"/>
+  <UML2:Property owner="#/625" name="entry" type="#/550"/>
+  <UML2:Property owner="#/718" name="inPartition" type="#/673" association="#/77"/>
+  <UML2:Class ownedElement="#/209 #/163 #/427 #/475 #/731" name="TemplateSignature"
+      superClass="#/817"/>
+  <UML2:Class ownedElement="#/839 #/309 #/755 #/802" name="ReadIsClassifiedObjectAction"
+      superClass="#/100"/>
+  <UML2:Property owner="#/662" name="guard" type="#/538"/>
+  <UML2:Property owner="#/146" name="enclosingOperand" type="#/186" association="#/471"/>
+  <UML2:Class name="OutputPin" superClass="#/27"/>
+  <UML2:Property owner="#/532" name="subvertex" type="#/493" association="#/844"/>
+  <UML2:Property owner="#/150" name="signal" type="#/51"/>
+  <UML2:Property owner="#/386" name="exceptionType" type="#/837"/>
+  <UML2:Property owner="#/706" name="namespace" type="#/185" association="#/843"/>
+  <UML2:Property owner="#/732" name="ownedMember" type="#/342"/>
+  <UML2:Property owner="#/453" name="importedProfile" type="#/275"/>
+  <UML2:Property owner="#/774" name="importedPackage" type="#/732"/>
+  <UML2:Class ownedElement="#/10" name="StateInvariant" superClass="#/146"/>
+  <UML2:Property owner="#/831" name="viewpoint" type="#/248"/>
+  <UML2:Property owner="#/338" name="doActivity" type="#/308"/>
+  <UML2:Association owner="#/737" name="ownedTemplateSignaturetemplate" memberEnd="#/11 #/731"/>
+  <UML2:Property owner="#/837" name="generalization" type="#/661" association="#/477"/>
+  <UML2:Property owner="#/308" name="language" type="#/248"/>
+  <UML2:Class name="MessageTrigger" isAbstract="true" superClass="#/499"/>
+  <UML2:Property owner="#/388" name="loopVariableInput" type="#/439"/>
+  <UML2:Property owner="#/837" name="powertypeExtent" type="#/87" association="#/141"/>
+  <UML2:Property owner="#/748" name="argument" type="#/439"/>
+  <UML2:Property owner="#/407" name="location" type="#/183" association="#/65"/>
+  <UML2:Property owner="#/354" name="alias" type="#/248"/>
+  <UML2:Property owner="#/457" name="operation" type="#/497" association="#/413"/>
+  <UML2:Property owner="#/388" name="bodyPart" type="#/718"/>
+  <UML2:Class ownedElement="#/445 #/416 #/348 #/367" name="ExceptionHandler" superClass="#/817"/>
+  <UML2:Property owner="#/671" name="signature" type="#/40"/>
+  <UML2:Class ownedElement="#/605 #/385 #/62 #/498 #/319 #/739 #/628 #/333 #/379"
+      name="LoopNode" superClass="#/712"/>
+  <UML2:Class name="ClearVariableAction" superClass="#/585"/>
+  <UML2:Property owner="#/718" name="incoming" type="#/662" association="#/155"/>
+  <UML2:Property owner="#/679" name="isUnique" type="#/657"/>
+  <UML2:Property owner="#/497" name="ownedParameter" type="#/457" association="#/413"/>
+  <UML2:Property owner="#/650" name="result" type="#/364"/>
+  <UML2:Property owner="#/81" name="source" type="#/493" association="#/37"/>
+  <UML2:Association owner="#/737" name="inStructuredNodecontainedEdge" memberEnd="#/242 #/522"/>
+  <UML2:Property owner="#/549" name="substitutingClassifier" type="#/837" association="#/581"/>
+  <UML2:Class ownedElement="#/849" name="Collaboration" superClass="#/402 #/39"/>
+  <UML2:Property owner="#/710" name="represents" type="#/791"/>
+  <UML2:Class ownedElement="#/204 #/646 #/563" name="ReadLinkObjectEndQualifierAction"
+      superClass="#/100"/>
+  <UML2:Property owner="#/210" name="max" type="#/538"/>
+  <UML2:Class ownedElement="#/713 #/776" name="ActivityGroup" isAbstract="true" superClass="#/817"/>
+  <UML2:Class ownedElement="#/803 #/95 #/414 #/314 #/658" name="BehavioredClassifier"
+      isAbstract="true" superClass="#/837"/>
+  <UML2:Property owner="#/112" name="isReplaceAll" type="#/657"/>
+  <UML2:Association owner="#/737" name="nestingSignaturenestedSignature" memberEnd="#/475 #/427"/>
+  <UML2:Property owner="#/76" name="actual" type="#/262"/>
+  <UML2:Association owner="#/737" name="stateMachine_redefinitionContextownedStateMachine"
+      memberEnd="#/74 #/658"/>
+  <UML2:Class ownedElement="#/565 #/382 #/244" name="Deployment" superClass="#/152"/>
+  <UML2:Property owner="#/184" name="addition" type="#/742"/>
+  <UML2:Property owner="#/493" name="incoming" type="#/81" association="#/486"/>
+  <UML2:Property owner="#/41" name="value" type="#/439"/>
+  <UML2:Class ownedElement="#/665 #/660 #/630 #/352 #/355 #/73 #/252" name="BehavioralFeature"
+      isAbstract="true" superClass="#/185 #/806"/>
+  <UML2:Property owner="#/679" name="isOrdered" type="#/657"/>
+  <UML2:Association owner="#/737" name="operationownedParameter" memberEnd="#/384 #/392"/>
+  <UML2:Property owner="#/402" name="implementation" type="#/36" association="#/832"/>
+  <UML2:Class ownedElement="#/777 #/269 #/765" name="ProtocolTransition" superClass="#/81"/>
+  <UML2:Property owner="#/386" name="handlerBody" type="#/189"/>
+  <UML2:Property owner="#/458" name="outputElement" type="#/848" association="#/29"/>
+  <UML2:Class ownedElement="#/241" name="EncapsulatedClassifier" isAbstract="true"
+      superClass="#/39"/>
+  <UML2:Property owner="#/100" name="output" type="#/364"/>
+  <UML2:Class name="ExtensionEnd" superClass="#/460"/>
+  <UML2:Property owner="#/460" name="association" type="#/80" association="#/132"/>
+  <UML2:Class ownedElement="#/604 #/15 #/600 #/688" name="Interaction" superClass="#/668 #/146"/>
+  <UML2:Property owner="#/299" name="result" type="#/364"/>
+  <UML2:Property owner="#/275" name="metaclassReference" type="#/354"/>
+  <UML2:Property owner="#/627" name="changeExpression" type="#/538"/>
+  <UML2:Class ownedElement="#/143" name="EnumerationLiteral" superClass="#/268"/>
+  <UML2:Property owner="#/360" name="nestedSignature" type="#/360" association="#/404"/>
+  <UML2:Property owner="#/262" name="owningParameter" type="#/487" association="#/763"/>
+  <UML2:Association owner="#/737" name="ownerownedElement" memberEnd="#/494 #/7"/>
+  <UML2:Property owner="#/806" name="isStatic" type="#/657"/>
+  <UML2:Property owner="#/185" name="packageImport" type="#/774" association="#/256"/>
+  <UML2:Property owner="#/126" name="minint" type="#/538"/>
+  <UML2:Enumeration name="MessageKind">
+    <ownedLiteral name="found"/>
+    <ownedLiteral name="lost"/>
+    <ownedLiteral name="unknown"/>
+    <ownedLiteral name="complete"/>
+  </UML2:Enumeration>
+  <UML2:PrimitiveType name="EInt" package="#/737"/>
+  <UML2:Association owner="#/737" name="fragmentenclosingInteraction" memberEnd="#/600 #/829"/>
+  <UML2:Property owner="#/615" name="operand" type="#/538"/>
+  <UML2:Property owner="#/168" name="isReplaceAll" type="#/657"/>
+  <UML2:Class ownedElement="#/45" name="WriteVariableAction" isAbstract="true" superClass="#/585"/>
+  <UML2:Class name="InputPin" superClass="#/27"/>
+  <UML2:Property owner="#/81" name="redefinedTransition" type="#/81"/>
+  <UML2:Association owner="#/737" name="variablescope" memberEnd="#/101 #/594"/>
+  <UML2:Property owner="#/87" name="isDisjoint" type="#/657"/>
+  <UML2:Property owner="#/520" name="relatedElement" type="#/817"/>
+  <UML2:Property owner="#/25" name="onPort" type="#/278"/>
+  <UML2:Property owner="#/386" name="protectedNode" type="#/189" association="#/12"/>
+  <UML2:Class name="ControlFlow" superClass="#/662"/>
+  <UML2:Property owner="#/718" name="inGroup" type="#/401"/>
+  <UML2:Property owner="#/679" name="upperValue" type="#/538"/>
+  <UML2:Property owner="#/239" name="interactionOperator" type="#/322"/>
+  <UML2:Association owner="#/737" name="inputElementregionAsInput" memberEnd="#/206 #/172"/>
+  <UML2:Property owner="#/742" name="extensionPoint" type="#/689" association="#/772"/>
+  <UML2:Association owner="#/737" name="interactionlifeline" memberEnd="#/158 #/604"/>
+  <UML2:Class ownedElement="#/370" name="ProfileApplication" superClass="#/774"/>
+  <UML2:Property owner="#/13" name="isSynchronous" type="#/657"/>
+  <UML2:Property owner="#/662" name="inPartition" type="#/673" association="#/567"/>
+  <UML2:Property owner="#/662" name="redefinedElement" type="#/662"/>
+  <UML2:Class ownedElement="#/735 #/272 #/24 #/194 #/722 #/384 #/230 #/476" name="Parameter"
+      superClass="#/791 #/283 #/679"/>
+  <UML2:Class ownedElement="#/462 #/417 #/206" name="ExpansionRegion" superClass="#/712"/>
+  <UML2:Property owner="#/487" name="default" type="#/262"/>
+  <UML2:Class ownedElement="#/529 #/726 #/597 #/225 #/75 #/845 #/813 #/835 #/506 #/203 #/589 #/421 #/769 #/840 #/134"
+      name="Property" superClass="#/261 #/791 #/183"/>
+  <UML2:Property owner="#/712" name="containedNode" type="#/718" association="#/286"/>
+  <UML2:Property owner="#/458" name="mode" type="#/741"/>
+  <UML2:Property owner="#/837" name="redefinedClassifier" type="#/837"/>
+  <UML2:Property owner="#/661" name="specific" type="#/837" association="#/477"/>
+  <UML2:Property owner="#/116" name="isLeaf" type="#/657"/>
+  <UML2:Property owner="#/100" name="localPrecondition" type="#/706"/>
+  <UML2:Class ownedElement="#/202 #/617" name="SendSignalAction" superClass="#/25"/>
+  <UML2:Enumeration name="AggregationKind">
+    <ownedLiteral name="composite"/>
+    <ownedLiteral name="none"/>
+    <ownedLiteral name="shared"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/673" name="containedEdge" type="#/662" association="#/567"/>
+  <UML2:Class ownedElement="#/820" name="TimeObservationAction" superClass="#/41"/>
+  <UML2:Association owner="#/737" name="enclosingOperandfragment" memberEnd="#/363 #/82"/>
+  <UML2:Class ownedElement="#/613 #/612" name="CreateObjectAction" superClass="#/100"/>
+  <UML2:Association owner="#/737" name="finishfinishExec" memberEnd="#/624 #/133"/>
+  <UML2:Property owner="#/254" name="value" type="#/657"/>
+  <UML2:Property owner="#/360" name="nestingSignature" type="#/360" association="#/404"/>
+  <UML2:Property owner="#/457" name="parameterSet" type="#/16" association="#/778"/>
+  <UML2:Association owner="#/737" name="generalizationspecific" memberEnd="#/376 #/464"/>
+  <UML2:Property owner="#/837" name="representation" type="#/822"/>
+  <UML2:Property owner="#/288" name="when" type="#/538"/>
+  <UML2:Association owner="#/737" name="enumerationownedLiteral" memberEnd="#/143 #/279"/>
+  <UML2:Association owner="#/737" name="packageownedType" memberEnd="#/88 #/521"/>
+  <UML2:Property owner="#/673" name="represents" type="#/817"/>
+  <UML2:Property owner="#/764" name="end" type="#/460"/>
+  <UML2:Property owner="#/671" name="sendEvent" type="#/508" association="#/177"/>
+  <UML2:Class name="OperationTemplateParameter" superClass="#/487"/>
+  <UML2:Association owner="#/737" name="incomingtarget" memberEnd="#/409 #/711"/>
+  <UML2:Class ownedElement="#/758 #/667 #/714 #/459 #/55" name="TemplateParameter"
+      superClass="#/817"/>
+  <UML2:Property owner="#/537" name="annotatedElement" type="#/817"/>
+  <UML2:Property owner="#/550" name="kind" type="#/798"/>
+  <UML2:Property owner="#/837" name="general" type="#/837"/>
+  <UML2:Property owner="#/112" name="insertAt" type="#/439"/>
+  <UML2:Class ownedElement="#/540" name="LiteralInteger" superClass="#/637"/>
+  <UML2:Class ownedElement="#/801 #/559 #/409" name="Vertex" isAbstract="true" superClass="#/40"/>
+  <UML2:Property owner="#/817" name="owner" type="#/817" association="#/429"/>
+  <UML2:Property owner="#/497" name="class_" type="#/554" association="#/759"/>
+  <UML2:Property owner="#/80" name="memberEnd" type="#/460" association="#/132"/>
+  <UML2:Class ownedElement="#/534 #/392 #/495 #/584 #/306 #/752 #/216 #/510" name="Operation"
+      superClass="#/411 #/283 #/679 #/262"/>
+  <UML2:Property owner="#/388" name="decider" type="#/364"/>
+  <UML2:Class ownedElement="#/721" name="Trigger" isAbstract="true" superClass="#/40"/>
+  <UML2:Property owner="#/354" name="importedElement" type="#/342"/>
+  <UML2:Property owner="#/275" name="ownedStereotype" type="#/304"/>
+  <UML2:Property owner="#/770" name="object" type="#/439"/>
+  <UML2:Property owner="#/740" name="qualifier" type="#/460"/>
+  <UML2:Property owner="#/146" name="covered" type="#/710" association="#/796"/>
+  <UML2:Property owner="#/668" name="context" type="#/402" association="#/9"/>
+  <UML2:Property owner="#/460" name="redefinedProperty" type="#/460"/>
+  <UML2:Property owner="#/679" name="lowerValue" type="#/538"/>
+  <UML2:Class ownedElement="#/707 #/656" name="MessageEnd" isAbstract="true" superClass="#/40"/>
+  <UML2:Property owner="#/76" name="formal" type="#/487"/>
+  <UML2:Property owner="#/497" name="bodyCondition" type="#/706"/>
+  <UML2:Property owner="#/338" name="connection" type="#/625"/>
+  <UML2:Property owner="#/742" name="include" type="#/184" association="#/553"/>
+  <UML2:Property owner="#/80" name="endType" type="#/290"/>
+  <UML2:Class ownedElement="#/753 #/11" name="TemplateableElement" isAbstract="true"
+      superClass="#/817"/>
+  <UML2:Class ownedElement="#/233 #/224 #/182 #/572 #/253 #/113" name="Clause" superClass="#/817"/>
+  <UML2:Enumeration name="ConnectorKind">
+    <ownedLiteral name="delegation"/>
+    <ownedLiteral name="assembly"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/338" name="redefinedState" type="#/338"/>
+  <UML2:Property owner="#/246" name="selection" type="#/668"/>
+  <UML2:Property owner="#/152" name="supplier" type="#/40"/>
+  <UML2:Class ownedElement="#/443" name="Relationship" isAbstract="true" superClass="#/817"/>
+  <UML2:Property owner="#/732" name="ownedType" type="#/290" association="#/481"/>
+  <UML2:Property owner="#/712" name="containedEdge" type="#/662" association="#/395"/>
+  <UML2:Class ownedElement="#/325" name="ReadVariableAction" superClass="#/585"/>
+  <UML2:Association owner="#/737" name="activitynode" memberEnd="#/165 #/128"/>
+  <UML2:Class ownedElement="#/339 #/624 #/145" name="ExecutionOccurrence" superClass="#/146"/>
+  <UML2:Property owner="#/40" name="name" type="#/248"/>
+  <UML2:Property owner="#/783" name="duration" type="#/618"/>
+  <UML2:Property owner="#/124" name="isRequired" type="#/657"/>
+  <UML2:Property owner="#/460" name="default" type="#/248"/>
+  <UML2:Association owner="#/737" name="interactionmessage" memberEnd="#/49 #/15"/>
+  <UML2:Class ownedElement="#/631" name="CallTrigger" superClass="#/378"/>
+  <UML2:Class ownedElement="#/365 #/349 #/767 #/701 #/330" name="Region" superClass="#/185 #/116"/>
+  <UML2:Property owner="#/342" name="packageableElement_visibility" type="#/327"/>
+  <UML2:Property owner="#/497" name="isQuery" type="#/657"/>
+  <UML2:Property owner="#/668" name="postcondition" type="#/706"/>
+  <UML2:Property owner="#/668" name="specification" type="#/411" association="#/328"/>
+  <UML2:Class ownedElement="#/138 #/488 #/53" name="Comment" superClass="#/514"/>
+  <UML2:Class name="ValueSpecification" isAbstract="true" superClass="#/283 #/262"/>
+  <UML2:Property owner="#/116" name="redefinitionContext" type="#/837"/>
+  <UML2:Property owner="#/492" name="value" type="#/434"/>
+  <UML2:Property owner="#/212" name="conveyed" type="#/837"/>
+  <UML2:Property owner="#/308" name="group" type="#/401" association="#/649"/>
+  <UML2:Property owner="#/789" name="returnInformation" type="#/439"/>
+  <UML2:Class name="ControlNode" isAbstract="true" superClass="#/718"/>
+  <UML2:Property owner="#/682" name="transformation" type="#/668"/>
+  <UML2:Property owner="#/33" name="condition" type="#/706"/>
+  <UML2:Class name="ConnectableElementTemplateParameter" superClass="#/487"/>
+  <UML2:Property owner="#/16" name="parameter" type="#/457" association="#/778"/>
+  <UML2:Class ownedElement="#/676 #/396" name="Substitution" superClass="#/574"/>
+  <UML2:Class ownedElement="#/489" name="Pseudostate" superClass="#/493"/>
+  <UML2:Association owner="#/737" name="datatypeownedOperation" memberEnd="#/584 #/719"/>
+  <UML2:Property owner="#/16" name="condition" type="#/706"/>
+  <UML2:Association owner="#/737" name="includeincludingCase" memberEnd="#/512 #/30"/>
+  <UML2:Class ownedElement="#/788 #/640 #/281 #/260 #/284 #/603" name="Class" superClass="#/402 #/418"/>
+  <UML2:Property owner="#/288" name="isRelative" type="#/657"/>
+  <UML2:Property owner="#/257" name="owningInstance" type="#/268" association="#/727"/>
+  <UML2:Property owner="#/40" name="qualifiedName" type="#/248"/>
+  <UML2:Property owner="#/81" name="kind" type="#/273"/>
+  <UML2:Property owner="#/493" name="outgoing" type="#/81" association="#/37"/>
+  <UML2:Association owner="#/737" name="metaclassextension" memberEnd="#/586 #/260"/>
+  <UML2:Class ownedElement="#/122 #/781 #/606" name="InteractionOccurrence" superClass="#/146"/>
+  <UML2:Property owner="#/837" name="inheritedMember" type="#/40"/>
+  <UML2:Property owner="#/399" name="qualifier" type="#/460"/>
+  <UML2:Association owner="#/737" name="realizationabstraction" memberEnd="#/137 #/166"/>
+  <UML2:Property owner="#/407" name="deployedArtifact" type="#/285"/>
+  <UML2:Property owner="#/673" name="superPartition" type="#/673" association="#/826"/>
+  <UML2:Association owner="#/737" name="inPartitioncontainedEdge" memberEnd="#/455 #/469"/>
+  <UML2:Property owner="#/40" name="visibility" type="#/327"/>
+  <UML2:Property owner="#/805" name="endData" type="#/764"/>
+  <UML2:Property owner="#/817" name="ownedComment" type="#/537"/>
+  <UML2:Property owner="#/671" name="messageKind" type="#/433"/>
+  <UML2:Property owner="#/515" name="successorClause" type="#/515" association="#/69"/>
+  <UML2:Property owner="#/146" name="generalOrdering" type="#/3"/>
+  <UML2:Class ownedElement="#/166 #/153" name="Realization" superClass="#/340"/>
+  <UML2:Property owner="#/712" name="mustIsolate" type="#/657"/>
+  <UML2:Property owner="#/13" name="result" type="#/364"/>
+  <UML2:Property owner="#/344" name="parameter" type="#/457"/>
+  <UML2:Class ownedElement="#/205 #/705" name="DirectedRelationship" isAbstract="true"
+      superClass="#/520"/>
+  <UML2:Association owner="#/737" name="startstartExec" memberEnd="#/339 #/31"/>
+  <UML2:Property owner="#/105" name="represented" type="#/837"/>
+  <UML2:Association owner="#/737" name="substitutionsubstitutingClassifier" memberEnd="#/249 #/396"/>
+  <UML2:Property owner="#/716" name="decisionInput" type="#/668"/>
+  <UML2:Property owner="#/278" name="isService" type="#/657"/>
+  <UML2:Property owner="#/497" name="datatype" type="#/592" association="#/551"/>
+  <UML2:Class ownedElement="#/159" name="VariableAction" isAbstract="true" superClass="#/100"/>
+  <UML2:Property owner="#/124" name="metaclass" type="#/554" association="#/560"/>
+  <UML2:Property owner="#/107" name="definingEnd" type="#/460"/>
+  <UML2:Association owner="#/737" name="featuringClassifierfeature" memberEnd="#/240 #/725"/>
+  <UML2:Property owner="#/460" name="datatype" type="#/592" association="#/121"/>
+  <UML2:Property owner="#/626" name="result" type="#/364"/>
+  <UML2:Association owner="#/737" name="subExpressionowningExpression" memberEnd="#/797 #/629"/>
+  <UML2:Class ownedElement="#/659 #/719" name="DataType" superClass="#/837"/>
+  <UML2:Property owner="#/346" name="object" type="#/439"/>
+  <UML2:Property owner="#/106" name="scope" type="#/712" association="#/441"/>
+  <UML2:Property owner="#/732" name="packageExtension" type="#/318"/>
+  <UML2:Property owner="#/706" name="specification" type="#/538"/>
+  <UML2:Property owner="#/460" name="isDerived" type="#/657"/>
+  <UML2:Property owner="#/323" name="value" type="#/248"/>
+  <UML2:Class name="TemplateableClassifier" isAbstract="true" superClass="#/837"/>
+  <UML2:Property owner="#/422" name="fragment" type="#/146" association="#/435"/>
+  <UML2:Property owner="#/278" name="isBehavior" type="#/657"/>
+  <UML2:Class ownedElement="#/678 #/102" name="AcceptEventAction" superClass="#/100"/>
+  <UML2:Property owner="#/554" name="ownedReception" type="#/827"/>
+  <UML2:Property owner="#/422" name="lifeline" type="#/710" association="#/452"/>
+  <UML2:Property owner="#/388" name="isTestedFirst" type="#/657"/>
+  <UML2:Property owner="#/561" name="argument" type="#/439"/>
+  <UML2:Property owner="#/706" name="constrainedElement" type="#/817"/>
+  <UML2:Property owner="#/668" name="precondition" type="#/706"/>
+  <UML2:Property owner="#/718" name="redefinedElement" type="#/718"/>
+  <UML2:Property owner="#/39" name="ownedAttribute" type="#/460"/>
+  <UML2:Association owner="#/737" name="elementImportimportingNamespace" memberEnd="#/104 #/258"/>
+  <UML2:Property owner="#/472" name="result" type="#/364"/>
+  <UML2:Property owner="#/472" name="classifier" type="#/837"/>
+  <UML2:Property owner="#/748" name="result" type="#/364"/>
+  <UML2:Class ownedElement="#/310 #/436" name="Expression" superClass="#/790"/>
+  <UML2:Property owner="#/671" name="argument" type="#/538"/>
+  <UML2:Property owner="#/467" name="signal" type="#/51"/>
+  <UML2:Class ownedElement="#/680 #/235" name="Duration" superClass="#/538"/>
+  <UML2:Property owner="#/308" name="isSingleExecution" type="#/657"/>
+  <UML2:Class name="Device" superClass="#/670"/>
+  <UML2:Property owner="#/346" name="end" type="#/460"/>
+  <UML2:Property owner="#/350" name="required" type="#/18"/>
+  <UML2:Property owner="#/261" name="isReadOnly" type="#/657"/>
+  <UML2:Property owner="#/525" name="finish" type="#/238" association="#/473"/>
+  <UML2:Class ownedElement="#/358 #/277" name="ConnectionPointReference" superClass="#/493"/>
+  <UML2:Class ownedElement="#/590" name="ReadStructuralFeatureAction" superClass="#/770"/>
+  <UML2:Class ownedElement="#/425" name="ChangeTrigger" superClass="#/499"/>
+  <UML2:Property owner="#/388" name="loopVariable" type="#/364"/>
+  <UML2:Property owner="#/699" name="owningExpression" type="#/699" association="#/591"/>
+  <UML2:Property owner="#/411" name="parameter" type="#/457"/>
+  <UML2:Property owner="#/531" name="operation" type="#/497"/>
+  <UML2:Property owner="#/771" name="manifestation" type="#/151"/>
+  <UML2:Property owner="#/239" name="cfragmentGate" type="#/823"/>
+  <UML2:Property owner="#/187" name="result" type="#/364"/>
+  <UML2:Property owner="#/807" name="behavior" type="#/668"/>
+  <UML2:Property owner="#/66" name="executionLocation" type="#/248"/>
+  <UML2:Class name="LiteralSpecification" isAbstract="true" superClass="#/538"/>
+  <UML2:Property owner="#/18" name="nestedClassifier" type="#/837"/>
+  <UML2:Property owner="#/650" name="classifier" type="#/837"/>
+  <UML2:Property owner="#/554" name="ownedOperation" type="#/497" association="#/759"/>
+  <UML2:Property owner="#/183" name="deployedElement" type="#/342"/>
+  <UML2:Property owner="#/81" name="guard" type="#/706"/>
+  <UML2:Property owner="#/103" name="signature" type="#/360"/>
+  <UML2:Class name="CommunicationPath" superClass="#/80"/>
+  <UML2:Property owner="#/80" name="ownedEnd" type="#/460" association="#/207"/>
+  <UML2:Property owner="#/399" name="result" type="#/364"/>
+  <UML2:Class name="PartDecomposition" superClass="#/561"/>
+  <UML2:Class name="TimeInterval" superClass="#/210"/>
+  <UML2:Association owner="#/737" name="groupactivityGroup_activity" memberEnd="#/542 #/776"/>
+  <UML2:Class ownedElement="#/393 #/639" name="ReadExtentAction" superClass="#/100"/>
+  <UML2:Property owner="#/848" name="regionAsOutput" type="#/458" association="#/29"/>
+  <UML2:Property owner="#/100" name="context_" type="#/837"/>
+  <UML2:Property owner="#/732" name="nestedPackage" type="#/732" association="#/293"/>
+  <UML2:Property owner="#/662" name="source" type="#/718" association="#/842"/>
+  <UML2:Property owner="#/308" name="structuredNode" type="#/712"/>
+  <UML2:Property owner="#/508" name="sendMessage" type="#/671" association="#/177"/>
+  <UML2:PrimitiveType name="EBoolean" package="#/737"/>
+  <UML2:Property owner="#/402" name="ownedStateMachine" type="#/736" association="#/406"/>
+  <UML2:Property owner="#/592" name="ownedAttribute" type="#/460" association="#/121"/>
+  <UML2:Property owner="#/411" name="concurrency" type="#/115"/>
+  <UML2:Class ownedElement="#/821 #/464 #/337 #/847" name="Generalization" superClass="#/578"/>
+  <UML2:Class ownedElement="#/704 #/654 #/747 #/746 #/362 #/456 #/242 #/455 #/135 #/276"
+      name="ActivityEdge" isAbstract="true" superClass="#/116"/>
+  <UML2:Property owner="#/93" name="returnInformation" type="#/364"/>
+  <UML2:Property owner="#/693" name="exception" type="#/439"/>
+  <UML2:Property owner="#/411" name="isAbstract" type="#/657"/>
+  <UML2:Property owner="#/679" name="upper" type="#/248"/>
+  <UML2:Property owner="#/487" name="parameteredElement" type="#/262" association="#/129"/>
+  <UML2:Class ownedElement="#/294 #/505 #/247 #/536 #/117 #/683 #/274 #/608 #/535 #/677"
+      name="Behavior" isAbstract="true" superClass="#/554"/>
+  <UML2:Class name="IntervalConstraint" superClass="#/706"/>
+  <UML2:Class ownedElement="#/61" name="Node" superClass="#/554 #/183"/>
+  <UML2:Class ownedElement="#/571 #/34 #/148 #/484 #/695 #/49 #/387 #/616" name="Message"
+      superClass="#/40"/>
+  <UML2:Property owner="#/238" name="toBefore" type="#/3" association="#/834"/>
+  <UML2:Class ownedElement="#/4 #/686 #/469 #/324 #/48 #/566 #/482" name="ActivityPartition"
+      superClass="#/40 #/401"/>
+  <UML2:Class name="DataStoreNode" superClass="#/156"/>
+  <UML2:Property owner="#/186" name="guard" type="#/126"/>
+  <UML2:Property owner="#/549" name="contract" type="#/837"/>
+  <UML2:Property owner="#/668" name="ownedParameterSet" type="#/16"/>
+  <UML2:Property owner="#/602" name="trigger" type="#/499"/>
+  <UML2:Class ownedElement="#/412 #/391 #/154 #/666 #/448 #/507" name="MultiplicityElement"
+      isAbstract="true" superClass="#/817"/>
+  <UML2:Property owner="#/618" name="firstTime" type="#/657"/>
+  <UML2:Property owner="#/771" name="nestedArtifact" type="#/771"/>
+  <UML2:Class ownedElement="#/44 #/231 #/545 #/97" name="ObjectFlow" superClass="#/662"/>
+  <UML2:Property owner="#/668" name="formalParameter" type="#/457"/>
+  <UML2:Class name="FlowFinalNode" superClass="#/190"/>
+  <UML2:Class ownedElement="#/780 #/125" name="PrimitiveFunction" superClass="#/342"/>
+  <UML2:Property owner="#/673" name="isExternal" type="#/657"/>
+  <UML2:Property owner="#/43" name="result" type="#/364"/>
+  <UML2:Property owner="#/422" name="formalGate" type="#/823"/>
+  <UML2:Class ownedElement="#/131" name="ExtensionPoint" superClass="#/116"/>
+  <UML2:Property owner="#/3" name="after" type="#/238" association="#/834"/>
+  <UML2:Property owner="#/706" name="context" type="#/185"/>
+  <UML2:Class name="DurationConstraint" superClass="#/669"/>
+  <UML2:Class ownedElement="#/664" name="RaiseExceptionAction" superClass="#/100"/>
+  <UML2:Property owner="#/757" name="joinSpec" type="#/538"/>
+  <UML2:Property owner="#/671" name="connector" type="#/178"/>
+  <UML2:Property owner="#/764" name="qualifier" type="#/740"/>
+  <UML2:Property owner="#/811" name="containedNode" type="#/718" association="#/259"/>
+  <UML2:Association owner="#/737" name="signatureownedParameter" memberEnd="#/758 #/163"/>
+  <UML2:Class ownedElement="#/797 #/629" name="StringExpression" superClass="#/514"/>
+  <UML2:Property owner="#/72" name="isDeterminate" type="#/657"/>
+  <UML2:Property owner="#/532" name="state" type="#/338" association="#/19"/>
+  <UML2:Class name="MergeNode" superClass="#/544"/>
+  <UML2:Property owner="#/736" name="region" type="#/532" association="#/287"/>
+  <UML2:Property owner="#/662" name="activity" type="#/308" association="#/800"/>
+  <UML2:Property owner="#/578" name="target" type="#/817"/>
+  <UML2:Class ownedElement="#/691 #/368 #/596 #/607" name="Constraint" superClass="#/342"/>
+  <UML2:Property owner="#/508" name="receiveMessage" type="#/671" association="#/779"/>
+  <UML2:Class ownedElement="#/814" name="ClassifierTemplateParameter" superClass="#/487"/>
+  <UML2:Property owner="#/72" name="result" type="#/364"/>
+  <UML2:Class ownedElement="#/267 #/398 #/158 #/265 #/139" name="Lifeline" superClass="#/40"/>
+  <UML2:Property owner="#/81" name="target" type="#/493" association="#/486"/>
+  <UML2:Class ownedElement="#/575 #/101 #/461 #/522" name="StructuredActivityNode"
+      superClass="#/100 #/185 #/401"/>
+  <UML2:Property owner="#/401" name="superGroup" type="#/401"/>
+  <UML2:Property owner="#/487" name="ownedParameteredElement" type="#/262" association="#/763"/>
+  <UML2:Property owner="#/39" name="part" type="#/460"/>
+  <UML2:Class ownedElement="#/582" name="DecisionNode" superClass="#/544"/>
+  <UML2:Property owner="#/18" name="protocol" type="#/282"/>
+  <UML2:Class ownedElement="#/809 #/390 #/447 #/165 #/609 #/58 #/359 #/750" name="ActivityNode"
+      isAbstract="true" superClass="#/116"/>
+  <UML2:Property owner="#/592" name="ownedOperation" type="#/497" association="#/551"/>
+  <UML2:Property owner="#/338" name="isOrthogonal" type="#/657"/>
+  <UML2:Property owner="#/499" name="port" type="#/278"/>
+  <UML2:Property owner="#/457" name="effect" type="#/47"/>
+  <UML2:Association owner="#/737" name="extensionextend" memberEnd="#/307 #/756"/>
+  <UML2:Property owner="#/732" name="appliedProfile" type="#/453"/>
+  <UML2:Property owner="#/837" name="feature" type="#/806" association="#/588"/>
+  <UML2:Property owner="#/460" name="isComposite" type="#/657"/>
+  <UML2:Association owner="#/737" name="slotowningInstance" memberEnd="#/17 #/556"/>
+  <UML2:Property owner="#/275" name="metamodelReference" type="#/774"/>
+  <UML2:Class name="ExecutionEnvironment" superClass="#/670"/>
+  <UML2:Property owner="#/282" name="conformance" type="#/297" association="#/46"/>
+  <UML2:Property owner="#/360" name="template" type="#/514" association="#/375"/>
+  <UML2:Class ownedElement="#/653 #/347 #/521 #/369 #/221 #/724 #/595" name="Package"
+      superClass="#/185 #/342"/>
+  <UML2:Property owner="#/60" name="request" type="#/439"/>
+  <UML2:Class name="LiteralNull" superClass="#/637"/>
+  <UML2:Property owner="#/457" name="default" type="#/248"/>
+  <UML2:Class ownedElement="#/703 #/237 #/21 #/74" name="StateMachine" superClass="#/668"/>
+  <UML2:Package ownedElement="#/834 #/207 #/286 #/406 #/796 #/280 #/473 #/480 #/441 #/775 #/564 #/404 #/435 #/429 #/763 #/778 #/649 #/842 #/121 #/611 #/553 #/256 #/263 #/65 #/723 #/129 #/173 #/591 #/450 #/291 #/375 #/530 #/69 #/759 #/54 #/551 #/766 #/395 #/155 #/19 #/826 #/698 #/477 #/486 #/77 #/844 #/293 #/524 #/9 #/588 #/581 #/471 #/177 #/832 #/567 #/132 #/772 #/220 #/452 #/287 #/481 #/29 #/413 #/255 #/12 #/779 #/141 #/824 #/560 #/46 #/270 #/37 #/800 #/328 #/843 #/579 #/259 #/727"
+      name="UML2" member="#/327 #/91 #/468 #/115 #/433 #/785 #/741 #/322 #/273 #/798 #/47 #/84 #/516 #/817 #/679 #/40 #/185 #/790 #/538 #/615 #/537 #/578 #/520 #/554 #/290 #/460 #/497 #/283 #/457 #/732 #/169 #/592 #/426 #/794 #/837 #/806 #/706 #/254 #/637 #/89 #/734 #/492 #/323 #/411 #/261 #/268 #/257 #/144 #/116 #/661 #/342 #/354 #/774 #/80 #/318 #/304 #/275 #/453 #/124 #/420 #/668 #/402 #/308 #/99 #/152 #/109 #/340 #/574 #/549 #/87 #/157 #/105 #/212 #/831 #/107 #/791 #/178 #/39 #/662 #/401 #/718 #/100 #/246 #/544 #/446 #/682 #/92 #/190 #/251 #/716 #/702 #/189 #/364 #/439 #/27 #/344 #/198 #/18 #/36 #/771 #/151 #/127 #/33 #/742 #/689 #/184 #/822 #/397 #/278 #/418 #/531 #/378 #/627 #/499 #/827 #/51 #/56 #/288 #/217 #/106 #/712 #/72 #/515 #/388 #/422 #/146 #/710 #/671 #/3 #/508 #/238 #/525 #/372 #/833 #/360 #/487 #/514 #/699 #/262 #/103 #/76 #/485 #/708 #/810 #/841 #/599 #/547 #/784 #/757 #/684 #/156 #/673 #/848 #/458 #/386 #/561 #/823 #/647 #/186 #/126 #/239 #/70 #/736 #/532 #/550 #/338 #/493 #/625 #/81 #/838 #/472 #/353 #/345 #/187 #/770 #/626 #/41 #/78 #/762 #/320 #/805 #/764 #/299 #/168 #/8 #/316 #/180 #/1 #/585 #/523 #/438 #/389 #/112 #/243 #/748 #/685 #/13 #/25 #/467 #/150 #/60 #/196 #/807 #/819 #/618 #/470 #/111 #/210 #/199 #/669 #/648 #/783 #/692 #/674 #/811 #/16 #/350 #/407 #/285 #/183 #/670 #/620 #/729 #/644 #/297 #/282 #/415 #/650 #/63 #/361 #/5 #/740 #/346 #/399 #/43 #/602 #/93 #/789 #/693 #/66"
+      ownedType="#/248 #/434 #/657"/>
+  <UML2:Property owner="#/89" name="value" type="#/248"/>
+  <UML2:Property owner="#/388" name="result" type="#/364"/>
+  <UML2:Class ownedElement="#/503 #/108" name="QualifierValue" superClass="#/817"/>
+  <UML2:Enumeration name="ExpansionKind">
+    <ownedLiteral name="parallel"/>
+    <ownedLiteral name="iterative"/>
+    <ownedLiteral name="stream"/>
+  </UML2:Enumeration>
+  <UML2:Class ownedElement="#/512 #/756 #/451 #/336" name="UseCase" superClass="#/402"/>
+  <UML2:Property owner="#/33" name="extensionLocation" type="#/689"/>
+  <UML2:Property owner="#/837" name="attribute" type="#/460"/>
+  <UML2:Property owner="#/246" name="upperBound" type="#/538"/>
+  <UML2:Property owner="#/662" name="inGroup" type="#/401"/>
+  <UML2:Property owner="#/662" name="target" type="#/718" association="#/155"/>
+  <UML2:Class ownedElement="#/64 #/381 #/614" name="ApplyFunctionAction" superClass="#/100"/>
+  <UML2:Property owner="#/278" name="provided" type="#/18"/>
+  <UML2:Property owner="#/718" name="inInterruptibleRegion" type="#/811" association="#/259"/>
+  <UML2:Property owner="#/18" name="ownedReception" type="#/827"/>
+  <UML2:Property owner="#/497" name="postcondition" type="#/706"/>
+  <UML2:Property owner="#/514" name="templateBinding" type="#/103" association="#/220"/>
+  <UML2:Property owner="#/278" name="protocol" type="#/282"/>
+  <UML2:Property owner="#/361" name="result" type="#/364"/>
+  <UML2:Property owner="#/742" name="extend" type="#/33" association="#/723"/>
+  <UML2:Class ownedElement="#/193 #/694" name="JoinNode" superClass="#/544"/>
+  <UML2:Property owner="#/487" name="signature" type="#/360" association="#/698"/>
+  <UML2:Association owner="#/737" name="ownedOperationclass_" memberEnd="#/640 #/495"/>
+  <UML2:Property owner="#/81" name="container" type="#/532" association="#/280"/>
+  <UML2:Property owner="#/353" name="target" type="#/439"/>
+  <UML2:Class name="RemoveStructuralFeatureValueAction" superClass="#/41"/>
+  <UML2:Association owner="#/737" name="owningParameterownedParameteredElement" memberEnd="#/428 #/714"/>
+  <UML2:Class ownedElement="#/167 #/483 #/696" name="LinkEndData" superClass="#/817"/>
+  <UML2:Property owner="#/415" name="preCondition" type="#/706"/>
+  <UML2:Association owner="#/737" name="toAfterbefore" memberEnd="#/229 #/23"/>
+  <UML2:Property owner="#/532" name="stateMachine" type="#/736" association="#/287"/>
+  <UML2:Property owner="#/338" name="region" type="#/532" association="#/19"/>
+  <UML2:Property owner="#/460" name="defaultValue" type="#/538"/>
+  <UML2:Class ownedElement="#/292 #/502" name="StructuralFeatureAction" isAbstract="true"
+      superClass="#/100"/>
+  <UML2:Class ownedElement="#/192 #/681 #/632 #/226 #/825" name="Artifact" superClass="#/837 #/285"/>
+  <UML2:Association owner="#/737" name="extensionPointuseCase" memberEnd="#/451 #/131"/>
+  <UML2:Property owner="#/1" name="object" type="#/439"/>
+  <UML2:Class ownedElement="#/188 #/371 #/110" name="PackageImport" superClass="#/578"/>
+  <UML2:Association owner="#/737" name="roleend" memberEnd="#/200 #/302"/>
+  <UML2:Property owner="#/401" name="activityGroup_activity" type="#/308" association="#/649"/>
+  <UML2:Property owner="#/415" name="postCondition" type="#/706"/>
+  <UML2:Association owner="#/737" name="parameterSetparameter" memberEnd="#/476 #/548"/>
+  <UML2:Association owner="#/737" name="receiveMessagereceiveEvent" memberEnd="#/707 #/148"/>
+  <UML2:Property owner="#/685" name="body" type="#/248"/>
+  <UML2:Property owner="#/561" name="actualGate" type="#/823"/>
+  <UML2:Property owner="#/76" name="ownedActual" type="#/262"/>
+  <UML2:Class ownedElement="#/527" name="DurationObservationAction" superClass="#/41"/>
+  <UML2:Class name="ForkNode" superClass="#/544"/>
+  <UML2:Enumeration name="MessageSort">
+    <ownedLiteral name="synchSignal"/>
+    <ownedLiteral name="synchCall"/>
+    <ownedLiteral name="asynchCall"/>
+    <ownedLiteral name="asynchSignal"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/144" name="instance" type="#/268"/>
+  <UML2:Property owner="#/350" name="provided" type="#/18"/>
+  <UML2:Property owner="#/554" name="isActive" type="#/657"/>
+  <UML2:Class ownedElement="#/818 #/295 #/543" name="ReplyAction" superClass="#/100"/>
+  <UML2:Class ownedElement="#/130 #/223 #/119 #/289" name="OpaqueExpression" superClass="#/538"/>
+  <UML2:Class ownedElement="#/302" name="ConnectableElement" isAbstract="true" superClass="#/40 #/262"/>
+  <UML2:Property owner="#/819" name="firstTime" type="#/657"/>
+  <UML2:Property owner="#/345" name="first" type="#/439"/>
+  <UML2:Class name="PrimitiveType" superClass="#/592"/>
+  <UML2:Property owner="#/151" name="utilizedElement" type="#/342"/>
+  <UML2:Association owner="#/737" name="coveredBycovered" memberEnd="#/267 #/504"/>
+  <UML2:Property owner="#/699" name="subExpression" type="#/699" association="#/591"/>
+  <UML2:Enumeration name="PseudostateKind">
+    <ownedLiteral name="deepHistory"/>
+    <ownedLiteral name="shallowHistory"/>
+    <ownedLiteral name="choice"/>
+    <ownedLiteral name="join"/>
+    <ownedLiteral name="exitPoint"/>
+    <ownedLiteral name="terminate"/>
+    <ownedLiteral name="fork"/>
+    <ownedLiteral name="junction"/>
+    <ownedLiteral name="initial"/>
+    <ownedLiteral name="entryPoint"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/822" name="type" type="#/397"/>
+  <UML2:Association owner="#/737" name="edgeactivity" memberEnd="#/219 #/704"/>
+  <UML2:Property owner="#/493" name="container" type="#/532" association="#/844"/>
+  <UML2:Property owner="#/361" name="object" type="#/439"/>
+  <UML2:Property owner="#/402" name="ownedBehavior" type="#/668" association="#/9"/>
+  <UML2:Property owner="#/126" name="maxint" type="#/538"/>
+  <UML2:Class ownedElement="#/569" name="LinkAction" isAbstract="true" superClass="#/100"/>
+  <UML2:Class ownedElement="#/430 #/240" name="Feature" isAbstract="true" superClass="#/116"/>
+  <UML2:Class ownedElement="#/635" name="CallBehaviorAction" superClass="#/13"/>
+  <UML2:Property owner="#/107" name="partWithPort" type="#/460"/>
+  <UML2:Property owner="#/718" name="outgoing" type="#/662" association="#/842"/>
+  <UML2:Class name="ParameterableClassifier" isAbstract="true" superClass="#/837"/>
+  <UML2:Class ownedElement="#/201 #/697" name="InterruptibleActivityRegion" superClass="#/401"/>
+  <UML2:Property owner="#/80" name="isDerived" type="#/657"/>
+  <UML2:Property owner="#/460" name="opposite" type="#/460"/>
+  <UML2:Property owner="#/708" name="allowSubstitutable" type="#/657"/>
+  <UML2:Property owner="#/350" name="isIndirectlyInstantiated" type="#/657"/>
+  <UML2:Property owner="#/338" name="entry" type="#/308"/>
+  <UML2:Class ownedElement="#/7 #/494 #/570" name="Element" isAbstract="true"/>
+  <UML2:Property owner="#/789" name="replyToCall" type="#/531"/>
+  <UML2:Class ownedElement="#/792 #/343" name="TimeExpression" superClass="#/538"/>
+  <UML2:Property owner="#/470" name="now" type="#/819"/>
+  <UML2:Property owner="#/661" name="isSubstitutable" type="#/657"/>
+  <UML2:Class ownedElement="#/799 #/357" name="CollaborationOccurrence" superClass="#/40"/>
+  <UML2:Class name="Gate" superClass="#/508"/>
+  <UML2:Association owner="#/737" name="clientDependencyclient" memberEnd="#/236 #/266"/>
+  <UML2:Property owner="#/771" name="ownedAttribute" type="#/460"/>
+  <UML2:Association owner="#/737" name="superPartitionsubgroup" memberEnd="#/566 #/48"/>
+  <UML2:Class ownedElement="#/67" name="Reception" superClass="#/411"/>
+  <UML2:Property owner="#/837" name="occurrence" type="#/822"/>
+  <UML2:Property owner="#/146" name="enclosingInteraction" type="#/422" association="#/435"/>
+  <UML2:Property owner="#/56" name="signal" type="#/51"/>
+  <UML2:Class ownedElement="#/373" name="Model" superClass="#/732"/>
+  <UML2:Association owner="#/737" name="implementationimplementingClassifier" memberEnd="#/414 #/50"/>
+  <UML2:Class name="Stop" superClass="#/238"/>
+  <UML2:Association owner="#/737" name="toBeforeafter" memberEnd="#/672 #/690"/>
+  <UML2:Property owner="#/460" name="owningAssociation" type="#/80" association="#/207"/>
+  <UML2:Property owner="#/72" name="isAssured" type="#/657"/>
+  <UML2:Class ownedElement="#/59 #/725 #/562 #/490 #/376 #/744 #/463 #/249 #/380 #/296 #/218 #/478 #/828"
+      name="Classifier" isAbstract="true" superClass="#/185 #/290 #/116"/>
+  <UML2:Class name="FinalState" superClass="#/338"/>
+  <UML2:Property owner="#/361" name="isDirect" type="#/657"/>
+  <UML2:Property owner="#/460" name="qualifier" type="#/460" association="#/263"/>
+  <UML2:Class name="RedefinableTemplateSignature" superClass="#/116 #/360"/>
+  <UML2:Association owner="#/737" name="sourceoutgoing" memberEnd="#/654 #/809"/>
+  <UML2:Association owner="#/737" name="ownedRulenamespace" memberEnd="#/32 #/368"/>
+  <UML2:Association owner="#/737" name="containersubvertex" memberEnd="#/801 #/365"/>
+  <UML2:Property owner="#/460" name="class_" type="#/554"/>
+  <UML2:Property owner="#/70" name="setting" type="#/657"/>
+  <UML2:Property owner="#/661" name="generalizationSet" type="#/87" association="#/173"/>
+  <UML2:Class ownedElement="#/651 #/172" name="ExpansionNode" superClass="#/246"/>
+  <UML2:Property owner="#/397" name="collaborationRole" type="#/791"/>
+</xmi:XMI>

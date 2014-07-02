@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <ocl.ecore:Constraint xmi:id="_F5VdwMw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_F5Vdwcw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vdwsw2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5VdxMw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vdxsw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_F5VdyMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5Vdysw2EeCTAbeb_8PhAQ" name="self" referredVariable="_F5Vd3Mw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//CombinedFragment"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="UMLinteractions.ecore#//CombinedFragment/interactionOperator"/>
+            </source>
+            <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_F5VdzMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+              <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLinteractions.ecore#//InteractionOperatorKind/consider"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+          </source>
+          <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vdzsw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_F5Vd0Mw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5Vd0sw2EeCTAbeb_8PhAQ" name="self" referredVariable="_F5Vd3Mw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//CombinedFragment"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="UMLinteractions.ecore#//CombinedFragment/interactionOperator"/>
+            </source>
+            <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_F5Vd1Mw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+              <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLinteractions.ecore#//InteractionOperatorKind/ignore"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+        </source>
+        <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vd1sw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5Vd2Mw2EeCTAbeb_8PhAQ" name="self" referredVariable="_F5Vd3Mw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//CombinedFragment"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" xmi:id="_F5Vd2sw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/3/ConsiderIgnoreFragment.2"/>
+            <referredType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/implies"/>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_F5Vd3Mw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//CombinedFragment"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLinteractions.ecore#//CombinedFragment"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_F5Vd3sw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_F5Vd38w2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vd4Mw2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vd4sw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_F5Vd5Mw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5Vd5sw2EeCTAbeb_8PhAQ" name="self" referredVariable="_F5Vd8sw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="UMLinteractions.ecore#//CombinedFragment/interactionOperator"/>
+          </source>
+          <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_F5Vd6Mw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+            <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLinteractions.ecore#//InteractionOperatorKind/consider"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+        </source>
+        <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vd6sw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_F5Vd7Mw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5Vd7sw2EeCTAbeb_8PhAQ" name="self" referredVariable="_F5Vd8sw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="UMLinteractions.ecore#//CombinedFragment/interactionOperator"/>
+          </source>
+          <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_F5Vd8Mw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EEnum" href="UMLinteractions.ecore#//InteractionOperatorKind"/>
+            <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLinteractions.ecore#//InteractionOperatorKind/ignore"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_F5Vd8sw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_F5Vd9Mw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_F5Vd9cw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IteratorExp" xmi:id="_F5Vd9sw2EeCTAbeb_8PhAQ" name="forAll">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_F5Vd-Mw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(NamedElement).5"/>
+          <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5Vd-sw2EeCTAbeb_8PhAQ" name="self" referredVariable="_F5VeFMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="UMLinteractions.ecore#//ConsiderIgnoreFragment/message"/>
+        </source>
+        <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vd_Mw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5Vd_sw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5VeAMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5VeAsw2EeCTAbeb_8PhAQ" name="m" referredVariable="_F5VeEsw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//NamedElement"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" xmi:id="_F5VeBMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/3/Operation.2"/>
+                <referredType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//Operation"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+            </source>
+            <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5VeBsw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5VeCMw2EeCTAbeb_8PhAQ" name="m" referredVariable="_F5VeEsw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//NamedElement"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" xmi:id="_F5VeCsw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/3/Reception.2"/>
+                <referredType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//Reception"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+          </source>
+          <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_F5VeDMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:VariableExp" xmi:id="_F5VeDsw2EeCTAbeb_8PhAQ" name="m" referredVariable="_F5VeEsw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//NamedElement"/>
+            </source>
+            <argument xsi:type="ocl.ecore:TypeExp" xmi:id="_F5VeEMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:TypeType" href="ocl:///oclenv.ecore#/3/Signal.5"/>
+              <referredType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//Signal"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+        </body>
+        <iterator xsi:type="ocl.ecore:Variable" xmi:id="_F5VeEsw2EeCTAbeb_8PhAQ" name="m">
+          <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//NamedElement"/>
+        </iterator>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_F5VeFMw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLinteractions.ecore#//ConsiderIgnoreFragment"/>
+  </ocl.ecore:Constraint>
+</xmi:XMI>

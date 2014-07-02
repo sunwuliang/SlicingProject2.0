@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <ocl.ecore:Constraint xmi:id="_FzKkUMw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_FzKkUcw2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkUsw2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkVMw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          <source xsi:type="ocl.ecore:IteratorExp" xmi:id="_FzKkVsw2EeCTAbeb_8PhAQ" name="select">
+            <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(Parameter).7"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkWMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(Parameter).7"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkWsw2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzKkfMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//FunctionBehavior"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLcommonBehaviors.ecore#//Behavior/ownedParameter"/>
+            </source>
+            <body xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkXMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkXsw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkYMw2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkYsw2EeCTAbeb_8PhAQ">
+                    <eType xsi:type="ecore:EEnum" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind"/>
+                    <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkZMw2EeCTAbeb_8PhAQ" name="p" referredVariable="_FzKkeMw2EeCTAbeb_8PhAQ">
+                      <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//Parameter"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//Parameter/direction"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_FzKkZsw2EeCTAbeb_8PhAQ">
+                    <eType xsi:type="ecore:EEnum" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind"/>
+                    <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind/out"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+                </source>
+                <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkaMw2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkasw2EeCTAbeb_8PhAQ">
+                    <eType xsi:type="ecore:EEnum" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind"/>
+                    <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkbMw2EeCTAbeb_8PhAQ" name="p" referredVariable="_FzKkeMw2EeCTAbeb_8PhAQ">
+                      <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//Parameter"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//Parameter/direction"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_FzKkbsw2EeCTAbeb_8PhAQ">
+                    <eType xsi:type="ecore:EEnum" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind"/>
+                    <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind/inout"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkcMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkcsw2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EEnum" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind"/>
+                  <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkdMw2EeCTAbeb_8PhAQ" name="p" referredVariable="_FzKkeMw2EeCTAbeb_8PhAQ">
+                    <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//Parameter"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//Parameter/direction"/>
+                </source>
+                <argument xsi:type="ocl.ecore:EnumLiteralExp" xmi:id="_FzKkdsw2EeCTAbeb_8PhAQ">
+                  <eType xsi:type="ecore:EEnum" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind"/>
+                  <referredEnumLiteral xsi:type="ecore:EEnumLiteral" href="UMLcommonBehaviors.ecore#//ParameterDirectionKind/return"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/or"/>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" xmi:id="_FzKkeMw2EeCTAbeb_8PhAQ" name="p">
+              <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//Parameter"/>
+            </iterator>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/size"/>
+        </source>
+        <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzKkesw2EeCTAbeb_8PhAQ" integerSymbol="1">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        </argument>
+        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/%3E="/>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_FzKkfMw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//FunctionBehavior"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//FunctionBehavior"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_FzKkfsw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_FzKkf8w2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IfExp" xmi:id="_FzKkgMw2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <condition xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkgsw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkhMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkhsw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:OrderedSetType" href="ocl:///oclenv.ecore#/1/OrderedSet(Element).5"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkiMw2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzKkoMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationConstraint"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLcommonBehaviors.ecore#//Constraint/constrainedElement"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzKkisw2EeCTAbeb_8PhAQ" integerSymbol="2">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+        </condition>
+        <thenExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkjMw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkjsw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkkMw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(Boolean)"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkksw2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzKkoMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationConstraint"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//DurationConstraint/firstEvent"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzKklMw2EeCTAbeb_8PhAQ" integerSymbol="2">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+        </thenExpression>
+        <elseExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKklsw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkmMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkmsw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(Boolean)"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKknMw2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzKkoMw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationConstraint"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//DurationConstraint/firstEvent"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzKknsw2EeCTAbeb_8PhAQ" integerSymbol="0">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+        </elseExpression>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_FzKkoMw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationConstraint"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationConstraint"/>
+  </ocl.ecore:Constraint>
+  <ocl.ecore:Constraint xmi:id="_FzKkosw2EeCTAbeb_8PhAQ" stereotype="invariant">
+    <specification xsi:type="ocl.ecore:ExpressionInOCL" xmi:id="_FzKko8w2EeCTAbeb_8PhAQ">
+      <bodyExpression xsi:type="ocl.ecore:IfExp" xmi:id="_FzKkpMw2EeCTAbeb_8PhAQ">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <condition xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkpsw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzKkqMw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzKkqsw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(NamedElement).4"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzKkrMw2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzLLdcw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationObservation"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="UMLcommonBehaviors.ecore#//DurationObservation/event"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzKkrsw2EeCTAbeb_8PhAQ" integerSymbol="2">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+        </condition>
+        <thenExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzLLYcw2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzLLY8w2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzLLZcw2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(Boolean)"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzLLZ8w2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzLLdcw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationObservation"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//DurationObservation/firstEvent"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzLLacw2EeCTAbeb_8PhAQ" integerSymbol="2">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+        </thenExpression>
+        <elseExpression xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzLLa8w2EeCTAbeb_8PhAQ">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" xmi:id="_FzLLbcw2EeCTAbeb_8PhAQ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp" xmi:id="_FzLLb8w2EeCTAbeb_8PhAQ">
+              <eType xsi:type="ocl.ecore:SetType" href="ocl:///oclenv.ecore#/1/Set(Boolean)"/>
+              <source xsi:type="ocl.ecore:VariableExp" xmi:id="_FzLLccw2EeCTAbeb_8PhAQ" name="self" referredVariable="_FzLLdcw2EeCTAbeb_8PhAQ">
+                <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationObservation"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="UMLcommonBehaviors.ecore#//DurationObservation/firstEvent"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" xmi:id="_FzLLc8w2EeCTAbeb_8PhAQ" integerSymbol="0">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/="/>
+        </elseExpression>
+      </bodyExpression>
+      <contextVariable xsi:type="ocl.ecore:Variable" xmi:id="_FzLLdcw2EeCTAbeb_8PhAQ" name="self">
+        <eType xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationObservation"/>
+      </contextVariable>
+    </specification>
+    <constrainedElements xsi:type="ecore:EClass" href="UMLcommonBehaviors.ecore#//DurationObservation"/>
+  </ocl.ecore:Constraint>
+</xmi:XMI>

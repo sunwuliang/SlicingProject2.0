@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UML2="http:///UML2.ecore">
+  <UML2:Package ownedElement="#/66 #/22 #/29 #/51 #/28 #/43 #/38 #/31 #/48 #/58 #/60"
+      name="LRBAC" member="#/39 #/36 #/3 #/19 #/80 #/44 #/27 #/79 #/46 #/21 #/10 #/49 #/8 #/63"
+      ownedType="#/72 #/53 #/42"/>
+  <UML2:Property owner="#/39" name="Age" type="#/53"/>
+  <UML2:Property owner="#/36" name="SessUser" type="#/39" association="#/48"/>
+  <UML2:Class ownedElement="#/33 #/9 #/64 #/55 #/40" name="Role">
+    <ownedOperation href="#/62"/>
+    <ownedOperation href="#/20"/>
+  </UML2:Class>
+  <UML2:Parameter operation="#/62" name="name" type="#/72"/>
+  <UML2:Property owner="#/39" name="UserID" type="#/53"/>
+  <UML2:Property owner="#/79" name="EReference0" type="#/10"/>
+  <UML2:Operation class_="#/36" name="UpdateMaxRoles">
+    <ownedParameter href="#/23"/>
+  </UML2:Operation>
+  <UML2:Class name="Banker" superClass="#/39"/>
+  <UML2:Property owner="#/3" name="AssignUser" type="#/39" association="#/38"/>
+  <UML2:Class name="EClass0"/>
+  <UML2:Property owner="#/19" name="LocUser" type="#/39" association="#/22"/>
+  <UML2:Property owner="#/39" name="UserLoc" type="#/19" association="#/22"/>
+  <UML2:Parameter operation="#/70" name="id" type="#/53"/>
+  <UML2:Property owner="#/44" name="ObjPerm" type="#/80" association="#/58"/>
+  <UML2:Property owner="#/39" name="AssignedRoles" type="#/3" association="#/38"/>
+  <UML2:Property owner="#/19" name="LocAssign" type="#/3" association="#/31"/>
+  <UML2:Parameter operation="#/67" name="name" type="#/72"/>
+  <UML2:Operation class_="#/39" name="UpdateLoc">
+    <ownedParameter href="#/83"/>
+  </UML2:Operation>
+  <UML2:Class ownedElement="#/54 #/11 #/16 #/25 #/56 #/65" name="Location">
+    <ownedOperation href="#/34"/>
+  </UML2:Class>
+  <UML2:Operation class_="#/3" name="AddAssignLoc">
+    <ownedParameter href="#/71"/>
+  </UML2:Operation>
+  <UML2:Class name="Execute" superClass="#/27"/>
+  <UML2:Association owner="#/0" name="UserLocLocUser" memberEnd="#/12 #/11"/>
+  <UML2:Parameter operation="#/7" name="NoOfRoles" type="#/53"/>
+  <UML2:Property owner="#/39" name="UserSess" type="#/36" association="#/48"/>
+  <UML2:Property owner="#/19" name="LocObj" type="#/44" association="#/51"/>
+  <UML2:Property owner="#/36" name="MaxRoles" type="#/53"/>
+  <UML2:Class ownedElement="#/52" name="Operation"/>
+  <UML2:Association owner="#/0" name="SessRoleRoleSess" memberEnd="#/69 #/55"/>
+  <UML2:Association owner="#/0" name="RolePermPermRole" memberEnd="#/40 #/77"/>
+  <UML2:Parameter operation="#/47" name="id" type="#/53"/>
+  <UML2:Association owner="#/0" name="AssignLocLocAssign" memberEnd="#/64 #/16"/>
+  <UML2:Parameter operation="#/34" name="name" type="#/72"/>
+  <UML2:Property owner="#/3" name="RoleName" type="#/72"/>
+  <UML2:Operation class_="#/19" name="UpdateLocName">
+    <ownedParameter href="#/32"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/80" name="PermObj" type="#/44" association="#/58"/>
+  <UML2:Class ownedElement="#/26 #/69 #/2" name="Session">
+    <ownedOperation href="#/7"/>
+  </UML2:Class>
+  <UML2:Parameter operation="#/45" name="r" type="#/3"/>
+  <UML2:Association owner="#/0" name="AssignUserAssignedRoles" memberEnd="#/9 #/15"/>
+  <UML2:Class ownedElement="#/75 #/76 #/5 #/1 #/24 #/15 #/12" name="User">
+    <ownedOperation href="#/78"/>
+    <ownedOperation href="#/59"/>
+    <ownedOperation href="#/18"/>
+    <ownedOperation href="#/45"/>
+    <ownedOperation href="#/47"/>
+  </UML2:Class>
+  <UML2:Property owner="#/3" name="RolePerm" type="#/80" association="#/29"/>
+  <UML2:Property owner="#/80" name="RoleLocPerm" type="#/19" association="#/43"/>
+  <UML2:PrimitiveType name="EBoolean" package="#/0"/>
+  <UML2:Association owner="#/0" name="RoleLocPermPermRoleLoc" memberEnd="#/41 #/56"/>
+  <UML2:Class ownedElement="#/73 #/82 #/14" name="Object">
+    <ownedOperation href="#/70"/>
+  </UML2:Class>
+  <UML2:Operation class_="#/39" name="AssignRole">
+    <ownedParameter href="#/37"/>
+  </UML2:Operation>
+  <UML2:Class name="Write" superClass="#/27"/>
+  <UML2:Operation class_="#/39" name="UpdateUserID">
+    <ownedParameter href="#/30"/>
+  </UML2:Operation>
+  <UML2:Association owner="#/0" name="UserSessSessUser" memberEnd="#/24 #/2"/>
+  <UML2:Class ownedElement="#/61" name="EClass1"/>
+  <UML2:Property owner="#/80" name="PermOper" type="#/27" association="#/66"/>
+  <UML2:Association owner="#/0" name="ObjLocLocObj" memberEnd="#/82 #/25"/>
+  <UML2:Property owner="#/27" name="OperPerm" type="#/80" association="#/66"/>
+  <UML2:PrimitiveType name="EInt" package="#/0"/>
+  <UML2:Property owner="#/19" name="LocName" type="#/72"/>
+  <UML2:Property owner="#/3" name="RoleSess" type="#/36" association="#/28"/>
+  <UML2:Property owner="#/19" name="PermRoleLoc" type="#/80" association="#/43"/>
+  <UML2:Parameter operation="#/78" name="name" type="#/72"/>
+  <UML2:Association owner="#/0" name="PermObjObjPerm" memberEnd="#/35 #/14"/>
+  <UML2:Operation class_="#/39" name="UpdateAge" type="#/72">
+    <ownedParameter href="#/68"/>
+  </UML2:Operation>
+  <UML2:Association owner="#/0" name="ObjLocPermPermObjLoc" memberEnd="#/74 #/65"/>
+  <UML2:Property owner="#/49" name="EReference0" type="#/79"/>
+  <UML2:Operation class_="#/3" name="UpdateRoleName">
+    <ownedParameter href="#/4"/>
+  </UML2:Operation>
+  <UML2:Class name="Coder" superClass="#/39"/>
+  <UML2:Property owner="#/3" name="AssignLoc" type="#/19" association="#/31"/>
+  <UML2:Property owner="#/19" name="PermObjLoc" type="#/80" association="#/60"/>
+  <UML2:Association owner="#/0" name="OperPermPermOper" memberEnd="#/52 #/50"/>
+  <UML2:Operation class_="#/80" name="UpdatePermName">
+    <ownedParameter href="#/17"/>
+  </UML2:Operation>
+  <UML2:Parameter operation="#/59" name="age" type="#/53"/>
+  <UML2:Property owner="#/36" name="SessRole" type="#/3" association="#/28"/>
+  <UML2:Operation class_="#/44" name="UpdateObjID">
+    <ownedParameter href="#/13"/>
+  </UML2:Operation>
+  <UML2:Parameter operation="#/20" name="l" type="#/19"/>
+  <UML2:PrimitiveType name="EString" package="#/0"/>
+  <UML2:Property owner="#/44" name="ObjID" type="#/53"/>
+  <UML2:Property owner="#/80" name="ObjLocPerm" type="#/19" association="#/60"/>
+  <UML2:Property owner="#/39" name="Gender" type="#/72"/>
+  <UML2:Property owner="#/39" name="UserName" type="#/72"/>
+  <UML2:Property owner="#/80" name="PermRole" type="#/3" association="#/29"/>
+  <UML2:Operation class_="#/39" name="UpdateUserName" type="#/27">
+    <ownedParameter href="#/57"/>
+  </UML2:Operation>
+  <UML2:Class ownedElement="#/6" name="Read" superClass="#/27"/>
+  <UML2:Class ownedElement="#/81 #/50 #/35 #/77 #/41 #/74" name="Permission">
+    <ownedOperation href="#/67"/>
+  </UML2:Class>
+  <UML2:Property owner="#/80" name="PermName" type="#/72"/>
+  <UML2:Property owner="#/44" name="ObjLoc" type="#/19" association="#/51"/>
+  <UML2:Parameter operation="#/18" name="l" type="#/19"/>
+</xmi:XMI>

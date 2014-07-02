@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UML2="http:///UML2.ecore">
+  <UML2:Association owner="#/166" name="transactionscard" memberEnd="#/82 #/41"/>
+  <UML2:Parameter operation="#/150" name="d" type="#/144"/>
+  <UML2:Property owner="#/19" name="deliveredServices" type="#/141" association="#/126"/>
+  <UML2:Class ownedElement="#/34 #/66 #/57 #/38 #/161 #/7 #/115 #/111 #/104" name="TransactionReport"/>
+  <UML2:Operation class_="#/130" name="birthdayHappens"/>
+  <UML2:Property owner="#/98" name="participants" type="#/130" association="#/135"/>
+  <UML2:Association owner="#/166" name="cardMembership" memberEnd="#/157 #/80"/>
+  <UML2:Property owner="#/3" name="until" type="#/144"/>
+  <UML2:Property owner="#/130" name="name" type="#/71"/>
+  <UML2:Parameter operation="#/70" name="d" type="#/144"/>
+  <UML2:Property owner="#/72" name="number" type="#/132"/>
+  <UML2:Operation class_="#/72" name="earn">
+    <ownedParameter href="#/42"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/15" name="validFrom" type="#/144"/>
+  <UML2:Association owner="#/166" name="partnersprograms" memberEnd="#/31 #/99"/>
+  <UML2:Property owner="#/98" name="levels" type="#/25" association="#/53"/>
+  <UML2:Class ownedElement="#/142 #/122 #/63 #/30 #/12 #/90 #/40 #/80 #/82" name="CustomerCard">
+    <ownedOperation href="#/52"/>
+  </UML2:Class>
+  <UML2:Property owner="#/131" name="currentLevel" type="#/25" association="#/102"/>
+  <UML2:Operation class_="#/98" name="enrollAndCreateCustomer" type="#/130">
+    <ownedParameter href="#/134"/>
+    <ownedParameter href="#/35"/>
+  </UML2:Operation>
+  <UML2:Parameter operation="#/70" name="servId" type="#/132"/>
+  <UML2:Class ownedElement="#/140 #/51 #/2 #/99" name="ProgramPartner"/>
+  <UML2:Property owner="#/75" name="ref_RandL_LoyaltyAccount" type="#/72"/>
+  <UML2:Property owner="#/106" name="partnerName" type="#/71"/>
+  <UML2:Property owner="#/130" name="title" type="#/71"/>
+  <UML2:Operation class_="#/141" name="calcPoints" type="#/132"/>
+  <UML2:Property owner="#/106" name="date" type="#/144"/>
+  <UML2:Class ownedElement="#/107 #/128 #/139 #/154" name="ServiceLevel"/>
+  <UML2:Property owner="#/131" name="account" type="#/72" association="#/113"/>
+  <UML2:Operation class_="#/72" name="burn">
+    <ownedParameter href="#/156"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/72" name="usedServices" type="#/141"/>
+  <UML2:Property owner="#/144" name="year" type="#/132"/>
+  <UML2:Property owner="#/15" name="goodThru" type="#/144"/>
+  <UML2:Property owner="#/98" name="partners" type="#/19" association="#/13"/>
+  <UML2:Property owner="#/106" name="transaction" type="#/56"/>
+  <UML2:Operation class_="#/56" name="program" type="#/98"/>
+  <UML2:Property owner="#/3" name="balance" type="#/132"/>
+  <UML2:Parameter operation="#/17" name="d" type="#/144"/>
+  <UML2:Property owner="#/144" name="month" type="#/132"/>
+  <UML2:Parameter operation="#/44" name="t" type="#/144"/>
+  <UML2:Property owner="#/3" name="number" type="#/132"/>
+  <UML2:Property owner="#/141" name="description" type="#/71"/>
+  <UML2:Property owner="#/15" name="owner" type="#/130" association="#/155"/>
+  <UML2:Property owner="#/56" name="card" type="#/15" association="#/0"/>
+  <UML2:Parameter operation="#/11" name="i" type="#/132"/>
+  <UML2:Operation class_="#/141" name="upgradePointsEarned">
+    <ownedParameter href="#/88"/>
+  </UML2:Operation>
+  <UML2:Operation class_="#/144" name="isEqual" type="#/146">
+    <ownedParameter href="#/37"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/131" name="participants" type="#/130"/>
+  <UML2:Property owner="#/75" name="ref_RandL_ServiceLevel" type="#/25"/>
+  <UML2:Parameter operation="#/52" name="from" type="#/144"/>
+  <UML2:Operation class_="#/72" name="isEmpty" type="#/146"/>
+  <UML2:Property owner="#/56" name="account" type="#/72" association="#/108"/>
+  <UML2:Operation class_="#/98" name="enroll">
+    <ownedParameter href="#/117"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/19" name="numberOfCustomers" type="#/132"/>
+  <UML2:Operation class_="#/15" name="getTransactions" type="#/56">
+    <ownedParameter href="#/143"/>
+    <ownedParameter href="#/47"/>
+  </UML2:Operation>
+  <UML2:Association owner="#/166" name="levelsprogram" memberEnd="#/14 #/128"/>
+  <UML2:Property owner="#/130" name="dateOfBirth" type="#/144"/>
+  <UML2:Property owner="#/141" name="condition" type="#/146"/>
+  <UML2:Class ownedElement="#/151 #/121 #/164 #/49 #/74 #/41" name="Transaction" isAbstract="true">
+    <ownedOperation href="#/33"/>
+  </UML2:Class>
+  <UML2:Property owner="#/3" name="totalBurned" type="#/132"/>
+  <UML2:Enumeration name="RandLColor">
+    <ownedLiteral name="silver"/>
+    <ownedLiteral name="gold"/>
+  </UML2:Enumeration>
+  <UML2:Property owner="#/144" name="day" type="#/132"/>
+  <UML2:Property owner="#/141" name="pointsEarned" type="#/132"/>
+  <UML2:Property owner="#/72" name="points" type="#/132"/>
+  <UML2:Parameter operation="#/123" name="m" type="#/132"/>
+  <UML2:Property owner="#/15" name="printedName" type="#/71"/>
+  <UML2:Parameter operation="#/123" name="k" type="#/132"/>
+  <UML2:Property owner="#/141" name="pointsBurned" type="#/132"/>
+  <UML2:Property owner="#/3" name="totalEarned" type="#/132"/>
+  <UML2:Property owner="#/75" name="ref_RandL_TransactionReportLine" type="#/106"/>
+  <UML2:Operation class_="#/98" name="getServices" type="#/141">
+    <ownedParameter href="#/160"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/141" name="partner" type="#/19" association="#/126"/>
+  <UML2:Operation class_="#/98" name="addTransaction">
+    <ownedParameter href="#/9"/>
+    <ownedParameter href="#/18"/>
+    <ownedParameter href="#/84"/>
+    <ownedParameter href="#/79"/>
+    <ownedParameter href="#/152"/>
+  </UML2:Operation>
+  <UML2:PrimitiveType name="EString" package="#/166"/>
+  <UML2:Class ownedElement="#/61 #/86 #/10 #/28 #/85 #/149" name="LoyaltyAccount">
+    <ownedOperation href="#/11"/>
+    <ownedOperation href="#/27"/>
+    <ownedOperation href="#/119"/>
+    <ownedOperation href="#/48"/>
+  </UML2:Class>
+  <UML2:Class name="Burning" superClass="#/56"/>
+  <UML2:Property owner="#/56" name="generatedBy" type="#/141" association="#/94"/>
+  <UML2:Class ownedElement="#/112 #/101 #/91 #/78 #/133 #/167 #/95 #/20 #/46 #/105 #/120 #/148 #/67"
+      name="Container_RandL"/>
+  <UML2:Property owner="#/106" name="serviceDesc" type="#/71"/>
+  <UML2:Class name="Earning" superClass="#/56"/>
+  <UML2:Property owner="#/75" name="ref_RandL_Membership" type="#/131"/>
+  <UML2:Parameter operation="#/70" name="amnt" type="#/136"/>
+  <UML2:Property owner="#/15" name="Membership" type="#/131" association="#/6"/>
+  <UML2:Operation class_="#/144" name="isAfter" type="#/146">
+    <ownedParameter href="#/159"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/15" name="transactions" type="#/56" association="#/0"/>
+  <UML2:Property owner="#/130" name="cards" type="#/15" association="#/155"/>
+  <UML2:Parameter operation="#/70" name="pName" type="#/71"/>
+  <UML2:Property owner="#/72" name="Membership" type="#/131" association="#/113"/>
+  <UML2:Property owner="#/72" name="totalPointsEarned" type="#/132"/>
+  <UML2:Property owner="#/131" name="programs" type="#/98"/>
+  <UML2:Parameter operation="#/43" name="amount" type="#/132"/>
+  <UML2:Operation class_="#/98" name="addService">
+    <ownedParameter href="#/153"/>
+    <ownedParameter href="#/124"/>
+    <ownedParameter href="#/103"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/15" name="myLevel" type="#/25"/>
+  <UML2:Property owner="#/75" name="ref_RandL_CustomerCard" type="#/15"/>
+  <UML2:Operation class_="#/98" name="getServices" type="#/141"/>
+  <UML2:Property owner="#/106" name="amount" type="#/136"/>
+  <UML2:Association owner="#/166" name="generatedBytransactions" memberEnd="#/74 #/116"/>
+  <UML2:Property owner="#/75" name="ref_RandL_Earning" type="#/77"/>
+  <UML2:Enumeration name="Gender">
+    <ownedLiteral name="male"/>
+    <ownedLiteral name="female"/>
+  </UML2:Enumeration>
+  <UML2:Parameter operation="#/123" name="y" type="#/132"/>
+  <UML2:Class ownedElement="#/114 #/31 #/14 #/5 #/125" name="LoyaltyProgram">
+    <ownedOperation href="#/150"/>
+    <ownedOperation href="#/89"/>
+    <ownedOperation href="#/68"/>
+    <ownedOperation href="#/17"/>
+    <ownedOperation href="#/50"/>
+    <ownedOperation href="#/70"/>
+    <ownedOperation href="#/92"/>
+  </UML2:Class>
+  <UML2:Property owner="#/19" name="programs" type="#/98" association="#/13"/>
+  <UML2:Property owner="#/130" name="gender" type="#/96"/>
+  <UML2:Property owner="#/75" name="ref_RandL_Date" type="#/144"/>
+  <UML2:Association owner="#/166" name="MembershipcurrentLevel" memberEnd="#/154 #/16"/>
+  <UML2:Parameter operation="#/89" name="p" type="#/19"/>
+  <UML2:Property owner="#/3" name="card" type="#/15"/>
+  <UML2:Property owner="#/75" name="ref_RandL_TransactionReport" type="#/3"/>
+  <UML2:Class ownedElement="#/21 #/76 #/147 #/93 #/24 #/32 #/158" name="TransactionReportLine"/>
+  <UML2:Property owner="#/25" name="name" type="#/71"/>
+  <UML2:Association owner="#/166" name="accounttransactions" memberEnd="#/49 #/149"/>
+  <UML2:Association owner="#/166" name="linesreport" memberEnd="#/111 #/158"/>
+  <UML2:Operation class_="#/144" name="isBefore" type="#/146">
+    <ownedParameter href="#/118"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/3" name="lines" type="#/106" association="#/109"/>
+  <UML2:Property owner="#/75" name="ref_RandL_Customer" type="#/130"/>
+  <UML2:Association owner="#/166" name="Membershipaccount" memberEnd="#/85 #/26"/>
+  <UML2:Property owner="#/98" name="name" type="#/71"/>
+  <UML2:Property owner="#/3" name="from" type="#/144"/>
+  <UML2:Property owner="#/141" name="transactions" type="#/56" association="#/94"/>
+  <UML2:Parameter operation="#/50" name="c" type="#/130"/>
+  <UML2:Parameter operation="#/110" name="t" type="#/144"/>
+  <UML2:Operation class_="#/72" name="getCustomerName" type="#/71"/>
+  <UML2:Property owner="#/75" name="ref_RandL_ProgramPartner" type="#/19"/>
+  <UML2:Property owner="#/56" name="points" type="#/132"/>
+  <UML2:Property owner="#/15" name="color" type="#/58"/>
+  <UML2:Operation class_="#/144" name="fromYMD" type="#/144">
+    <ownedParameter href="#/62"/>
+    <ownedParameter href="#/64"/>
+    <ownedParameter href="#/97"/>
+  </UML2:Operation>
+  <UML2:Parameter operation="#/89" name="l" type="#/25"/>
+  <UML2:Property owner="#/98" name="memberships" type="#/131"/>
+  <UML2:Association owner="#/166" name="partnerdeliveredServices" memberEnd="#/69 #/2"/>
+  <UML2:Property owner="#/141" name="serviceNr" type="#/132"/>
+  <UML2:Property owner="#/25" name="program" type="#/98" association="#/53"/>
+  <UML2:Operation class_="#/130" name="age" type="#/132"/>
+  <UML2:Class ownedElement="#/100 #/138 #/8 #/22 #/162 #/54 #/165 #/83 #/137" name="Customer">
+    <ownedOperation href="#/4"/>
+    <ownedOperation href="#/129"/>
+  </UML2:Class>
+  <UML2:Class ownedElement="#/16 #/157 #/26 #/87 #/45" name="Membership"/>
+  <UML2:PrimitiveType name="EInt" package="#/166"/>
+  <UML2:Property owner="#/75" name="ref_RandL_Service" type="#/141"/>
+  <UML2:Parameter operation="#/17" name="n" type="#/71"/>
+  <UML2:Association owner="#/166" name="participantsprograms" memberEnd="#/5 #/165"/>
+  <UML2:PrimitiveType name="EDouble" package="#/166"/>
+  <UML2:Property owner="#/130" name="memberships" type="#/131"/>
+  <UML2:Property owner="#/130" name="isMale" type="#/146"/>
+  <UML2:Property owner="#/25" name="availableServices" type="#/141" association="#/145"/>
+  <UML2:Property owner="#/19" name="name" type="#/71"/>
+  <UML2:Class ownedElement="#/127 #/39 #/60 #/55 #/65 #/69 #/116 #/163" name="Service">
+    <ownedOperation href="#/23"/>
+    <ownedOperation href="#/43"/>
+  </UML2:Class>
+  <UML2:Property owner="#/15" name="valid" type="#/146"/>
+  <UML2:Parameter operation="#/52" name="until" type="#/144"/>
+  <UML2:Class ownedElement="#/29 #/36 #/59" name="Date">
+    <ownedOperation href="#/110"/>
+    <ownedOperation href="#/44"/>
+    <ownedOperation href="#/123"/>
+    <ownedOperation href="#/81"/>
+  </UML2:Class>
+  <UML2:Association owner="#/166" name="levelavailableServices" memberEnd="#/163 #/139"/>
+  <UML2:PrimitiveType name="EBoolean" package="#/166"/>
+  <UML2:Property owner="#/106" name="points" type="#/132"/>
+  <UML2:Property owner="#/75" name="ref_RandL_Burning" type="#/73"/>
+  <UML2:Property owner="#/72" name="transactions" type="#/56" association="#/108"/>
+  <UML2:Operation class_="#/98" name="selectPopularPartners" type="#/19">
+    <ownedParameter href="#/1"/>
+  </UML2:Operation>
+  <UML2:Property owner="#/56" name="amount" type="#/136"/>
+  <UML2:Parameter operation="#/70" name="accNr" type="#/132"/>
+  <UML2:Parameter operation="#/89" name="s" type="#/141"/>
+  <UML2:Property owner="#/25" name="Membership" type="#/131" association="#/102"/>
+  <UML2:Association owner="#/166" name="cardsowner" memberEnd="#/83 #/40"/>
+  <UML2:Parameter operation="#/27" name="i" type="#/132"/>
+  <UML2:Property owner="#/131" name="card" type="#/15" association="#/6"/>
+  <UML2:Property owner="#/106" name="report" type="#/3" association="#/109"/>
+  <UML2:Parameter operation="#/81" name="t" type="#/144"/>
+  <UML2:Parameter operation="#/68" name="pp" type="#/19"/>
+  <UML2:Property owner="#/3" name="name" type="#/71"/>
+  <UML2:Property owner="#/130" name="age" type="#/132"/>
+  <UML2:Property owner="#/141" name="level" type="#/25" association="#/145"/>
+  <UML2:Property owner="#/56" name="date" type="#/144"/>
+  <UML2:Property owner="#/130" name="programs" type="#/98" association="#/135"/>
+  <UML2:Package ownedElement="#/6 #/94 #/145 #/108 #/0 #/109 #/135 #/113 #/155 #/53 #/102 #/13 #/126"
+      name="RoyalAndLoyal" member="#/58 #/96 #/25 #/56 #/72 #/77 #/19 #/73 #/3 #/15 #/144 #/131 #/75 #/141 #/130 #/106 #/98"
+      ownedType="#/71 #/132 #/146 #/136"/>
+  <UML2:Property owner="#/75" name="ref_RandL_LoyaltyProgram" type="#/98"/>
+</xmi:XMI>
