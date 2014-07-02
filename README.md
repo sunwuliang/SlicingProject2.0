@@ -11,7 +11,7 @@ Below is a descrition of a list of folders/files in the ClassModelSlicing projec
 4. slices folder includes a list of slicing results including sliced class models, object configurations, and invariants; 
 5. src folder includes the Java source files for the slicing project. 
 
-The src.org.csu.slicing package has three sub-packages: evaluation, instance, main, test and util. 
+The src.org.csu.slicing package has five sub-packages: evaluation, instance, main, test and util. 
 The entry pint of the project is in the main package, specifically the OCSlicer class. 
 In the main package, the Footprinter class is used to slice a .ecore class model, 
 the OCSlicer class is used to sliced a .xmi object configurations.
