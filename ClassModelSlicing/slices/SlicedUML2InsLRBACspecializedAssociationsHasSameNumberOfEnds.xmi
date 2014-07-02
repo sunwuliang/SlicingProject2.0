@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2="http:///UML2.ecore" xsi:schemaLocation="http:///UML2.ecore SlicedUML2InsLRBACspecializedAssociationsHasSameNumberOfEnds.ecore">
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:PrimitiveType/>
+  <UML2:Class/>
+  <UML2:Association memberEnd="#/6 #/5"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/36 #/50"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/41 #/1"/>
+  <UML2:Association memberEnd="#/8 #/18"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/0 #/48"/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/55 #/29"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:PrimitiveType/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/46 #/13"/>
+  <UML2:Association memberEnd="#/38 #/32"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/21 #/57"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property/>
+  <UML2:Association memberEnd="#/53 #/34"/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Association memberEnd="#/22 #/12"/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:PrimitiveType/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Property/>
+  <UML2:Class/>
+  <UML2:Class/>
+</xmi:XMI>

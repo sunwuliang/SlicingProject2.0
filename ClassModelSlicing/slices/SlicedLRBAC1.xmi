@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:BlankModel="http:///BlankModel.ecore" xsi:schemaLocation="http:///BlankModel.ecore SlicedLRBAC.ecore">
+  <BlankModel:Location/>
+  <BlankModel:User AssignedRoles="#/5" UserLoc="#/0" Gender="male" UserID="2107401462"
+      Age="27"/>
+  <BlankModel:Object ObjID="1234"/>
+  <BlankModel:Session SessRole="#/5" MaxRoles="20"/>
+  <BlankModel:Coder/>
+  <BlankModel:Role AssignLoc="#/0"/>
+  <BlankModel:Banker/>
+</xmi:XMI>

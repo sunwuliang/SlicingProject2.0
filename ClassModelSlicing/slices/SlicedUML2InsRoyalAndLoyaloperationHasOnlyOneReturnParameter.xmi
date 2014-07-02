@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2="http:///UML2.ecore" xsi:schemaLocation="http:///UML2.ecore SlicedUML2InsRoyalAndLoyaloperationHasOnlyOneReturnParameter.ecore">
+  <UML2:Operation>
+    <ownedParameter href="#/22"/>
+  </UML2:Operation>
+  <UML2:Operation>
+    <ownedParameter href="#/25"/>
+  </UML2:Operation>
+  <UML2:Parameter/>
+  <UML2:Operation/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation/>
+  <UML2:Operation/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation/>
+  <UML2:Operation>
+    <ownedParameter href="#/12"/>
+  </UML2:Operation>
+  <UML2:Operation>
+    <ownedParameter href="#/36"/>
+  </UML2:Operation>
+  <UML2:Operation>
+    <ownedParameter href="#/4"/>
+    <ownedParameter href="#/30"/>
+    <ownedParameter href="#/9"/>
+  </UML2:Operation>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation>
+    <ownedParameter href="#/18"/>
+    <ownedParameter href="#/19"/>
+  </UML2:Operation>
+  <UML2:Operation>
+    <ownedParameter href="#/5"/>
+    <ownedParameter href="#/8"/>
+    <ownedParameter href="#/29"/>
+  </UML2:Operation>
+  <UML2:Parameter/>
+  <UML2:Operation>
+    <ownedParameter href="#/37"/>
+  </UML2:Operation>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation>
+    <ownedParameter href="#/31"/>
+  </UML2:Operation>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation>
+    <ownedParameter href="#/42"/>
+  </UML2:Operation>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Parameter/>
+  <UML2:Operation>
+    <ownedParameter href="#/27"/>
+    <ownedParameter href="#/32"/>
+  </UML2:Operation>
+  <UML2:Operation>
+    <ownedParameter href="#/35"/>
+  </UML2:Operation>
+  <UML2:Operation>
+    <ownedParameter href="#/28"/>
+    <ownedParameter href="#/24"/>
+    <ownedParameter href="#/2"/>
+    <ownedParameter href="#/10"/>
+    <ownedParameter href="#/13"/>
+  </UML2:Operation>
+  <UML2:Operation/>
+  <UML2:Parameter/>
+  <UML2:Operation>
+    <ownedParameter href="#/33"/>
+  </UML2:Operation>
+  <UML2:Operation/>
+</xmi:XMI>

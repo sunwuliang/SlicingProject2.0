@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2="http:///UML2.ecore" xsi:schemaLocation="http:///UML2.ecore SlicedUML2InsUML2wsfa1.ecore">
+  <UML2:Property type="#/199"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/575"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Property type="#/829"/>
+  <UML2:Class/>
+  <UML2:Property type="#/90"/>
+  <UML2:Property type="#/737"/>
+  <UML2:Property type="#/265"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/793"/>
+  <UML2:Association/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/422"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/66"/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Class/>
+  <UML2:Property type="#/793"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/575"/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/101"/>
+  <UML2:Property type="#/78"/>
+  <UML2:Property type="#/586"/>
+  <UML2:Property type="#/647"/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/560"/>
+  <UML2:Association/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/357"/>
+  <UML2:Association/>
+  <UML2:Property type="#/78"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/496"/>
+  <UML2:Property type="#/792"/>
+  <UML2:Property type="#/803"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/801"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Class/>
+  <UML2:Property type="#/265"/>
+  <UML2:Class/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/602"/>
+  <UML2:Property type="#/134"/>
+  <UML2:Association/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/507"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/211"/>
+  <UML2:Property type="#/7"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/341"/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/335"/>
+  <UML2:Property type="#/699"/>
+  <UML2:Association/>
+  <UML2:Property type="#/801"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/349"/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/744"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/389"/>
+  <UML2:Class/>
+  <UML2:Property type="#/528"/>
+  <UML2:Property type="#/222"/>
+  <UML2:Association/>
+  <UML2:Property type="#/700"/>
+  <UML2:Property type="#/422"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/680"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/596"/>
+  <UML2:Class/>
+  <UML2:Property type="#/604"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Class/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/229"/>
+  <UML2:Class/>
+  <UML2:Property type="#/422"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/804"/>
+  <UML2:Property type="#/172"/>
+  <UML2:Property type="#/106"/>
+  <UML2:Class/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/593"/>
+  <UML2:Property type="#/237"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/514"/>
+  <UML2:Property type="#/527"/>
+  <UML2:Property type="#/699"/>
+  <UML2:Class/>
+  <UML2:Property type="#/7"/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/718"/>
+  <UML2:Class/>
+  <UML2:Property type="#/672"/>
+  <UML2:Property type="#/421"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/410"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/357"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/796"/>
+  <UML2:Property type="#/571"/>
+  <UML2:Property type="#/357"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Property type="#/56"/>
+  <UML2:Property type="#/676"/>
+  <UML2:Property type="#/743"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/97"/>
+  <UML2:Property type="#/474"/>
+  <UML2:Class/>
+  <UML2:Property type="#/528"/>
+  <UML2:Class/>
+  <UML2:Property type="#/64"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/211"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/347"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/441"/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/357"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/519"/>
+  <UML2:Property type="#/519"/>
+  <UML2:Property type="#/663"/>
+  <UML2:Class/>
+  <UML2:Property type="#/394"/>
+  <UML2:Class/>
+  <UML2:Property type="#/97"/>
+  <UML2:Property type="#/410"/>
+  <UML2:Property type="#/586"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/5"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/90"/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/571"/>
+  <UML2:Property type="#/56"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/815"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Class/>
+  <UML2:Property type="#/53"/>
+  <UML2:Property type="#/106"/>
+  <UML2:Class/>
+  <UML2:Property type="#/410"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Property type="#/66"/>
+  <UML2:Class/>
+  <UML2:Property type="#/222"/>
+  <UML2:Property type="#/506"/>
+  <UML2:Class/>
+  <UML2:Property type="#/173"/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/172"/>
+  <UML2:Association/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/580"/>
+  <UML2:Property type="#/357"/>
+  <UML2:Class/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/357"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/357"/>
+  <UML2:Property type="#/64"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/66"/>
+  <UML2:Property type="#/796"/>
+  <UML2:Property type="#/560"/>
+  <UML2:Property type="#/265"/>
+  <UML2:Association/>
+  <UML2:Property type="#/586"/>
+  <UML2:Property type="#/106"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/506"/>
+  <UML2:Class/>
+  <UML2:Property type="#/618"/>
+  <UML2:Class/>
+  <UML2:Property type="#/628"/>
+  <UML2:Property type="#/265"/>
+  <UML2:Property type="#/528"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/347"/>
+  <UML2:Property type="#/265"/>
+  <UML2:Class/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/168"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/106"/>
+  <UML2:Property type="#/341"/>
+  <UML2:Association/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/173"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/409"/>
+  <UML2:Association/>
+  <UML2:Property type="#/422"/>
+  <UML2:Property type="#/96"/>
+  <UML2:Class/>
+  <UML2:Property type="#/518"/>
+  <UML2:Property type="#/12"/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/578"/>
+  <UML2:Property type="#/331"/>
+  <UML2:Property type="#/829"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/97"/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/29"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/265"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Class/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/531"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/78"/>
+  <UML2:Class/>
+  <UML2:Property type="#/757"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/788"/>
+  <UML2:Class/>
+  <UML2:Property type="#/441"/>
+  <UML2:Association/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/518"/>
+  <UML2:Property type="#/397"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/788"/>
+  <UML2:Property type="#/801"/>
+  <UML2:Property type="#/527"/>
+  <UML2:Property type="#/56"/>
+  <UML2:Property type="#/335"/>
+  <UML2:Property type="#/29"/>
+  <UML2:Class/>
+  <UML2:Property type="#/322"/>
+  <UML2:Class/>
+  <UML2:Property type="#/579"/>
+  <UML2:PrimitiveType/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/335"/>
+  <UML2:Property type="#/580"/>
+  <UML2:Property type="#/341"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/519"/>
+  <UML2:Property type="#/796"/>
+  <UML2:Association/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/202"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/809"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/101"/>
+  <UML2:Property type="#/172"/>
+  <UML2:Property type="#/115"/>
+  <UML2:PrimitiveType/>
+  <UML2:Property type="#/692"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/422"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/528"/>
+  <UML2:Property type="#/199"/>
+  <UML2:Class/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/331"/>
+  <UML2:Property type="#/723"/>
+  <UML2:Property type="#/349"/>
+  <UML2:Class/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/575"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/713"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/596"/>
+  <UML2:Association/>
+  <UML2:Property type="#/519"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/578"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/441"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/576"/>
+  <UML2:Property type="#/541"/>
+  <UML2:PrimitiveType/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/115"/>
+  <UML2:Class/>
+  <UML2:Property type="#/64"/>
+  <UML2:Class/>
+  <UML2:Property type="#/496"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/426"/>
+  <UML2:Class/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/815"/>
+  <UML2:Property type="#/53"/>
+  <UML2:Property type="#/446"/>
+  <UML2:Property type="#/479"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Association/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/56"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/211"/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/602"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/84"/>
+  <UML2:Property type="#/347"/>
+  <UML2:Class/>
+  <UML2:Property type="#/29"/>
+  <UML2:Association/>
+  <UML2:Property type="#/35"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Enumeration/>
+  <UML2:Association/>
+  <UML2:Property type="#/793"/>
+  <UML2:Property type="#/397"/>
+  <UML2:Property type="#/56"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/195"/>
+  <UML2:Property type="#/680"/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/575"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/97"/>
+  <UML2:Property type="#/106"/>
+  <UML2:Property type="#/803"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/527"/>
+  <UML2:Property type="#/670"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/7"/>
+  <UML2:Property type="#/541"/>
+  <UML2:Class/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/676"/>
+  <UML2:Property type="#/744"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/541"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/699"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/643"/>
+  <UML2:Property type="#/586"/>
+  <UML2:Property type="#/829"/>
+  <UML2:Property type="#/97"/>
+  <UML2:Property type="#/357"/>
+  <UML2:Property type="#/803"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/335"/>
+  <UML2:Class/>
+  <UML2:Property type="#/596"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/1"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/519"/>
+  <UML2:Property type="#/743"/>
+  <UML2:Class/>
+  <UML2:Property type="#/615"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/785"/>
+  <UML2:Class/>
+  <UML2:Property type="#/64"/>
+  <UML2:Property type="#/265"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/593"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/78"/>
+  <UML2:Property type="#/83"/>
+  <UML2:Property type="#/801"/>
+  <UML2:Property type="#/471"/>
+  <UML2:Class/>
+  <UML2:Property type="#/651"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/670"/>
+  <UML2:Property type="#/349"/>
+  <UML2:Enumeration/>
+  <UML2:Class/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/64"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/90"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/173"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/828"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/115"/>
+  <UML2:Property type="#/57"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Class/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/123"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/404"/>
+  <UML2:Property type="#/87"/>
+  <UML2:Association/>
+  <UML2:Property type="#/347"/>
+  <UML2:Property type="#/331"/>
+  <UML2:Class/>
+  <UML2:Property type="#/322"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/56"/>
+  <UML2:Class/>
+  <UML2:Property type="#/331"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/305"/>
+  <UML2:Association/>
+  <UML2:Property type="#/12"/>
+  <UML2:Class/>
+  <UML2:Property type="#/678"/>
+  <UML2:Association/>
+  <UML2:Property type="#/803"/>
+  <UML2:Property type="#/828"/>
+  <UML2:Class/>
+  <UML2:Property type="#/531"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/519"/>
+  <UML2:Property type="#/496"/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Class/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/658"/>
+  <UML2:Association/>
+  <UML2:Property type="#/154"/>
+  <UML2:Enumeration/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/56"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/809"/>
+  <UML2:Class/>
+  <UML2:Property type="#/343"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Class/>
+  <UML2:Property type="#/596"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/809"/>
+  <UML2:Class/>
+  <UML2:Property type="#/829"/>
+  <UML2:Class/>
+  <UML2:Property type="#/205"/>
+  <UML2:Class/>
+  <UML2:Property type="#/815"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/496"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/64"/>
+  <UML2:Property type="#/575"/>
+  <UML2:Association/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/267"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Association/>
+  <UML2:Property type="#/699"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/441"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/106"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Association/>
+  <UML2:Property type="#/531"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Association/>
+  <UML2:Enumeration/>
+  <UML2:Class/>
+  <UML2:Property type="#/84"/>
+  <UML2:Class/>
+  <UML2:Property type="#/64"/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/531"/>
+  <UML2:Class/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/568"/>
+  <UML2:Property type="#/732"/>
+  <UML2:Property type="#/441"/>
+  <UML2:Association/>
+  <UML2:Property type="#/580"/>
+  <UML2:Association/>
+  <UML2:Property type="#/368"/>
+  <UML2:Class/>
+  <UML2:Property type="#/471"/>
+  <UML2:Class/>
+  <UML2:Property type="#/678"/>
+  <UML2:Property type="#/249"/>
+  <UML2:Class/>
+  <UML2:Property type="#/422"/>
+  <UML2:Class/>
+  <UML2:Property type="#/676"/>
+  <UML2:Property type="#/53"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Property type="#/518"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Association/>
+  <UML2:Property type="#/809"/>
+  <UML2:Property type="#/366"/>
+  <UML2:Class/>
+  <UML2:Property type="#/64"/>
+  <UML2:Property type="#/676"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/364"/>
+  <UML2:Property type="#/580"/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/848"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Class/>
+  <UML2:Property type="#/7"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Association/>
+  <UML2:Class/>
+  <UML2:Property type="#/574"/>
+  <UML2:Property type="#/796"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/410"/>
+  <UML2:Property type="#/35"/>
+  <UML2:Class/>
+  <UML2:Property type="#/331"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/389"/>
+  <UML2:Property type="#/29"/>
+  <UML2:Class/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/528"/>
+  <UML2:Property type="#/416"/>
+  <UML2:Enumeration/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/374"/>
+  <UML2:Enumeration/>
+  <UML2:Property type="#/139"/>
+  <UML2:Property type="#/815"/>
+  <UML2:Class/>
+  <UML2:Property type="#/571"/>
+  <UML2:Class/>
+  <UML2:Property type="#/134"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/106"/>
+  <UML2:Property type="#/118"/>
+  <UML2:Property type="#/64"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/114"/>
+  <UML2:Class/>
+  <UML2:Association/>
+  <UML2:Property type="#/29"/>
+  <UML2:Property type="#/575"/>
+  <UML2:Class/>
+  <UML2:Property type="#/97"/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Association/>
+  <UML2:Property type="#/57"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/366"/>
+  <UML2:Property type="#/394"/>
+  <UML2:Association/>
+  <UML2:Property type="#/123"/>
+  <UML2:Property type="#/441"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Class/>
+  <UML2:Class/>
+  <UML2:Property type="#/815"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/53"/>
+  <UML2:Association/>
+  <UML2:Property type="#/173"/>
+  <UML2:Association/>
+  <UML2:Association/>
+  <UML2:Property type="#/364"/>
+  <UML2:Property type="#/793"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Property type="#/596"/>
+  <UML2:Association/>
+  <UML2:Property type="#/658"/>
+  <UML2:Property type="#/426"/>
+  <UML2:Property type="#/368"/>
+  <UML2:Property type="#/409"/>
+  <UML2:Property type="#/154"/>
+  <UML2:Association/>
+  <UML2:Class/>
+</xmi:XMI>
