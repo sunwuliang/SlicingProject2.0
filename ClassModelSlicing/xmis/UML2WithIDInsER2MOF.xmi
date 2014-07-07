@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UML2WithID="http:///UML2WithID.ecore">
+  <UML2WithID:Parameter operation="#/87" ID="30969271" name="aRelend" type="#/68"/>
+  <UML2WithID:Property owner="#/88" ID="30638546" name="relend" type="#/68" association="#/60"/>
+  <UML2WithID:Property owner="#/134" ID="23447542" name="relSchema" type="#/69" association="#/76"/>
+  <UML2WithID:Association owner="#/54" ID="22514347" name="linkerState" memberEnd="#/6 #/78"/>
+  <UML2WithID:Association owner="#/54" ID="33459432" name="relshiperSchema" memberEnd="#/124 #/75"/>
+  <UML2WithID:Property owner="#/43" ID="19509473" name="erSchema" type="#/48" association="#/136"/>
+  <UML2WithID:Property owner="#/43" ID="2409635" name="link" type="#/22" association="#/3"/>
+  <UML2WithID:Association owner="#/54" ID="24833256" name="entityrelend" memberEnd="#/25 #/113"/>
+  <UML2WithID:Property owner="#/134" ID="24435002" name="entity" type="#/64" association="#/66"/>
+  <UML2WithID:Property owner="#/67" ID="10822310" name="relend" type="#/68" association="#/26"/>
+  <UML2WithID:Operation class_="#/64" ID="18945918" name="key" type="#/134"/>
+  <UML2WithID:Parameter operation="#/13" ID="29919449" name="anAttr" type="#/134"/>
+  <UML2WithID:Property owner="#/59" ID="29594051" name="relSchema" type="#/69" association="#/30"/>
+  <UML2WithID:Operation class_="#/22" ID="1503089" name="applyAttr" type="#/99">
+    <ownedParameter href="#/130"/>
+    <ownedParameter href="#/11"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Property owner="#/111" ID="21868771" name="erState" type="#/43" association="#/97"/>
+  <UML2WithID:Property owner="#/73" ID="17010151" name="value" type="#/85" association="#/29"/>
+  <UML2WithID:Association owner="#/54" ID="22538826" name="attrMapattribute" memberEnd="#/135 #/141"/>
+  <UML2WithID:Association owner="#/54" ID="13948523" name="relDBStatetrans" memberEnd="#/140 #/45"/>
+  <UML2WithID:Association owner="#/54" ID="20570961" name="linkattrMap" memberEnd="#/94 #/84"/>
+  <UML2WithID:Association owner="#/54" ID="13301441" name="relshipattribute" memberEnd="#/104 #/121"/>
+  <UML2WithID:Property owner="#/58" ID="13725633" name="entity" type="#/64" association="#/41"/>
+  <UML2WithID:Property owner="#/88" ID="24257622" name="erState" type="#/43" association="#/34"/>
+  <UML2WithID:Class ownedElement="#/78 #/84 #/92 #/123" ID="18306724" name="ErSem_Link">
+    <ownedOperation href="#/13"/>
+    <ownedOperation href="#/87"/>
+  </UML2WithID:Class>
+  <UML2WithID:Association owner="#/54" ID="5313146" name="relDBStateerState" memberEnd="#/105 #/39"/>
+  <UML2WithID:Operation class_="#/59" ID="9870377" name="applyAttr" type="#/99">
+    <ownedParameter href="#/119"/>
+    <ownedParameter href="#/46"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Property owner="#/68" ID="12468716" name="entity" type="#/64" association="#/7"/>
+  <UML2WithID:Association owner="#/54" ID="33341602" name="relendrelship" memberEnd="#/9 #/122"/>
+  <UML2WithID:Property owner="#/48" ID="671035" name="erState" type="#/43" association="#/136"/>
+  <UML2WithID:Association owner="#/54" ID="28326938" name="linkrelendMap" memberEnd="#/110 #/92"/>
+  <UML2WithID:Association owner="#/54" ID="17708501" name="dataTypevalue" memberEnd="#/61 #/15"/>
+  <UML2WithID:Association owner="#/54" ID="1708953" name="relSchematuple" memberEnd="#/12 #/96"/>
+  <UML2WithID:Property owner="#/43" ID="22367538" name="relendMap" type="#/88" association="#/34"/>
+  <UML2WithID:Operation class_="#/64" ID="27582163" name="osRelend" type="#/134"/>
+  <UML2WithID:Association owner="#/54" ID="32519825" name="tuplerelDBState" memberEnd="#/120 #/82"/>
+  <UML2WithID:Association owner="#/54" ID="25442933" name="erStaterelendMap" memberEnd="#/21 #/31"/>
+  <UML2WithID:Association owner="#/54" ID="18724539" name="relendMapinstance" memberEnd="#/102 #/53"/>
+  <UML2WithID:Property owner="#/64" ID="12829461" name="instance" type="#/58" association="#/41"/>
+  <UML2WithID:Property owner="#/59" ID="1397168" name="attrMap" type="#/111" association="#/40"/>
+  <UML2WithID:Parameter operation="#/87" ID="15855697" name="aState" type="#/43"/>
+  <UML2WithID:Property owner="#/107" ID="14850080" name="erState" type="#/43" association="#/23"/>
+  <UML2WithID:Association owner="#/54" ID="13878877" name="tupleattrMap" memberEnd="#/55 #/37"/>
+  <UML2WithID:Association owner="#/54" ID="17427094" name="instanceentity" memberEnd="#/36 #/20"/>
+  <UML2WithID:Association owner="#/54" ID="30463067" name="relDBSchemarelDBState"
+      memberEnd="#/125 #/93"/>
+  <UML2WithID:Class ownedElement="#/89 #/6 #/31 #/79 #/5 #/126 #/105" ID="12839401"
+      name="ErSem_ErState"/>
+  <UML2WithID:Property owner="#/49" ID="21559496" name="trans" type="#/137" association="#/138"/>
+  <UML2WithID:Property owner="#/107" ID="8495511" name="trans" type="#/137" association="#/17"/>
+  <UML2WithID:Parameter operation="#/24" ID="24478976" name="anAttr" type="#/134"/>
+  <UML2WithID:Association owner="#/54" ID="26117441" name="linkrelship" memberEnd="#/77 #/123"/>
+  <UML2WithID:Class ownedElement="#/63 #/124 #/27 #/70" ID="23103355" name="ErSyn_ErSchema"
+      superClass="#/133"/>
+  <UML2WithID:Class ownedElement="#/62 #/93 #/44" ID="8180602" name="RelSyn_RelDBSchema"
+      superClass="#/133"/>
+  <UML2WithID:Association owner="#/54" ID="29345020" name="dataTypeattribute" memberEnd="#/117 #/132"/>
+  <UML2WithID:Association owner="#/54" ID="25709120" name="instanceerState" memberEnd="#/79 #/90"/>
+  <UML2WithID:Association owner="#/54" ID="539419" name="relDBSchemarelSchema" memberEnd="#/129 #/62"/>
+  <UML2WithID:Property owner="#/88" ID="31375837" name="instance" type="#/58" association="#/35"/>
+  <UML2WithID:Package ownedElement="#/51 #/118 #/138 #/4 #/17 #/86 #/42 #/76 #/116 #/60 #/50 #/35 #/97 #/136 #/41 #/52 #/66 #/16 #/83 #/40 #/34 #/30 #/26 #/19 #/29 #/33 #/47 #/80 #/28 #/18 #/7 #/3 #/23 #/100"
+      ID="21616774" name="ER2MOF" member="#/133 #/85 #/111 #/73 #/134 #/68 #/48 #/67 #/64 #/88 #/58 #/22 #/43 #/49 #/69 #/107 #/59 #/137"
+      ownedType="#/99 #/108 #/98 #/103"/>
+  <UML2WithID:Property owner="#/111" ID="4414010" name="tuple" type="#/59" association="#/40"/>
+  <UML2WithID:Operation class_="#/58" ID="4899350" name="applyAttr" type="#/99">
+    <ownedParameter href="#/65"/>
+    <ownedParameter href="#/101"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Property owner="#/85" ID="27778511" name="content" type="#/99"/>
+  <UML2WithID:Class ownedElement="#/109 #/102 #/20 #/90" ID="11150143" name="ErSem_Instance">
+    <ownedOperation href="#/56"/>
+  </UML2WithID:Class>
+  <UML2WithID:Class ownedElement="#/82 #/37 #/12" ID="9992755" name="RelSem_Tuple">
+    <ownedOperation href="#/24"/>
+  </UML2WithID:Class>
+  <UML2WithID:Association owner="#/54" ID="26977856" name="relendMaprelend" memberEnd="#/127 #/1"/>
+  <UML2WithID:Property owner="#/85" ID="31090332" name="dataType" type="#/73" association="#/29"/>
+  <UML2WithID:Property owner="#/49" ID="25515362" name="relSchema" type="#/69" association="#/52"/>
+  <UML2WithID:Property owner="#/48" ID="27182317" name="entity" type="#/64" association="#/116"/>
+  <UML2WithID:Class ownedElement="#/95 #/114 #/113 #/36" ID="28523022" name="ErSyn_Entity"
+      superClass="#/133">
+    <ownedOperation href="#/32"/>
+    <ownedOperation href="#/10"/>
+  </UML2WithID:Class>
+  <UML2WithID:Parameter operation="#/56" ID="11743647" name="aState" type="#/43"/>
+  <UML2WithID:Association owner="#/54" ID="6326112" name="attributeentity" memberEnd="#/114 #/8"/>
+  <UML2WithID:Class ownedElement="#/75 #/9 #/121 #/77" ID="3874616" name="ErSyn_Relship"
+      superClass="#/133"/>
+  <UML2WithID:Class ownedElement="#/122 #/25 #/127" ID="7912507" name="ErSyn_Relend"
+      superClass="#/133"/>
+  <UML2WithID:Class ownedElement="#/106 #/129 #/96" ID="9578500" name="RelSyn_RelSchema"
+      superClass="#/133">
+    <ownedOperation href="#/112"/>
+  </UML2WithID:Class>
+  <UML2WithID:Property owner="#/48" ID="28991606" name="trans" type="#/137" association="#/118"/>
+  <UML2WithID:Property owner="#/111" ID="8702985" name="instance" type="#/58" association="#/100"/>
+  <UML2WithID:Property owner="#/137" ID="10630672" name="erState" type="#/43" association="#/83"/>
+  <UML2WithID:Class ownedElement="#/132 #/15" ID="7858936" name="Base_DataType" superClass="#/133"/>
+  <UML2WithID:Property owner="#/137" ID="32853087" name="relDBSchema" type="#/49"
+      association="#/138"/>
+  <UML2WithID:Property owner="#/67" ID="16617866" name="erSchema" type="#/48" association="#/4"/>
+  <UML2WithID:Association owner="#/54" ID="19255406" name="attributerelSchema" memberEnd="#/106 #/2"/>
+  <UML2WithID:Property owner="#/67" ID="21010507" name="link" type="#/22" association="#/47"/>
+  <UML2WithID:Property owner="#/22" ID="21101238" name="erState" type="#/43" association="#/3"/>
+  <UML2WithID:Property owner="#/43" ID="1352077" name="instance" type="#/58" association="#/51"/>
+  <UML2WithID:Association owner="#/54" ID="30311876" name="attrMaprelDBState" memberEnd="#/142 #/128"/>
+  <UML2WithID:Property owner="#/85" ID="25109548" name="attrMap" type="#/111" association="#/86"/>
+  <UML2WithID:Property owner="#/59" ID="18403721" name="relDBState" type="#/107" association="#/33"/>
+  <UML2WithID:Association owner="#/54" ID="14069849" name="transerState" memberEnd="#/126 #/72"/>
+  <UML2WithID:Property owner="#/22" ID="4508606" name="attrMap" type="#/111" association="#/18"/>
+  <UML2WithID:Class ownedElement="#/57 #/61 #/81" ID="3860801" name="Base_Value"/>
+  <UML2WithID:Association owner="#/54" ID="21565531" name="attrMapvalue" memberEnd="#/81 #/131"/>
+  <UML2WithID:Operation class_="#/22" ID="9472129" name="applyRelend" type="#/58">
+    <ownedParameter href="#/38"/>
+    <ownedParameter href="#/0"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Class ownedElement="#/1 #/110 #/21 #/53" ID="24745276" name="ErSem_RelendMap"/>
+  <UML2WithID:Property owner="#/43" ID="20039836" name="attrMap" type="#/111" association="#/97"/>
+  <UML2WithID:Property owner="#/58" ID="31384576" name="erState" type="#/43" association="#/51"/>
+  <UML2WithID:Property owner="#/137" ID="15831407" name="erSchema" type="#/48" association="#/118"/>
+  <UML2WithID:Property owner="#/22" ID="30008954" name="relendMap" type="#/88" association="#/28"/>
+  <UML2WithID:Property owner="#/49" ID="30685694" name="relDBState" type="#/107" association="#/42"/>
+  <UML2WithID:Property owner="#/111" ID="6775863" name="link" type="#/22" association="#/18"/>
+  <UML2WithID:Property owner="#/64" ID="19673895" name="erSchema" type="#/48" association="#/116"/>
+  <UML2WithID:Property owner="#/69" ID="13640204" name="tuple" type="#/59" association="#/30"/>
+  <UML2WithID:Association owner="#/54" ID="29876954" name="erStateattrMap" memberEnd="#/14 #/89"/>
+  <UML2WithID:PrimitiveType ID="25229676" name="EBoolean" package="#/54"/>
+  <UML2WithID:PrimitiveType ID="7318012" name="EString" package="#/54"/>
+  <UML2WithID:Association owner="#/54" ID="9708927" name="attrMapinstance" memberEnd="#/109 #/71"/>
+  <UML2WithID:Parameter operation="#/56" ID="8310136" name="anAttr" type="#/134"/>
+  <UML2WithID:Property owner="#/58" ID="18414151" name="relendMap" type="#/88" association="#/35"/>
+  <UML2WithID:PrimitiveType ID="7812797" name="EDouble" package="#/54"/>
+  <UML2WithID:Property owner="#/134" ID="27271771" name="relship" type="#/67" association="#/19"/>
+  <UML2WithID:Property owner="#/43" ID="29683960" name="relDBState" type="#/107" association="#/23"/>
+  <UML2WithID:Property owner="#/69" ID="25068634" name="attribute" type="#/134" association="#/76"/>
+  <UML2WithID:Class ownedElement="#/120 #/142 #/125 #/45 #/39" ID="17975110" name="RelSem_RelDBState"/>
+  <UML2WithID:PrimitiveType ID="16837612" name="EInt" package="#/54"/>
+  <UML2WithID:Property owner="#/58" ID="4558657" name="attrMap" type="#/111" association="#/100"/>
+  <UML2WithID:Property owner="#/88" ID="9649099" name="link" type="#/22" association="#/28"/>
+  <UML2WithID:Class ownedElement="#/141 #/131 #/71 #/14 #/94 #/128 #/55" ID="1243630"
+      name="Base_AttrMap"/>
+  <UML2WithID:Operation class_="#/69" ID="7031149" name="key" type="#/134"/>
+  <UML2WithID:Property owner="#/64" ID="1673653" name="relend" type="#/68" association="#/7"/>
+  <UML2WithID:Property owner="#/64" ID="17777129" name="attribute" type="#/134" association="#/66"/>
+  <UML2WithID:Property owner="#/134" ID="15453627" name="isKey" type="#/98"/>
+  <UML2WithID:Association owner="#/54" ID="26670261" name="entityerSchema" memberEnd="#/63 #/95"/>
+  <UML2WithID:Property owner="#/134" ID="32380043" name="dataType" type="#/73" association="#/50"/>
+  <UML2WithID:Association owner="#/54" ID="12774933" name="transerSchema" memberEnd="#/70 #/91"/>
+  <UML2WithID:Parameter operation="#/24" ID="31882858" name="aState" type="#/107"/>
+  <UML2WithID:Property owner="#/107" ID="3682584" name="tuple" type="#/59" association="#/33"/>
+  <UML2WithID:Property owner="#/67" ID="7896086" name="attribute" type="#/134" association="#/19"/>
+  <UML2WithID:Property owner="#/68" ID="24778599" name="relship" type="#/67" association="#/26"/>
+  <UML2WithID:Property owner="#/22" ID="4973260" name="relship" type="#/67" association="#/47"/>
+  <UML2WithID:Property owner="#/48" ID="31571602" name="relship" type="#/67" association="#/4"/>
+  <UML2WithID:Property owner="#/107" ID="2955420" name="relDBSchema" type="#/49" association="#/42"/>
+  <UML2WithID:Property owner="#/43" ID="534353" name="trans" type="#/137" association="#/83"/>
+  <UML2WithID:Property owner="#/68" ID="29103856" name="relendMap" type="#/88" association="#/60"/>
+  <UML2WithID:Property owner="#/111" ID="2830910" name="relDBState" type="#/107" association="#/80"/>
+  <UML2WithID:Property owner="#/69" ID="28970806" name="relDBSchema" type="#/49" association="#/52"/>
+  <UML2WithID:Parameter operation="#/13" ID="29493424" name="aState" type="#/43"/>
+  <UML2WithID:Property owner="#/111" ID="8344960" name="value" type="#/85" association="#/86"/>
+  <UML2WithID:Property owner="#/73" ID="10127976" name="attribute" type="#/134" association="#/50"/>
+  <UML2WithID:Class ownedElement="#/139" ID="13059051" name="Base_Named" isAbstract="true"/>
+  <UML2WithID:Class ownedElement="#/115 #/117 #/135 #/8 #/104 #/2" ID="25421790" name="Base_Attribute"
+      superClass="#/133"/>
+  <UML2WithID:Property owner="#/134" ID="15354046" name="attrMap" type="#/111" association="#/16"/>
+  <UML2WithID:Association owner="#/54" ID="33445663" name="erSchemaerState" memberEnd="#/5 #/27"/>
+  <UML2WithID:Class ownedElement="#/91 #/74 #/72 #/140" ID="31952022" name="Er2Rel_Trans"/>
+  <UML2WithID:Association owner="#/54" ID="27055962" name="transrelDBSchema" memberEnd="#/44 #/74"/>
+  <UML2WithID:Property owner="#/133" ID="2550265" name="name" type="#/99"/>
+  <UML2WithID:Property owner="#/137" ID="30708295" name="relDBState" type="#/107"
+      association="#/17"/>
+  <UML2WithID:Property owner="#/111" ID="17235092" name="attribute" type="#/134" association="#/16"/>
+  <UML2WithID:Property owner="#/107" ID="23971937" name="attrMap" type="#/111" association="#/80"/>
+</xmi:XMI>
