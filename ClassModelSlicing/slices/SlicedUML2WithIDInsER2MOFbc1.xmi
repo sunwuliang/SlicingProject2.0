@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2WithID="http:///UML2WithID.ecore" xsi:schemaLocation="http:///UML2WithID.ecore SlicedUML2WithIDInsER2MOFbc1.ecore">
+  <UML2WithID:Class ID="13059051"/>
+  <UML2WithID:Class ID="12839401"/>
+  <UML2WithID:Class ID="28523022"/>
+  <UML2WithID:Class ID="8180602"/>
+  <UML2WithID:Operation ID="1503089"/>
+  <UML2WithID:Class ID="1243630"/>
+  <UML2WithID:Class ID="11150143"/>
+  <UML2WithID:Operation ID="9870377"/>
+  <UML2WithID:Class ID="24745276"/>
+  <UML2WithID:Class ID="7912507"/>
+  <UML2WithID:Operation ID="4899350"/>
+  <UML2WithID:Operation ID="18945918"/>
+  <UML2WithID:Class ID="9578500"/>
+  <UML2WithID:Class ID="3874616"/>
+  <UML2WithID:Class ID="23103355"/>
+  <UML2WithID:Class ID="9992755"/>
+  <UML2WithID:Class ID="3860801"/>
+  <UML2WithID:Operation ID="7031149"/>
+  <UML2WithID:Class ID="7858936"/>
+  <UML2WithID:Class ID="18306724"/>
+  <UML2WithID:Class ID="31952022"/>
+  <UML2WithID:Class ID="17975110"/>
+  <UML2WithID:Class ID="25421790"/>
+  <UML2WithID:Operation ID="27582163"/>
+  <UML2WithID:Operation ID="9472129"/>
+</xmi:XMI>

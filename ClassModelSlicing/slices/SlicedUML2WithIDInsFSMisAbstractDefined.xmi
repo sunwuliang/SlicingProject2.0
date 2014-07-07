@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2WithID="http:///UML2WithID.ecore" xsi:schemaLocation="http:///UML2WithID.ecore SlicedUML2WithIDInsFSMisAbstractDefined.ecore">
+  <UML2WithID:Association ID="30752603"/>
+  <UML2WithID:PrimitiveType ID="3022623"/>
+  <UML2WithID:Association ID="10038190"/>
+  <UML2WithID:Association ID="179514"/>
+  <UML2WithID:Class ID="25610032"/>
+  <UML2WithID:Class ID="1345122"/>
+  <UML2WithID:Association ID="31983818"/>
+  <UML2WithID:Class ID="28036099"/>
+  <UML2WithID:PrimitiveType ID="33385450"/>
+  <UML2WithID:Association ID="21878616"/>
+  <UML2WithID:Class ID="27263487"/>
+  <UML2WithID:Class ID="11197591"/>
+  <UML2WithID:Class ID="28336193"/>
+  <UML2WithID:PrimitiveType ID="3408129"/>
+  <UML2WithID:Association ID="31753535"/>
+  <UML2WithID:PrimitiveType ID="12053597"/>
+</xmi:XMI>

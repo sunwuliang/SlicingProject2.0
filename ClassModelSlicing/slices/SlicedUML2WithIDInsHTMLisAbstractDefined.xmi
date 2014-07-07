@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2WithID="http:///UML2WithID.ecore" xsi:schemaLocation="http:///UML2WithID.ecore SlicedUML2WithIDInsHTMLisAbstractDefined.ecore">
+  <UML2WithID:Association ID="31248093"/>
+  <UML2WithID:Class ID="8728760"/>
+  <UML2WithID:Class ID="27055962"/>
+  <UML2WithID:Class ID="2737550"/>
+  <UML2WithID:Class ID="3975755"/>
+  <UML2WithID:PrimitiveType ID="9486447"/>
+  <UML2WithID:Class ID="9472129"/>
+  <UML2WithID:Class ID="6775863"/>
+  <UML2WithID:Class ID="19589694"/>
+  <UML2WithID:Class ID="19509473"/>
+  <UML2WithID:Class ID="25442933"/>
+  <UML2WithID:Class ID="15734641"/>
+  <UML2WithID:Class ID="14850080"/>
+  <UML2WithID:Class ID="20526817"/>
+  <UML2WithID:Association ID="26285376"/>
+  <UML2WithID:Class ID="26670261"/>
+  <UML2WithID:Class ID="16617866"/>
+  <UML2WithID:Class ID="12518719" isAbstract="true"/>
+  <UML2WithID:PrimitiveType ID="19297865"/>
+  <UML2WithID:Association ID="27140443"/>
+  <UML2WithID:Class ID="19097823"/>
+  <UML2WithID:Class ID="6206601"/>
+  <UML2WithID:Class ID="21010507"/>
+  <UML2WithID:Class ID="14910620"/>
+  <UML2WithID:PrimitiveType ID="21616774"/>
+  <UML2WithID:Class ID="6586390"/>
+  <UML2WithID:Association ID="10481832"/>
+  <UML2WithID:Class ID="13948523"/>
+  <UML2WithID:Class ID="20039836"/>
+  <UML2WithID:Association ID="7388808"/>
+  <UML2WithID:Class ID="31882858"/>
+  <UML2WithID:Class ID="3874616"/>
+  <UML2WithID:Class ID="4508606"/>
+  <UML2WithID:Class ID="21878616" isAbstract="true"/>
+  <UML2WithID:Class ID="28523022"/>
+  <UML2WithID:Class ID="10625551"/>
+  <UML2WithID:Class ID="12590745"/>
+  <UML2WithID:Class ID="25567987"/>
+  <UML2WithID:Class ID="30463067"/>
+  <UML2WithID:Class ID="10822310"/>
+  <UML2WithID:Class ID="32853087"/>
+  <UML2WithID:Class ID="30311876"/>
+  <UML2WithID:Class ID="11557581"/>
+  <UML2WithID:Class ID="8344960"/>
+  <UML2WithID:Class ID="25337455"/>
+  <UML2WithID:Association ID="672904"/>
+  <UML2WithID:Class ID="9624795"/>
+  <UML2WithID:Association ID="1668655"/>
+  <UML2WithID:Class ID="25515362"/>
+  <UML2WithID:Class ID="24257622"/>
+  <UML2WithID:Class ID="1503089"/>
+  <UML2WithID:Class ID="31375837"/>
+  <UML2WithID:Class ID="3808966"/>
+  <UML2WithID:Class ID="6326112"/>
+  <UML2WithID:Class ID="14111765"/>
+  <UML2WithID:Class ID="3115866"/>
+  <UML2WithID:Class ID="13599389"/>
+  <UML2WithID:Class ID="1243630" isAbstract="true"/>
+  <UML2WithID:Class ID="17975110"/>
+  <UML2WithID:Class ID="27778511"/>
+  <UML2WithID:Class ID="25921812"/>
+  <UML2WithID:Class ID="7896086"/>
+  <UML2WithID:Class ID="22450101"/>
+  <UML2WithID:Class ID="10038190"/>
+  <UML2WithID:PrimitiveType ID="2091149"/>
+  <UML2WithID:Class ID="14298351"/>
+  <UML2WithID:Class ID="27682895"/>
+  <UML2WithID:Class ID="9296972"/>
+  <UML2WithID:Class ID="30969271" isAbstract="true"/>
+  <UML2WithID:Class ID="9867226"/>
+</xmi:XMI>

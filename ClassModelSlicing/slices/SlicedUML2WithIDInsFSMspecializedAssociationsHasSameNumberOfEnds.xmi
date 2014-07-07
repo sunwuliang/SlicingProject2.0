@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2WithID="http:///UML2WithID.ecore" xsi:schemaLocation="http:///UML2WithID.ecore SlicedUML2WithIDInsFSMspecializedAssociationsHasSameNumberOfEnds.ecore">
+  <UML2WithID:PrimitiveType ID="3022623"/>
+  <UML2WithID:Association ID="179514" memberEnd="#/13 #/28"/>
+  <UML2WithID:Association ID="31983818" memberEnd="#/30 #/9"/>
+  <UML2WithID:Property ID="3860801"/>
+  <UML2WithID:Association ID="31753535" memberEnd="#/20 #/29"/>
+  <UML2WithID:Property ID="7318012"/>
+  <UML2WithID:Association ID="21878616" memberEnd="#/5 #/10"/>
+  <UML2WithID:Class ID="11197591"/>
+  <UML2WithID:Property ID="14463035"/>
+  <UML2WithID:Property ID="25229676"/>
+  <UML2WithID:Property ID="30633470"/>
+  <UML2WithID:Property ID="2086370"/>
+  <UML2WithID:PrimitiveType ID="3408129"/>
+  <UML2WithID:Property ID="2550265"/>
+  <UML2WithID:Class ID="27263487"/>
+  <UML2WithID:PrimitiveType ID="12053597"/>
+  <UML2WithID:Property ID="26750913"/>
+  <UML2WithID:Association ID="10038190" memberEnd="#/21 #/3"/>
+  <UML2WithID:Class ID="1345122"/>
+  <UML2WithID:Class ID="25610032"/>
+  <UML2WithID:Property ID="7314318"/>
+  <UML2WithID:Property ID="20914447"/>
+  <UML2WithID:Property ID="25109548"/>
+  <UML2WithID:Class ID="28036099"/>
+  <UML2WithID:PrimitiveType ID="33385450"/>
+  <UML2WithID:Property ID="8728760"/>
+  <UML2WithID:Class ID="28336193"/>
+  <UML2WithID:Property ID="11930515"/>
+  <UML2WithID:Property ID="30844270"/>
+  <UML2WithID:Property ID="13059051"/>
+  <UML2WithID:Property ID="29775659"/>
+  <UML2WithID:Association ID="30752603" memberEnd="#/16 #/25"/>
+</xmi:XMI>

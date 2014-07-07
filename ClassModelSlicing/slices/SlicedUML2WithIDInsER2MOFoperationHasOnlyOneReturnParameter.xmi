@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2WithID="http:///UML2WithID.ecore" xsi:schemaLocation="http:///UML2WithID.ecore SlicedUML2WithIDInsER2MOFoperationHasOnlyOneReturnParameter.ecore">
+  <UML2WithID:Parameter ID="15855697"/>
+  <UML2WithID:Operation ID="7031149"/>
+  <UML2WithID:Parameter ID="31882858"/>
+  <UML2WithID:Parameter ID="8310136"/>
+  <UML2WithID:Parameter ID="30969271"/>
+  <UML2WithID:Parameter ID="29919449"/>
+  <UML2WithID:Parameter ID="11743647"/>
+  <UML2WithID:Operation ID="9870377">
+    <ownedParameter href="#/2"/>
+    <ownedParameter href="#/12"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="9472129">
+    <ownedParameter href="#/0"/>
+    <ownedParameter href="#/4"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="4899350">
+    <ownedParameter href="#/6"/>
+    <ownedParameter href="#/3"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Parameter ID="29493424"/>
+  <UML2WithID:Operation ID="18945918"/>
+  <UML2WithID:Parameter ID="24478976"/>
+  <UML2WithID:Operation ID="1503089">
+    <ownedParameter href="#/10"/>
+    <ownedParameter href="#/5"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="27582163"/>
+</xmi:XMI>

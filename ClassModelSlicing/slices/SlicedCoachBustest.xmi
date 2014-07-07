@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:CoachBus="http:///CoachBus.ecore" xsi:schemaLocation="http:///CoachBus.ecore SlicedCoachBustest.ecore">
+  <CoachBus:Passenger age="12"/>
+  <CoachBus:Passenger age="65"/>
+  <CoachBus:Coach noOfSeats="20"/>
+  <CoachBus:Passenger age="24"/>
+</xmi:XMI>

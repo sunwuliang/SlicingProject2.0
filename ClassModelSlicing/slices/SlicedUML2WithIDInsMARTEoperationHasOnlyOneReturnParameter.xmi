@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:UML2WithID="http:///UML2WithID.ecore" xsi:schemaLocation="http:///UML2WithID.ecore SlicedUML2WithIDInsMARTEoperationHasOnlyOneReturnParameter.ecore">
+  <UML2WithID:Parameter ID="2698418"/>
+  <UML2WithID:Operation ID="16865950">
+    <ownedParameter href="#/2"/>
+    <ownedParameter href="#/22"/>
+    <ownedParameter href="#/21"/>
+    <ownedParameter href="#/0"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Parameter ID="31742556"/>
+  <UML2WithID:Operation ID="9012544"/>
+  <UML2WithID:Operation ID="5823789">
+    <ownedParameter href="#/16"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="20666938">
+    <ownedParameter href="#/11"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="25120699">
+    <ownedParameter href="#/9"/>
+    <ownedParameter href="#/15"/>
+    <ownedParameter href="#/7"/>
+    <ownedParameter href="#/12"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Parameter ID="18372676"/>
+  <UML2WithID:Operation ID="13218198"/>
+  <UML2WithID:Parameter ID="21731956"/>
+  <UML2WithID:Parameter ID="22571162"/>
+  <UML2WithID:Parameter ID="27309374"/>
+  <UML2WithID:Parameter ID="21694491"/>
+  <UML2WithID:Parameter ID="21403224"/>
+  <UML2WithID:Parameter ID="27841632"/>
+  <UML2WithID:Parameter ID="8993129"/>
+  <UML2WithID:Parameter ID="1205211"/>
+  <UML2WithID:Parameter ID="22845412"/>
+  <UML2WithID:Operation ID="20486975">
+    <ownedParameter href="#/10"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="22669032">
+    <ownedParameter href="#/13"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Operation ID="17761829">
+    <ownedParameter href="#/17"/>
+  </UML2WithID:Operation>
+  <UML2WithID:Parameter ID="1214005"/>
+  <UML2WithID:Parameter ID="15229036"/>
+  <UML2WithID:Operation ID="31128398">
+    <ownedParameter href="#/14"/>
+  </UML2WithID:Operation>
+</xmi:XMI>
