@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.security.KeyStore.Entry;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -149,28 +151,13 @@ public class Evaluator {
 	}
 	
 	
-	public List<Object> checkUnslicedInput(String ecoreFilePath, String xmiFilePath, String oclFilePath, Set<String> invNames) {
+	public List<Object> checkInput(String ecoreFilePath, String xmiFilePath, String oclFilePath, Set<String> invNames) {
 		long startTime = System.currentTimeMillis();
 		
 		EPackage ePkg = EMFHelper.loadModel(ecoreFilePath);
 		List<EObject> eObjs = EMFHelper.loadInstance(xmiFilePath, ePkg);			
 		List<Object> res = check(ePkg, eObjs, oclFilePath, invNames);
 		
-		long estimatedTime = System.currentTimeMillis() - startTime;
-		res.add(estimatedTime);
-		return res;
-	}
-	public List<Object> checkSlicedInput(String slicedModelPath, String slicedInstancePath, String slicedOclFilePath, String temp) {
-		long startTime = System.currentTimeMillis();
-		
-		slicedModelPath = slicedModelPath.replace(".ecore", temp  + ".ecore");
-		slicedOclFilePath = slicedOclFilePath.replace(".ocl", temp + ".ocl");
-		slicedInstancePath = slicedInstancePath.replace(".xmi", temp + ".xmi");
-		
-		EPackage ePkg = EMFHelper.loadModel(slicedModelPath);
-		List<EObject> eObjs = EMFHelper.loadInstance(slicedInstancePath, ePkg);
-		List<Object> res = check(ePkg, eObjs, slicedOclFilePath, null);
-				
 		long estimatedTime = System.currentTimeMillis() - startTime;
 		res.add(estimatedTime);
 		return res;
@@ -182,12 +169,12 @@ public class Evaluator {
 		System.out.println("Checking time including loading time: " + res.get(2));
 		Map<String, Map<EObject, Boolean>> result = (Map<String, Map<EObject, Boolean>>) res.get(1);
 		int totalCount = 0, invalidCount = 0;
-		for (String key : result.keySet()) {
-			System.out.println(key);
-			Map<EObject, Boolean> temp = result.get(key);
-			for (EObject eObj : temp.keySet()) {
+		for (String invName : result.keySet()) {
+			System.out.println(invName);
+			Map<EObject, Boolean> resultPerInv = result.get(invName);
+			for (EObject eObj : resultPerInv.keySet()) {
 				totalCount++;
-				if (temp.get(eObj) == false)
+				if (resultPerInv.get(eObj) == false)
 					invalidCount++;
 			}
 		}
@@ -196,37 +183,62 @@ public class Evaluator {
 		System.out.println("---------------------------------------");
 		System.out.println();
 	}
+	
+	public void writeToFile(List<Object> res, String filePath) {
+		Map<String, Map<EObject, Boolean>> result = (Map<String, Map<EObject, Boolean>>) res.get(1);
+		List<String> resList = new ArrayList<String>();
+		for (String invName : result.keySet()) {
+			Map<EObject, Boolean> resultPerInv = result.get(invName);
+			List<EObject> objList = new ArrayList<EObject>(resultPerInv.keySet());
+			Collections.sort(objList, new EObjectComparator());
+			for (EObject eObj : objList) {
+				String resStr = invName + " " + eObj.eGet(eObj.eClass().getEStructuralFeature("ID")) + " " + resultPerInv.get(eObj);
+				resList.add(resStr);
+			}
+		}
+		EMFHelper.saveEvalResults(filePath, resList);
+	}
+	class EObjectComparator implements Comparator<EObject>{
+
+		@Override
+		public int compare(EObject eObj1, EObject eObj2) {
+			
+			Long l1 = Long.valueOf((String)eObj1.eGet(eObj1.eClass().getEStructuralFeature("ID")));
+			Long l2 = Long.valueOf((String)eObj2.eGet(eObj1.eClass().getEStructuralFeature("ID")));
+			return l1.compareTo(l2);
+		}
+		
+	}
 	public static void main(String[] args) {
 		
 		String basePath = "D:\\EclipseWorkspaceForSlicing\\ClassModelSlicing\\";
 		String ecoreFileName = "UML2.ecore";
-		String ecorePath = basePath + "ecores\\";
-		String ecoreFilePath = ecorePath + ecoreFileName;
-		String xmiPath = basePath + "xmis\\";
+		String ecoreFilePath = basePath + "ecores\\" + ecoreFileName;
 		String xmiFileName = "UML2InsDataSet1.xmi";//ecoreFileName.replace(".ecore", ".xmi");
-		String xmiFilePath = xmiPath + xmiFileName;
+		String xmiFilePath = basePath + "xmis\\" + xmiFileName;
 		String oclFileName = ecoreFileName.replace(".ecore", ".ocl");
 		String oclFilePath = basePath + "ocls\\" + oclFileName;
 		
-		String slicedModelPath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", ".ecore");
-		String slicedOclFilePath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", ".ocl");
-		String slicedInstancePath = basePath + "slices\\" + "Sliced" + xmiFileName;
-		
 		Set<String> invNames = new HashSet<String>();
-		String temp = "onlyBinaryAssociationCanBeAggregations";
-		invNames.add(temp);
+		String mark = "onlyBinaryAssociationCanBeAggregations";
+		invNames.add(mark);
+		
+		String slicedModelPath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", mark + ".ecore");
+		String slicedOclFilePath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", mark + ".ocl");
+		String slicedInstancePath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", mark + ".xmi");
+		
 		Evaluator eval = new Evaluator();
 		long totalTime1 = 0, totalTime2 = 0, totalTime3 = 0, totalTime4 = 0;
-		int times = 4;
+		int times = 1;
 		for (int i = 0; i < times; i++) {
 			System.out.println("Check unsliced input ... ");
-			List<Object> res = eval.checkUnslicedInput(ecoreFilePath, xmiFilePath, oclFilePath, invNames);
+			List<Object> res = eval.checkInput(ecoreFilePath, xmiFilePath, oclFilePath, invNames);
 			eval.print(res);
 			totalTime1 += (Long) res.get(0);
 			totalTime2 += (Long) res.get(2);
 			
 			System.out.println("Check sliced input ... ");	
-			res = eval.checkSlicedInput(slicedModelPath, slicedInstancePath, slicedOclFilePath, temp);
+			res = eval.checkInput(slicedModelPath, slicedInstancePath, slicedOclFilePath, null);
 			eval.print(res);
 			totalTime3 += (Long) res.get(0);
 			totalTime4 += (Long) res.get(2);
