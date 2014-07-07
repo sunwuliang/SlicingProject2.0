@@ -19,8 +19,8 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.csu.slicing.CoachBusWithEDataType.*;
-import org.csu.slicing.CoachBusWithEDataType.impl.CoachBusWithEDataTypeFactoryImpl;
-import org.csu.slicing.CoachBusWithEDataType.impl.CoachBusWithEDataTypePackageImpl;
+//import org.csu.slicing.CoachBusWithEDataType.impl.CoachBusWithEDataTypeFactoryImpl;
+//import org.csu.slicing.CoachBusWithEDataType.impl.CoachBusWithEDataTypePackageImpl;
 
 /**
  * Need to import org.csu.slicing.coachbuswithedatatype project

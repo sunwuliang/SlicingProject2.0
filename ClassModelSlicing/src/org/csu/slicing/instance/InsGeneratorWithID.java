@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcorePackage;
 
-public class InsGenerator {
+public class InsGeneratorWithID {
 	
 	public static Set<EObject> generateInstance(EPackage ePkg) {
 		
@@ -31,8 +31,7 @@ public class InsGenerator {
 		
 		
 		Set<EObject> totalObjs = new HashSet<EObject>();
-		
-		for (int i = 0; i < 502; i++) {
+		for (int i = 0; i < 3000; i++) {
 			Map<EClass, Set<EObject>> clsInsMap = new HashMap<EClass, Set<EObject>>();
 			Set<EObject> objs = new HashSet<EObject>();
 			
@@ -52,6 +51,7 @@ public class InsGenerator {
 						}
 						
 						for (EAttribute eAttri : eCls.getEAttributes()) {
+							
 							EDataType dataType = eAttri.getEAttributeType();
 							
 							// GetEType is in the super class
@@ -125,7 +125,29 @@ public class InsGenerator {
 			
 			totalObjs.addAll(objs);
 		}
+		injectID(ePkg, totalObjs);
 		return totalObjs;
+	}
+	
+	private static void injectID(EPackage ePkg, Set<EObject> objs) {
+		EAttribute elmtIDAttr = null;
+		for (EClassifier eClsf : ePkg.getEClassifiers()) {
+			if (eClsf.getName().equals("Element")) {
+				EClass eCls = (EClass) eClsf;
+				for (EAttribute eAttr : eCls.getEAttributes()) {
+					if (eAttr.getName().equals("ID")) {
+						elmtIDAttr = eAttr;
+						break;
+					}
+				}
+			}
+		}
+		//System.out.println(elmtIDAttr);
+		for (EObject eObj : objs) {
+			if (eObj.eClass() instanceof EClass) {
+				eObj.eSet(elmtIDAttr, "" + eObj.hashCode());	
+			}
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -136,16 +158,15 @@ public class InsGenerator {
 		 */
 		
 		String basePath = "D:\\EclipseWorkspaceForSlicing\\ClassModelSlicing\\";
-		String ecoreFileName = "UML2.ecore";
+		String ecoreFileName = "UML2WithID.ecore";
 		String ecorePath = basePath + "ecores\\";
 		String ecoreFilePath = ecorePath + ecoreFileName;
 		String xmiPath = basePath + "xmis\\";
-		String xmiFilePath = xmiPath + ecoreFileName.replace(".ecore", "InsDataSet1.xmi") ;
-		
+		String xmiFilePath = xmiPath + ecoreFileName.replace(".ecore", "InsDataSet3.xmi") ;
 		
 		EPackage ePkg = EMFHelper.loadModel(ecoreFilePath);
 		
-		Set<EObject> objs = InsGenerator.generateInstance(ePkg);
+		Set<EObject> objs = InsGeneratorWithID.generateInstance(ePkg);
 		EMFHelper.saveInstance(xmiFilePath, objs);
 		
 		//List<EObject> eObjs = EMFHelper.loadInstance(xmiFilePath, ePkg);
