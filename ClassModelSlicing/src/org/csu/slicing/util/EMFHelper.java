@@ -202,6 +202,18 @@ public class EMFHelper {
 			e.printStackTrace();
 		}
 	}
+	public static void saveEvalResults(String resPath, List<String> resList) {
+		try {
+			File file = new File(resPath);
+			BufferedWriter out = new BufferedWriter(new FileWriter(file));
+			for (String res: resList) {
+				out.write(res + "\n");	
+			}
+			out.close();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 	/**
 	 * 	Cannot use loadOCLinXMI to parse the constraints because class model cannot be bound to the ocl 
 	 */
