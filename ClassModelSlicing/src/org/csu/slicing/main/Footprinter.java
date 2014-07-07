@@ -1,5 +1,6 @@
 package org.csu.slicing.main;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -7,6 +8,7 @@ import java.util.Set;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
@@ -14,6 +16,7 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EParameter;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcoreFactory;
 
 public class Footprinter {
@@ -26,7 +29,6 @@ public class Footprinter {
 		this.ePkg = ePkg;
 	}
 	public Footprinter() {
-		
 	}
 	public void setEPackge(EPackage ePkg) {
 		this.ePkg = ePkg;
@@ -78,11 +80,13 @@ public class Footprinter {
 	 * Add subclasses of each referenced class into the set of referenced model elements  
 	 */
 	protected Set<Object> addSubclss2RefClss(Set<Object> tmpRefModelElmts) {
+		
 		Set<Object> subclss = new HashSet<Object>();
+		pkgClss = null;
 		
 		for (Object obj : tmpRefModelElmts) {
-			//System.out.println(obj);
 			if (obj instanceof EClass) {
+				//System.out.println(obj);
 				for (EClass eCls : this.getPkgClss()) {
 					if (obj == eCls)
 						continue;
@@ -96,7 +100,7 @@ public class Footprinter {
 		tmpRefModelElmts.addAll(subclss);
 		return tmpRefModelElmts;
 	}
-	public EPackage sliceModel(Set<Object> refModelElmts) {
+	public EPackage sliceModel(Set<Object> refModelElmts, boolean injectedID) {
 		
 		EPackage slicedPkg = EcoreFactory.eINSTANCE.createEPackage();
 		slicedPkg.setName(ePkg.getName());
@@ -107,6 +111,7 @@ public class Footprinter {
 		Map<EDataType, EDataType> dtCopy = new HashMap<EDataType, EDataType>();
 		
 		// Start from the date types of the original package, because there are a few data types
+		this.pkgDtypes = null;
 		for (EDataType eDt : this.getPkgDataTypes()) {
 			if (refModelElmts.contains(eDt)) {
 				if (eDt instanceof EEnum) {
@@ -153,6 +158,7 @@ public class Footprinter {
 					clsCopy.put(eCls, slicedCls);
 				}
 				slicedCls.setName(eCls.getName());
+				slicedCls.setAbstract(eCls.isAbstract());
 				slicedPkg.getEClassifiers().add(slicedCls);
 								
 				for (EAttribute eAttr : eCls.getEAttributes()) {
@@ -280,6 +286,7 @@ public class Footprinter {
 				slicedOper.getEParameters().add(slicedPara);
 			}
 		}
+		
 		// Deal with inheritance
 		Set<EClass> eClss = clsCopy.keySet();
 		for (EClass eCls : eClss) {
@@ -290,7 +297,40 @@ public class Footprinter {
 			}
 		}
 		
+		if (injectedID)
+			injectID(slicedPkg, clsCopy);
+
 		return slicedPkg;
+	}
+	
+	private void injectID(EPackage slicedPkg, Map<EClass, EClass> clsCopy) {
+		EClass elmtCls = (EClass)this.ePkg.getEClassifier("Element");
+		EClass elmtCopy = null;
+		if (clsCopy.containsKey(elmtCls)) {
+			elmtCopy = clsCopy.get(elmtCls);
+		} else {
+			elmtCopy = EcoreFactory.eINSTANCE.createEClass();
+			clsCopy.put(elmtCls, elmtCopy);
+			elmtCopy.setName(elmtCls.getName());
+			elmtCopy.setAbstract(elmtCls.isAbstract());
+			slicedPkg.getEClassifiers().add(elmtCopy);
+		}
+		if (elmtCopy.getEStructuralFeature("ID") == null) {
+			EStructuralFeature idAttr = elmtCls.getEStructuralFeature("ID");
+			EAttribute idCopy = EcoreFactory.eINSTANCE.createEAttribute();
+			idCopy.setName(idAttr.getName());
+			idCopy.setUpperBound(idAttr.getUpperBound());
+			idCopy.setLowerBound(idAttr.getLowerBound());
+			idCopy.setEType(idAttr.getEType());
+			elmtCopy.getEStructuralFeatures().add(idCopy);
+		}
+		// Deal with inheritance
+		Collection<EClass> slicedClss = clsCopy.values();
+		for (EClass slicedCls : slicedClss) {
+			if (slicedCls != elmtCopy) {
+				slicedCls.getESuperTypes().add(elmtCopy);
+			}
+		}
 	}
 
 }

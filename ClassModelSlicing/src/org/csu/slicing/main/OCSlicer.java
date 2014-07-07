@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.csu.slicing.util.CoachBusWithOperationCons;
 import org.csu.slicing.util.EMFHelper;
 import org.csu.slicing.util.InvPrePostAnalyzer;
 import org.csu.slicing.util.UML2Invs;
@@ -46,8 +47,11 @@ public class OCSlicer extends Footprinter {
 	private void modeSetup() {
 		
 		this.refModelElmts = new HashSet<Object>();
-			
-		if (this.slicingMode.equals(SlicingMode.MultipleInvariants)) {
+		if (this.selectedInvNames == null || this.selectedInvNames.isEmpty()) {
+			selectedInvNames = this.refModelElmtsPerInv.keySet();
+		}
+		
+		if (this.slicingMode.equals(SlicingMode.Dynamic)) {
 			
 			Set<EClass> insRefClss = new HashSet<EClass>();
 			for (EObject eObj : this.eObjs) {
@@ -55,11 +59,7 @@ public class OCSlicer extends Footprinter {
 				insRefClss.add(eCls);
 				insRefClss.addAll(eCls.getEAllSuperTypes());
 			} 
-			
-			if (this.selectedInvNames == null) {
-				selectedInvNames = this.refModelElmtsPerInv.keySet();
-			} 
-			
+				
 			Set<String> rmInvs = new HashSet<String>();
 			for (String invName : this.selectedInvNames) {
 				boolean isRm = true;
@@ -81,15 +81,13 @@ public class OCSlicer extends Footprinter {
 		}
 		
 		for (String invName : this.selectedInvNames) {
-			//System.out.println(invName);
-			//System.out.println(this.refModelElmtsPerInv.get(invName));
 			this.refModelElmts.addAll(this.refModelElmtsPerInv.get(invName));
 		}
 		
 		this.refModelElmts = super.addSubclss2RefClss(this.refModelElmts);
 		
 		//for (Object obj : this.refModelElmts)
-		//	System.out.println("101 " + obj);
+		//	System.out.println("202 " + obj);
 	} 
 
 	private Set<EObject> sliceObjectConf(EPackage slicedPkg) {
@@ -102,7 +100,6 @@ public class OCSlicer extends Footprinter {
 		for (EClassifier eClsf : slicedPkg.getEClassifiers()) {
 			if (eClsf instanceof EClass) {
 				EClass eCls = (EClass)eClsf;
-				//System.out.println(eCls.getName());
 				clssMap.put(eCls.getName(), eCls);
 			}
 		}
@@ -140,7 +137,7 @@ public class OCSlicer extends Footprinter {
 			// Cannot use this.refModelElmts.contains(eObj.eClass())
 			// Because sliced class model is different from the unsliced model and 
 			// eObj.eClass returns a class in the unsliced model
-			if (clssMap.keySet().contains(eObj.eClass().getName())) {
+			if (clssMap.containsKey(eObj.eClass().getName())) {
 				
 				EClass slicedCls = clssMap.get(eObj.eClass().getName());
 				EObject slicedObj = null;
@@ -183,6 +180,9 @@ public class OCSlicer extends Footprinter {
 								if (objCopy.containsKey(refObj)) {
 									slicedRefObj = objCopy.get(refObj);
 								} else {
+									//System.out.println(refObj.eClass());
+									//System.out.println(refObj.eClass().getName());
+									//System.out.println(clssMap.get(refObj.eClass().getName()));
 									slicedRefObj = eFactory.create(clssMap.get(refObj.eClass().getName()));
 									slicedObjs.add(slicedRefObj);
 									objCopy.put(refObj, slicedRefObj);
@@ -221,7 +221,7 @@ public class OCSlicer extends Footprinter {
 	}
 
 	public List<Object> slice(String basePath, String ecoreFilePath, String xmiFilePath, String oclFilePath, String xmiFileName, String mark, Set<String> invNames, 
-			SlicingMode slicingMode) {
+			SlicingMode slicingMode, boolean injectedID, Map<String, String> constraintMap) {
 		String slicedModelPath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", mark + ".ecore");
 		String slicedInstancePath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", mark + ".xmi");
 		String slicedOclPath = basePath + "slices\\" + "Sliced" + xmiFileName.replace(".xmi", mark + ".ocl"); 
@@ -238,19 +238,17 @@ public class OCSlicer extends Footprinter {
 		
 		//OCSlicer st = new OCSlicer(ePkg, eObjs, refModelElmts, SlicingMode.SingleInvariant, invNames);
 		//Coslicer st = new Coslicer(ePkg, eObjs, refModelElmts, SlicingMode.MultipleInvariants, null);
-				
+		
 		super.setEPackge(ePkg);
 		this.refModelElmtsPerInv = iParser.getRefModelElmtsPerInv();
 		this.eObjs = eObjs;
 		this.slicingMode = slicingMode;
 		this.selectedInvNames = invNames;
 		this.modeSetup();
-
 		
 		long startTime1 = System.currentTimeMillis();
 		
-		
-		EPackage slicedPkg = sliceModel(this.refModelElmts);
+		EPackage slicedPkg = sliceModel(this.refModelElmts, injectedID);
 		Set<EObject> slicedObjs = sliceObjectConf(slicedPkg);
 		
 		List<Object> res = new ArrayList<Object>();
@@ -261,7 +259,6 @@ public class OCSlicer extends Footprinter {
 		EMFHelper.saveModel(slicedModelPath, slicedPkg);
 		EMFHelper.saveInstance(slicedInstancePath, slicedObjs);
 			
-		Map<String, String> constraintMap = UML2Invs.getConsMap();
 		Set<String> consToSave = new HashSet<String>();
 		
 		//System.out.println("A list of selected invariants : ");
@@ -287,27 +284,31 @@ public class OCSlicer extends Footprinter {
 	public static void main(String[] args) {
 		
 		String basePath = "D:\\EclipseWorkspaceForSlicing\\ClassModelSlicing\\";
-		String ecoreFileName = "UML2.ecore";
+		String ecoreFileName = "UML2WithID.ecore";
 		//String ecoreFileName = "CoachBus.ecore";
 		String ecorePath = basePath + "ecores\\";
 		String ecoreFilePath = ecorePath + ecoreFileName;
 		String xmiPath = basePath + "xmis\\";
-		String xmiFileName = "UML2InsER2MOF.xmi";
+		String xmiFileName = "UML2WithIDInsER2MOF.xmi";
 		//String xmiFileName = "CoachBus.xmi";
 		String xmiFilePath = xmiPath + xmiFileName;
 		String oclFileName = ecoreFileName.replace(".ecore", ".ocl");
 		String oclFilePath = basePath + "ocls\\" + oclFileName;
 		Set<String> invNames = new HashSet<String>();
 		String mark = "class1";
-		//String mark = "";
 		invNames.add(mark);
+		Map<String, String> constraintMap = UML2Invs.getConsMap();
+		//Map<String, String> constraintMap = CoachBusWithOperationCons.getConsMap();
+				
 		OCSlicer slicer = new OCSlicer();
-		
+
 		long totalTime1 = 0, totalTime2 = 0;
 		int times = 4;
 		for (int i = 0; i < times; i++) {
+			
 			System.out.println("Slicing input ... ");
-			List<Object> res = slicer.slice(basePath, ecoreFilePath, xmiFilePath, oclFilePath, xmiFileName, mark, invNames, SlicingMode.SingleInvariant);
+			List<Object> res = slicer.slice(basePath, ecoreFilePath, xmiFilePath, oclFilePath, 
+					xmiFileName, mark, invNames, SlicingMode.Static, true, constraintMap);
 			slicer.print(res);
 			totalTime1 += (Long) res.get(0);
 			totalTime2 += (Long) res.get(1);

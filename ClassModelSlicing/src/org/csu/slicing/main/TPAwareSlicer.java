@@ -147,7 +147,7 @@ public class TPAwareSlicer extends Footprinter{
 		
 		String tpName = "TP1";
 		TPAwareSlicer tpaSlicer = new TPAwareSlicer(ePkg, iParser.getRefModelElmtsPerCons(), tpName);
-		EPackage slicedPkg = tpaSlicer.sliceModel(tpaSlicer.getRefModelElmts());
+		EPackage slicedPkg = tpaSlicer.sliceModel(tpaSlicer.getRefModelElmts(), false);
 		
 		String slicedEcoreFileName = slicedPkg.getName() + tpName + ".ecore";
 		String slicedModelPath = slicePath + slicedEcoreFileName;

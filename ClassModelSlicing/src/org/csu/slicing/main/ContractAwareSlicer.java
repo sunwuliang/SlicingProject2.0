@@ -257,7 +257,7 @@ public class ContractAwareSlicer extends Footprinter {
 			System.out.println(obj);
 		System.out.println();*/
 		
-		EPackage slicedPkg = super.sliceModel(subGraph);
+		EPackage slicedPkg = super.sliceModel(subGraph, false);
 		this.subPkgMap.put(subPkgKey, slicedPkg);
 		this.selectedConsMap.put(subPkgKey, selectedConsNameSet);
 		
