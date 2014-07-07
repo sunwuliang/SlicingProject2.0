@@ -32,7 +32,7 @@ public class CoachBusInsEvaluator {
 		long startTime1 = System.currentTimeMillis();
 		
 		Evaluator eval = new Evaluator();
-		eval.checkUnslicedInput(modelPath, instancePath, oclPath, invNames);
+		eval.checkInput(modelPath, instancePath, oclPath, invNames);
 		
 		long estimatedTime1 = System.currentTimeMillis() - startTime1;
 		System.out.println(temp + " Evaluation estimated time including file loading is " + estimatedTime1);

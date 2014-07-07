@@ -24,27 +24,27 @@ public class UML2InsEvaluator {
 	private String oclPath = basePath + "ocls\\UML2.ocl";
 	private String instancePath = basePath + "xmis\\UML2InsRoyalAndLoyal.xmi";
 	
-	private String baseSlicePath = basePath + "slices\\";
-	private String mark = "UML2InsRoyalAndLoyal";
-	private String slicedModelPath = baseSlicePath + mark + ".ecore";
-	private String slicedOclPath = baseSlicePath + mark + ".ocl"; 
-	private String slicedInstancePath = baseSlicePath + mark + ".xmi";
+	private String xmiFileName = "UML2InsRoyalAndLoyal.xmi";
 
 		
-	private void checkInvariant(String temp) {
+	private void checkInvariant(String mark) {
 		Set<String> invNames = new HashSet<String>();
-		invNames.add(temp);
+		invNames.add(mark);
+		
+		String slicedModelPath = basePath + "slices\\Sliced" + xmiFileName.replace(".xmi", mark + ".ecore");
+		String slicedOclPath = basePath + "slices\\Sliced" + xmiFileName.replace(".xmi", mark + ".ocl");
+		String slicedXmiPath = basePath + "slices\\Sliced" + xmiFileName.replace(".xmi", mark + ".xmi");
 		
 		Evaluator eval = new Evaluator();
 		long startTime1 = System.currentTimeMillis();
-		eval.checkUnslicedInput(modelPath, instancePath, oclPath, invNames);
+		eval.checkInput(modelPath, instancePath, oclPath, invNames);
 		long estimatedTime1 = System.currentTimeMillis() - startTime1;
-		System.out.println(temp + " Evaluation estimated time including file loading is " + estimatedTime1);
+		System.out.println(mark + " Evaluation estimated time including file loading is " + estimatedTime1);
 		
 		long startTime2 = System.currentTimeMillis();				
-		eval.checkSlicedInput(slicedModelPath, slicedInstancePath, slicedOclPath, temp);
+		eval.checkInput(slicedModelPath, slicedXmiPath, slicedOclPath, null);
 		long estimatedTime2 = System.currentTimeMillis() - startTime2;
-		System.out.println(temp + " Evaluation estimated time including file laoding is " + estimatedTime2);	
+		System.out.println(mark + " Evaluation estimated time including file laoding is " + estimatedTime2);	
 
 	}
 	@After
@@ -56,14 +56,18 @@ public class UML2InsEvaluator {
 		
 		Set<String> invNames = new HashSet<String>();
 		
+		String slicedModelPath = basePath + "slices\\Sliced" + xmiFileName.replace(".xmi", ".ecore");
+		String slicedOclPath = basePath + "slices\\Sliced" + xmiFileName.replace(".xmi", ".ocl");
+		String slicedXmiPath = basePath + "slices\\Sliced" + xmiFileName.replace(".xmi", ".xmi");
+		
 		long startTime1 = System.currentTimeMillis();
 		Evaluator eval = new Evaluator();
-		eval.checkUnslicedInput(modelPath, instancePath, oclPath, invNames);
+		eval.checkInput(modelPath, instancePath, oclPath, invNames);
 		long estimatedTime1 = System.currentTimeMillis() - startTime1;
 		System.out.println("Evaluation estimated time including file laoding is " + estimatedTime1);
 
 		long startTime2 = System.currentTimeMillis();
-		eval.checkSlicedInput(slicedModelPath, slicedInstancePath, slicedOclPath, null);
+		eval.checkInput(slicedModelPath, slicedXmiPath, slicedOclPath, null);
 		long estimatedTime2 = System.currentTimeMillis() - startTime2;
 		System.out.println("Evaluation estimated time including file laoding is " + estimatedTime2);	
 	}
@@ -154,19 +158,6 @@ public class UML2InsEvaluator {
 		String temp = "isCompositeIsValid";
 		checkInvariant(temp);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
